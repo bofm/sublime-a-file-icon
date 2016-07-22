@@ -1,0 +1,16 @@
+{
+  "extensions": [
+    "git",
+    "gitignore",
+    "gitkeep",
+    "gitconfig",
+    "gitblame",
+    "gitcommit",
+    "gitgraph",
+    "gitattributes",
+    "gitmodules",
+    "git-blame",
+    "git-commit",
+    "git-graph"
+  ]
+}
