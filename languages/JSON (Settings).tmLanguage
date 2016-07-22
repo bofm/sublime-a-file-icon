@@ -7,6 +7,10 @@
     <key>fileTypes</key>
     <array>
       <string>.sublime-settings</string>
+      <string>.babelrc</string>
+      <string>.jscsrc</string>
+      <string>.jshintrc</string>
+      <string>.eslintrc</string>
     </array>
     <key>patterns</key>
     <array>

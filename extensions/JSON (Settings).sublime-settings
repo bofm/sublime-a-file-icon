@@ -1,5 +1,9 @@
 {
   "extensions": [
-    "sublime-settings"
+    "sublime-settings",
+    "babelrc",
+    "jscsrc",
+    "jshintrc",
+    "eslintrc"
   ]
 }
