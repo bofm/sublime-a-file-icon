@@ -25,14 +25,37 @@ The easiest way to install is using [Package Control](https://packagecontrol.io/
 1. Go to `Packages` directory, which you can find using the menu item `Preferences → Browse Packages...`
 2. Clone repository here: `git clone https://github.com/oivva/file-icons-extended.git "File Icons Extended"`
 
-
 ## Users
+
+### Icons
 
 In some cases you can see that some icons from your current theme are missing or conflicted with other custom themes. 
 
 > **You should remove other custom themes and use only the one which supports it or you can request support of this package from the developer of the theme that caused conflicts.**
 
 [More details here →](https://forum.sublimetext.com/t/sublime-text-3-file-icons-in-sidebar/21134/4) 
+
+### Sublime Linter
+
+This package adds some syntax aliases which Sublime Linter doesn't recognize. Just update your Sublime Linter settings:
+
+```json
+  "syntax_map": {
+    "html (django)": "html",
+    "html (rails)": "html",
+    "html 5": "html",
+    "javascript (babel)": "javascript",
+    "javascript (gruntfile)": "javascript",
+    "javascript (gulpfile)": "javascript",
+    "json (bower)": "json",
+    "json (npm)": "json",
+    "json (settings)": "json",
+    "magicpython": "python",
+    "php": "html",
+    "python django": "python",
+    "pythonimproved": "python"
+  },
+```
 
 ## Theme Developers
 
