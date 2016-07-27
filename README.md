@@ -4,6 +4,28 @@ This Sublime Text 3 package is the syntax aliases storage of the default syntaxe
 
 Its aim is to add support of such icons as NPM, Gulpfile, Font & etc.
 
+## Get It
+
+### Package Control (coming soon)
+
+The easiest way to install is using [Package Control](https://packagecontrol.io/), where [it](https://packagecontrol.io/packages/File%20Icons%20Extended) is listed as `File Icons Extended`.
+
+1. Open `Command Palette` using menu item `Tools → Command Palette...`
+2. Choose `Package Control: Install Package`
+3. Find `File Icons Extended` and hit `Enter`
+
+### Download
+
+1. [Download the .zip](https://github.com/oivva/file-icons-extended/releases)
+2. Unzip and rename the folder to `File Icons Extended`
+3. Copy the folder into `Packages` directory, which you can find using the menu item `Preferences → Browse Packages...`
+
+### Clone
+
+1. Go to `Packages` directory, which you can find using the menu item `Preferences → Browse Packages...`
+2. Clone repository here: `git clone https://github.com/oivva/file-icons-extended.git "File Icons Extended"`
+
+
 ## Users
 
 In some cases you can see that some icons from your current theme are missing or conflicted with other custom themes. 
