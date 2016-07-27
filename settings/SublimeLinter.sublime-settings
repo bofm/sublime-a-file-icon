@@ -1,5 +1,5 @@
 {
-  "user": {
+  "default": {
     "syntax_map": {
       "javascript (gruntfile)": "javascript",
       "javascript (gulpfile)": "javascript",
