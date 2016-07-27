@@ -1,0 +1,11 @@
+{
+  "user": {
+    "syntax_map": {
+      "javascript (gruntfile)": "javascript",
+      "javascript (gulpfile)": "javascript",
+      "json (npm)": "json",
+      "json (bower)": "json",
+      "json (settings)": "json"
+    }
+  }
+}
