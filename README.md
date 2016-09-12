@@ -67,6 +67,6 @@ If you are a theme developer and you want to have extended file icons support, y
 
 ## Support
 
-Themes that already have support of this package:
+Themes those already have support of this package:
 
 * [Boxy Theme](https://github.com/oivva/boxy)
