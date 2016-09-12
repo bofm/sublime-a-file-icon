@@ -6,7 +6,7 @@ Its aim is to add support of such icons as NPM, Gulpfile, Font & etc.
 
 ## Get It
 
-### Package Control (coming soon)
+### Package Control
 
 The easiest way to install is using [Package Control](https://packagecontrol.io/), where [it](https://packagecontrol.io/packages/File%20Icons%20Extended) is listed as `File Icons Extended`.
 
