@@ -39,7 +39,7 @@ In some cases you can see that some icons from your current theme are missing or
 
 This package adds some syntax aliases which Sublime Linter doesn't recognize. Just update your Sublime Linter settings:
 
-```json
+```js
   "syntax_map": {
     "html (django)": "html",
     "html (rails)": "html",
