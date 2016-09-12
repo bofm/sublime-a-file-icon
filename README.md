@@ -61,7 +61,7 @@ This package adds some syntax aliases which Sublime Linter doesn't recognize. Ju
 
 If you are a theme developer and you want to have extended file icons support, you should:
 
-* Remove all `.tmPreferences` files from your theme
+* Remove all `.tmPreferences` files (for the syntax aliases only) from your theme
 
 * Check the name of the each icon that you provide with the theme. They should be the same as in [ICONS](ICONS.md). Also you can see the [BOXY THEME](https://github.com/oivva/boxy), it supports this package.
 
