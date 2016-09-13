@@ -64,10 +64,12 @@ If you are a theme developer and you want to have extended file icons support, y
 Themes those already have support of this package:
 
 * [Boxy Theme][boxy-theme]
+* [Material Theme][material-theme]
 
 <!-- Themes -->
 
 [boxy-theme]: https://github.com/oivva/st-boxy
+[material-theme]: https://github.com/equinusocio/material-theme
 
 <!-- Misc -->
 
