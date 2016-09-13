@@ -81,7 +81,7 @@ Themes those already have support of this package:
 [downloads]: https://packagecontrol.io/packages/File%20Icons%20Extended
 [icons]: ICONS.md
 [patreon]: https://www.patreon.com/oivva
-[preferences]: tree/master/preferences
+[preferences]: /preferences
 [release]: https://github.com/oivva/st-file-icons-extended/releases
 
 <!-- Assets -->
