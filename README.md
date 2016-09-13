@@ -4,7 +4,7 @@
 [![Downloads][img-downloads]][downloads]
 [![Make a donation at patreon.com][img-patreon]][patreon]
 
-This Sublime Text 3 package is the syntax aliases storage of the default syntaxes.
+This package is a storage of syntax aliases to the [Default Sublime Text Packages][default-packages].
 
 Its aim is to add support of such icons as NPM, Gulpfile, Font & etc.
 
@@ -77,6 +77,7 @@ Themes those already have support of this package:
 
 <!-- Misc -->
 
+[default-packages]: https://github.com/sublimehq/Packages
 [details]: https://forum.sublimetext.com/t/sublime-text-3-file-icons-in-sidebar/21134/4
 [downloads]: https://packagecontrol.io/packages/File%20Icons%20Extended
 [icons]: ICONS.md
