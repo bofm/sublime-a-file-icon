@@ -2,8 +2,7 @@
 
 [![Release][img-release]][release]
 [![Downloads][img-downloads]][downloads]
-[![License][img-license]][license]
-[![Click here to lend your support to: Extended File Icons and make a donation at patreon.com !][img-patreon]][patreon]
+[![Make a donation at patreon.com][img-patreon]][patreon]
 
 This Sublime Text 3 package is the syntax aliases storage of the default syntaxes.
 
@@ -81,12 +80,11 @@ Themes those already have support of this package:
 [details]: https://forum.sublimetext.com/t/sublime-text-3-file-icons-in-sidebar/21134/4
 [downloads]: https://packagecontrol.io/packages/File%20Icons%20Extended
 [icons]: ICONS.md
-[license]: https://github.com/oivva/st-file-icons-extended/blob/master/LICENSE.md
+[patreon]: https://www.patreon.com/oivva
 [release]: https://github.com/oivva/st-file-icons-extended/releases
 
 <!-- Assets -->
 
 [img-downloads]: https://img.shields.io/packagecontrol/dt/File%20Icons%20Extended.svg?maxAge=3600&style=flat-square
-[img-license]: https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000&style=flat-square
 [img-patreon]: https://img.shields.io/badge/donate-patreon-orange.svg?maxAge=2592000&style=flat-square
 [img-release]: https://img.shields.io/github/release/oivva/st-file-icons-extended.svg?maxAge=86400&style=flat-square
