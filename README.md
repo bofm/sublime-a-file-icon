@@ -60,7 +60,7 @@ This package adds some syntax aliases which Sublime Linter doesn't recognize. Ju
 
 If you are a theme developer and you want to have extended file icons support, you should:
 
-* Remove syntax alias `.tmPreferences` files from your theme
+* Remove [these][preferences] syntax alias `.tmPreferences` files from your theme
 * Check the name of the each icon that you provide with the theme. They should be the same as in [ICONS.md][icons].
 
 ## Support
@@ -81,6 +81,7 @@ Themes those already have support of this package:
 [downloads]: https://packagecontrol.io/packages/File%20Icons%20Extended
 [icons]: ICONS.md
 [patreon]: https://www.patreon.com/oivva
+[preferences]: tree/master/preferences
 [release]: https://github.com/oivva/st-file-icons-extended/releases
 
 <!-- Assets -->
