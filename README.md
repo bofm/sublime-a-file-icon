@@ -63,7 +63,7 @@ If you are a theme developer and you want to have extended file icons support, y
 * Remove [these][preferences] syntax alias `.tmPreferences` files from your theme
 * Check the name of the each icon that you provide with the theme. They should be the same as in [ICONS.md][icons].
 
-## Support
+## Supports
 
 Themes those already have support of this package:
 
