@@ -1,0 +1,44 @@
+[
+	{
+		"id": "preferences",
+		"children":
+		[
+			{
+				"caption": "Package Settings",
+				"id": "package-settings",
+				"children":
+				[
+					{
+						"caption": "File Icons",
+						"children":
+						[
+							{
+								"caption": "Settings",
+								"command": "edit_settings", "args":
+								{
+									"base_file": "${packages}/File Icons/File Icons.sublime-settings",
+									"default": "// FILE ICONS PREFERENCES :: USER\n// =================================\n{\n\t$0\n}\n"
+								}
+							},
+							{ "caption": "-" },
+							{
+								"caption": "Settings - Default",
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/File Icons/File Icons.sublime-settings"
+								}
+							},
+							{
+								"caption": "Settings - User",
+								"command": "open_file", "args":
+								{
+									"file": "${packages}/User/File Icons.sublime-settings"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
