@@ -1,0 +1,25 @@
+// zzFileIcons Preferences – Default
+// ===================================================
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// ! RESTART SUBLIME TEXT AFTER CHANGING PREFERENCES !
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+{
+	// File type icons have different colors by default. However you can
+	// make them single colored. Just provide your color in #RRGGBB format
+	// (e.g. "#ffffff", "#000000", etc.).
+	"color": "",
+
+	// The opacity level of the default icon state.
+	"default_opacity": 0.75,
+
+	// The opacity level of the hovered icon state.
+	"hovered_opacity": 1.0,
+
+	// The opacity level of the selected icon state.
+	"selected_opacity": 1.0,
+
+	// Set to true to override icons of the supported themes
+	"force_override": false
+}
