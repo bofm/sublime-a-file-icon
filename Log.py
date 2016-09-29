@@ -29,7 +29,7 @@ def value(*args):
 
 def done():
     if DEBUG:
-        log('File Icons: ', 'Done')
+        log('File Icons: ', 'Finished')
         log('***\n')
 
 

@@ -219,6 +219,8 @@ def on_changed_sublime_settings():
         log.value(CURRENT_UI_THEME)
         activate()
         SETTINGS_CHANGED = False
+    else:
+        log.done()
 
 
 def on_changed_package_settings():
@@ -242,6 +244,8 @@ def on_changed_package_settings():
         log.value(CURRENT_SETTINGS)
         activate()
         SETTINGS_CHANGED = False
+    else:
+        log.done()
 
 
 def init():
