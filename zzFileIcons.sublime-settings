@@ -21,5 +21,8 @@
 	"selected_opacity": 1.0,
 
 	// Set to true to override icons of the supported themes
-	"force_override": false
+	"force_override": false,
+
+	// Show debug logging
+	"debug": false
 }
