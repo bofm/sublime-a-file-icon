@@ -12,6 +12,10 @@
 	// you like multi colored icons.
 	"color": "",
 
+	// This is the default size of Sublime Text icons. However you can
+	// change it to better fit your custom theme.
+	"size": 8,
+
 	// The opacity level of the default icon state.
 	"default_opacity": 0.75,
 

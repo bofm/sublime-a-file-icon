@@ -13,6 +13,7 @@ SUBLIME_SETTINGS = 'Preferences.sublime-settings'
 CURRENT_UI_THEME = ''
 CURRENT_SETTINGS = {
     'color': '',
+    'size': '',
     'default_opacity': '',
     'hovered_opacity': '',
     'selected_opacity': '',
@@ -35,7 +36,7 @@ TEMPLATE = '''
   {
     "class": "icon_file_type",
     "layer0.opacity": %(default_opacity)s,%(color)s
-    "content_margin": [8, 8]
+    "content_margin": [%(size)s, %(size)s]
   },
 
   // Hovered
@@ -133,17 +134,14 @@ def patch(theme, color):
 
     dest = os.path.join(get_dest_path(), theme)
 
-    default_opacity = CURRENT_SETTINGS['default_opacity']
-    hovered_opacity = CURRENT_SETTINGS['hovered_opacity']
-    selected_opacity = CURRENT_SETTINGS['selected_opacity']
-
     with open(dest, 'w') as t:
         t.write(TEMPLATE % {
             'name': os.path.splitext(theme)[0],
             'color': color,
-            'default_opacity': default_opacity,
-            'hovered_opacity': hovered_opacity,
-            'selected_opacity': selected_opacity
+            'size': CURRENT_SETTINGS['size'],
+            'default_opacity': CURRENT_SETTINGS['default_opacity'],
+            'hovered_opacity': CURRENT_SETTINGS['hovered_opacity'],
+            'selected_opacity': CURRENT_SETTINGS['selected_opacity']
         })
         t.close()
 
