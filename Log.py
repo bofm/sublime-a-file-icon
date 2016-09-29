@@ -11,12 +11,6 @@ def log(*args):
     print(''.join(text))
 
 
-def warning(*args):
-    log('')
-    log('File Icons: ', *args)
-    log('')
-
-
 def message(*args):
     if DEBUG:
         log('File Icons: ', *args)

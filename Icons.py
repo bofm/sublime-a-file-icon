@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import sublime
+import sublime_plugin
 import os
 import re
 import zzFileIcons.Log as log
@@ -22,6 +23,8 @@ CURRENT_SETTINGS = {
     'opacity_on_select': '',
     'size': ''
 }
+
+MSG = 'Please restart Sulbime Text for the applied icons to take effect ...'
 
 DEST = os.path.join('zzFileIcons', 'dist', 'zpatches')
 SETTINGS_CHANGED = False
@@ -165,8 +168,7 @@ def activate():
 
         if not os.path.isfile(patched) or SETTINGS_CHANGED:
             patch(theme, colors)
-            log.warning('Please restart your Sulbime Text for these changes ',
-                        'to take effect ...')
+            sublime.message_dialog(MSG)
 
         else:
             log.message('The theme is already patched')
@@ -276,12 +278,18 @@ def init():
     package_settings.add_on_change('zzfiocps', on_changed_package_settings)
 
 
+class FileIconsCleanCommand(sublime_plugin.WindowCommand):
+    def run(self):
+        clear_all_patches()
+
+
 def plugin_loaded():
     init()
     activate()
 
 
 def plugin_unloaded():
-    clear_all_patches()
     get_package_settings().clear_on_change('zzfiocss')
     get_sublime_settings().clear_on_change('zzfiocps')
+
+    clear_all_patches()
