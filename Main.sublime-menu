@@ -9,15 +9,16 @@
 				"children":
 				[
 					{
-						"caption": "zzFileIcons",
+						"caption": "File Icons",
+						"id": "file-icons",
 						"children":
 						[
 							{
 								"caption": "Settings",
 								"command": "edit_settings", "args":
 								{
-									"base_file": "${packages}/zzFileIcons/zzFileIcons.sublime-settings",
-									"default": "// zzFileIcons Preferences – User\n// ===================================================\n\n// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n// ! RESTART SUBLIME TEXT AFTER CHANGING PREFERENCES !\n// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n{\n\t$0\n}\n"
+									"base_file": "${packages}/zzFileIcons/File Icons.sublime-settings",
+									"default": "// File Icons Preferences – User\n// ===================================================\n\n// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n// ! RESTART SUBLIME TEXT AFTER CHANGING PREFERENCES !\n// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n{\n\t$0\n}\n"
 								}
 							},
 							{ "caption": "-" },
@@ -25,14 +26,14 @@
 								"caption": "Settings - Default",
 								"command": "open_file", "args":
 								{
-									"file": "${packages}/zzFileIcons/zzFileIcons.sublime-settings"
+									"file": "${packages}/zzFileIcons/File Icons.sublime-settings"
 								}
 							},
 							{
 								"caption": "Settings - User",
 								"command": "open_file", "args":
 								{
-									"file": "${packages}/User/zzFileIcons.sublime-settings"
+									"file": "${packages}/User/File Icons.sublime-settings"
 								}
 							}
 						]

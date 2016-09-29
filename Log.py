@@ -3,22 +3,36 @@
 DEBUG = False
 
 
+def log(*args):
+    text = []
+
+    for arg in args:
+        text.append(str(arg))
+    print(''.join(text))
+
+
+def warning(*args):
+    log('')
+    log('File Icons: ', *args)
+    log('')
+
+
 def message(*args):
     if DEBUG:
-        text = ['zzFileIcons: ']
-        for arg in args:
-            text.append(str(arg))
-        print(''.join(text))
+        log('File Icons: ', *args)
 
 
 def value(*args):
     if DEBUG:
-        text = ['         >>> ']
-        for arg in args:
-            text.append(str(arg))
-        print(''.join(text))
+        log('        >>> ', *args)
+
+
+def done():
+    if DEBUG:
+        log('File Icons: ', 'Done')
+        log('***\n')
 
 
 def separator():
     if DEBUG:
-        print('\n***\n')
+        log('\n***')

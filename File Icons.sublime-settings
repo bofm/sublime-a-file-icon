@@ -1,4 +1,4 @@
-// zzFileIcons Preferences – Default
+// File Icons Preferences – Default
 // ===================================================
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -8,7 +8,8 @@
 {
 	// File type icons have different colors by default. However you can
 	// make them single colored. Just provide your color in #RRGGBB format
-	// (e.g. "#ffffff", "#000000", etc.).
+	// (e.g. "#ffffff", "#000000", etc.) or leave this option empty if
+	// you like multi colored icons.
 	"color": "",
 
 	// The opacity level of the default icon state.

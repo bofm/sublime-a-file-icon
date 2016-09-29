@@ -7,7 +7,7 @@ import re
 import zzFileIcons.Log as log
 from zzFileIcons.Themes import SUPPORTED
 
-PACKAGE_SETTINGS = 'zzFileIcons.sublime-settings'
+PACKAGE_SETTINGS = 'File Icons.sublime-settings'
 SUBLIME_SETTINGS = 'Preferences.sublime-settings'
 
 CURRENT_UI_THEME = ''
@@ -20,7 +20,7 @@ CURRENT_SETTINGS = {
 }
 
 DIR = 'zzFileIcons'
-NEED_PATCH = False
+SETTINGS_CHANGED = False
 
 TEMPLATE = '''
 // %(name)s Theme Overlay
@@ -66,7 +66,7 @@ def get_package_settings():
 
 
 def get_dest_path():
-    return os.path.join(sublime.packages_path(), DIR, 'zzicons')
+    return os.path.join(sublime.packages_path(), DIR, 'zicons')
 
 
 def get_installed_themes():
@@ -78,8 +78,8 @@ def get_installed_themes():
         installed_themes.setdefault(os.path.basename(os.path.dirname(r)),
                                     []).append(os.path.basename(r))
 
-    if 'zzicons' in installed_themes:
-        del installed_themes['zzicons']
+    if 'zicons' in installed_themes:
+        del installed_themes['zicons']
 
     log.value(installed_themes)
 
@@ -87,7 +87,7 @@ def get_installed_themes():
 
 
 def is_theme_supported(theme):
-    log.message('Checking if current theme is supported')
+    log.message('Checking if the current theme is supported')
 
     current_theme = ''
     installed_themes = get_installed_themes()
@@ -108,7 +108,7 @@ def is_theme_supported(theme):
 
 
 def get_color():
-    log.message('Getting color of the icons')
+    log.message('Getting a color of the icons')
 
     color = get_package_settings().get('color', '')
     pattern = re.compile('#([A-Fa-f0-9]{6})')
@@ -129,42 +129,31 @@ def get_color():
 
 
 def patch(theme, color):
-    global NEED_PATCH
-
-    package_settings = get_package_settings()
+    log.message('Patching the current theme')
 
     dest = os.path.join(get_dest_path(), theme)
 
-    if not os.path.isfile(dest):
-        NEED_PATCH = True
+    default_opacity = CURRENT_SETTINGS['default_opacity']
+    hovered_opacity = CURRENT_SETTINGS['hovered_opacity']
+    selected_opacity = CURRENT_SETTINGS['selected_opacity']
 
-    if NEED_PATCH:
-        log.message('Patching the current theme')
-        default_opacity = package_settings.get('default_opacity', 0.75)
-        hovered_opacity = package_settings.get('hovered_opacity', 1.0)
-        selected_opacity = package_settings.get('selected_opacity', 1.0)
-
-        with open(dest, 'w') as t:
-            t.write(TEMPLATE % {
-                'name': os.path.splitext(theme)[0],
-                'color': color,
-                'default_opacity': default_opacity,
-                'hovered_opacity': hovered_opacity,
-                'selected_opacity': selected_opacity
-            })
-            t.close()
-
-        NEED_PATCH = False
-
-    log.message('Done')
+    with open(dest, 'w') as t:
+        t.write(TEMPLATE % {
+            'name': os.path.splitext(theme)[0],
+            'color': color,
+            'default_opacity': default_opacity,
+            'hovered_opacity': hovered_opacity,
+            'selected_opacity': selected_opacity
+        })
+        t.close()
 
 
 def activate():
-    log.message('Activating icons')
+    log.message('Activating the icons')
 
-    theme = get_sublime_settings().get('theme')
+    theme = CURRENT_UI_THEME
     supported = is_theme_supported(theme)
-    force_override = get_package_settings().get('force_override')
+    force_override = CURRENT_SETTINGS['force_override']
 
     if not supported or force_override:
         dest = get_dest_path()
@@ -172,19 +161,33 @@ def activate():
         icons = os.path.join(dest, 'icons')
         multi = os.path.join(dest, 'multi')
         single = os.path.join(dest, 'single')
+        patched = os.path.join(dest, theme)
 
-        if color and os.path.isdir(single):
-            log.message('Activating single mode')
-            os.rename(icons, multi)
-            os.rename(single, icons)
-        elif not color and os.path.isdir(multi):
-            log.message('Activating multi mode')
-            os.rename(icons, single)
-            os.rename(multi, icons)
+        if color:
+            if os.path.isdir(single):
+                log.message('Activating the single color mode')
+                os.rename(icons, multi)
+                os.rename(single, icons)
+            else:
+                log.message('The single color mode is already activated')
+        else:
+            if os.path.isdir(multi):
+                log.message('Activating the multi color mode')
+                os.rename(icons, single)
+                os.rename(multi, icons)
+            else:
+                log.message('The multi color mode is already activated')
 
-        patch(theme, color)
+        if not os.path.isfile(patched) or SETTINGS_CHANGED:
+            patch(theme, color)
+            log.warning('Please restart your Sulbime Text for these changes ',
+                        'to take effect ...')
+        else:
+            log.message('The theme is already patched')
     else:
         clear()
+
+    log.done()
 
 
 def clear():
@@ -198,48 +201,47 @@ def clear():
 
 
 def on_changed_sublime_settings():
-    log.separator()
-    log.message('Sublime settings are changed')
-
     global CURRENT_UI_THEME
-    global NEED_PATCH
+    global SETTINGS_CHANGED
+
+    log.separator()
+    log.message('The settings are changed')
 
     theme = get_sublime_settings().get('theme')
 
     if theme != CURRENT_UI_THEME:
+        SETTINGS_CHANGED = True
         log.message('`theme` is changed')
-        NEED_PATCH = True
-
-        log.message('Current theme')
         CURRENT_UI_THEME = theme
-        log.value(CURRENT_UI_THEME)
 
+    if SETTINGS_CHANGED:
+        log.message('Current theme')
+        log.value(CURRENT_UI_THEME)
         activate()
+        SETTINGS_CHANGED = False
 
 
 def on_changed_package_settings():
-    log.separator()
-    log.message('Package settings are changed')
-
     global CURRENT_SETTINGS
-    global NEED_PATCH
+    global SETTINGS_CHANGED
 
     package_settings = get_package_settings()
+    log.DEBUG = package_settings.get('debug')
+
+    log.separator()
+    log.message('The settings are changed')
 
     for k in CURRENT_SETTINGS.keys():
         if CURRENT_SETTINGS[k] != package_settings.get(k):
+            SETTINGS_CHANGED = True
             log.message('`', k, '` is changed')
-            NEED_PATCH = True
-
-            log.message('Current settings')
             CURRENT_SETTINGS[k] = package_settings.get(k)
-            log.value(CURRENT_SETTINGS)
 
-            activate()
-
-            break
-
-    log.DEBUG = package_settings.get('debug')
+    if SETTINGS_CHANGED:
+        log.message('Current settings')
+        log.value(CURRENT_SETTINGS)
+        activate()
+        SETTINGS_CHANGED = False
 
 
 def init():

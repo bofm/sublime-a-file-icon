@@ -3,7 +3,7 @@
 
 *.sublime-project
 *.sublime-workspace
-zzicons/*.sublime-theme
+*.sublime-theme
 node_modules/
 
 
