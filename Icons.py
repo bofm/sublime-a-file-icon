@@ -4,10 +4,8 @@ import sublime
 import os
 import re
 
-'''Should be such as theme name in Package Control'''
-SUPPORTED = [
-    'Boxy Theme'
-]
+import zzFileIcons.Log as log
+from zzFileIcons.Themes import SUPPORTED
 
 PACKAGE_SETTINGS = 'zzFileIcons.sublime-settings'
 SUBLIME_SETTINGS = 'Preferences.sublime-settings'
@@ -22,7 +20,6 @@ CURRENT_SETTINGS = {
 }
 
 DIR = 'zzFileIcons'
-DEBUG = False
 NEED_PATCH = False
 
 TEMPLATE = '''
@@ -68,33 +65,12 @@ def get_package_settings():
     return sublime.load_settings(PACKAGE_SETTINGS)
 
 
-def log_msg(*args):
-    if DEBUG:
-        text = ['zzFileIcons: ']
-        for arg in args:
-            text.append(str(arg))
-        print(''.join(text))
-
-
-def log_val(*args):
-    if DEBUG:
-        text = ['         >>> ']
-        for arg in args:
-            text.append(str(arg))
-        print(''.join(text))
-
-
-def log_sep():
-    if DEBUG:
-        print('\n***\n')
-
-
 def get_dest_path():
     return os.path.join(sublime.packages_path(), DIR, 'zzicons')
 
 
 def get_installed_themes():
-    log_msg('Getting installed themes')
+    log.message('Getting installed themes')
 
     installed_themes = {}
 
@@ -105,13 +81,13 @@ def get_installed_themes():
     if 'zzicons' in installed_themes:
         del installed_themes['zzicons']
 
-    log_val(installed_themes)
+    log.value(installed_themes)
 
     return installed_themes
 
 
 def is_theme_supported(theme):
-    log_msg('Checking if current theme is supported')
+    log.message('Checking if current theme is supported')
 
     current_theme = ''
     installed_themes = get_installed_themes()
@@ -124,15 +100,15 @@ def is_theme_supported(theme):
             break
 
     if current_theme in SUPPORTED:
-        log_msg(theme, ' is supported')
+        log.message(theme, ' is supported')
         return True
 
-    log_msg(theme, ' isn\'t supported')
+    log.message(theme, ' isn\'t supported')
     return False
 
 
 def get_color():
-    log_msg('Getting color of the icons')
+    log.message('Getting color of the icons')
 
     color = get_package_settings().get('color', '')
     pattern = re.compile('#([A-Fa-f0-9]{6})')
@@ -145,7 +121,7 @@ def get_color():
 
         color = ', '.join(str(e) for e in rgb_color)
 
-        log_val('[', color, ']')
+        log.value('[', color, ']')
 
         return '\n    "layer0.tint": [' + color + '],'
 
@@ -163,7 +139,7 @@ def patch(theme, color):
         NEED_PATCH = True
 
     if NEED_PATCH:
-        log_msg('Patching the current theme')
+        log.message('Patching the current theme')
         default_opacity = package_settings.get('default_opacity', 0.75)
         hovered_opacity = package_settings.get('hovered_opacity', 1.0)
         selected_opacity = package_settings.get('selected_opacity', 1.0)
@@ -180,11 +156,11 @@ def patch(theme, color):
 
         NEED_PATCH = False
 
-    log_msg('Done')
+    log.message('Done')
 
 
 def activate():
-    log_msg('Activating icons')
+    log.message('Activating icons')
 
     theme = get_sublime_settings().get('theme')
     supported = is_theme_supported(theme)
@@ -198,11 +174,11 @@ def activate():
         single = os.path.join(dest, 'single')
 
         if color and os.path.isdir(single):
-            log_msg('Activating single mode')
+            log.message('Activating single mode')
             os.rename(icons, multi)
             os.rename(single, icons)
         elif not color and os.path.isdir(multi):
-            log_msg('Activating multi mode')
+            log.message('Activating multi mode')
             os.rename(icons, single)
             os.rename(multi, icons)
 
@@ -212,7 +188,7 @@ def activate():
 
 
 def clear():
-    log_msg('Clearing patches of the supported themes')
+    log.message('Clearing patches of the supported themes')
 
     theme = get_sublime_settings().get('theme')
     path = os.path.join(get_dest_path(), theme)
@@ -222,8 +198,8 @@ def clear():
 
 
 def on_changed_sublime_settings():
-    log_sep()
-    log_msg('Sublime settings are changed')
+    log.separator()
+    log.message('Sublime settings are changed')
 
     global CURRENT_UI_THEME
     global NEED_PATCH
@@ -231,63 +207,61 @@ def on_changed_sublime_settings():
     theme = get_sublime_settings().get('theme')
 
     if theme != CURRENT_UI_THEME:
-        log_msg('`theme` is changed')
+        log.message('`theme` is changed')
         NEED_PATCH = True
 
-        log_msg('Current theme')
+        log.message('Current theme')
         CURRENT_UI_THEME = theme
-        log_val(CURRENT_UI_THEME)
+        log.value(CURRENT_UI_THEME)
 
         activate()
 
 
 def on_changed_package_settings():
-    log_sep()
-    log_msg('Package settings are changed')
+    log.separator()
+    log.message('Package settings are changed')
 
     global CURRENT_SETTINGS
-    global DEBUG
     global NEED_PATCH
 
     package_settings = get_package_settings()
 
     for k in CURRENT_SETTINGS.keys():
         if CURRENT_SETTINGS[k] != package_settings.get(k):
-            log_msg('`', k, '` is changed')
+            log.message('`', k, '` is changed')
             NEED_PATCH = True
 
-            log_msg('Current settings')
+            log.message('Current settings')
             CURRENT_SETTINGS[k] = package_settings.get(k)
-            log_val(CURRENT_SETTINGS)
+            log.value(CURRENT_SETTINGS)
 
             activate()
 
             break
 
-    DEBUG = package_settings.get('debug')
+    log.DEBUG = package_settings.get('debug')
 
 
 def init():
     global CURRENT_SETTINGS
     global CURRENT_UI_THEME
-    global DEBUG
 
     package_settings = get_package_settings()
     sublime_settings = get_sublime_settings()
 
-    DEBUG = package_settings.get('debug')
+    log.DEBUG = package_settings.get('debug')
 
-    log_sep()
-    log_msg('Initializing')
+    log.separator()
+    log.message('Initializing')
 
-    log_msg('Getting the current theme')
+    log.message('Getting the current theme')
     CURRENT_UI_THEME = sublime_settings.get('theme')
-    log_val(CURRENT_UI_THEME)
+    log.value(CURRENT_UI_THEME)
 
-    log_msg('Getting the current package settings')
+    log.message('Getting the current package settings')
     for k in CURRENT_SETTINGS.keys():
         CURRENT_SETTINGS[k] = package_settings.get(k)
-    log_val(CURRENT_SETTINGS)
+    log.value(CURRENT_SETTINGS)
 
     sublime_settings.add_on_change('zzfiocss', on_changed_sublime_settings)
     package_settings.add_on_change('zzfiocps', on_changed_package_settings)
