@@ -167,15 +167,16 @@ def activate():
             patch(theme, colors)
             log.warning('Please restart your Sulbime Text for these changes ',
                         'to take effect ...')
+
         else:
             log.message('The theme is already patched')
     else:
-        clear()
+        clear_supported_patches()
 
     log.done()
 
 
-def clear():
+def clear_supported_patches():
     log.message('Clearing patches of the supported themes')
 
     theme = get_sublime_settings().get('theme')
@@ -185,52 +186,69 @@ def clear():
         os.remove(path)
 
 
+def clear_all_patches():
+    dest = get_dest_path()
+
+    for theme in os.listdir(dest):
+        path = os.path.join(dest, theme)
+
+        try:
+            if os.path.isfile(path):
+                name, ext = os.path.splitext(path)
+                if ext == '.sublime-theme':
+                    os.remove(path)
+        except Exception as e:
+            print(e)
+
+
 def on_changed_sublime_settings():
     global CURRENT_UI_THEME
     global SETTINGS_CHANGED
 
-    log.separator()
-    log.message('The settings are changed')
+    if 'zzFileIcons' not in get_sublime_settings().get('ignored_packages'):
+        log.separator()
+        log.message('The settings are changed')
 
-    theme = get_sublime_settings().get('theme')
+        theme = get_sublime_settings().get('theme')
 
-    if theme != CURRENT_UI_THEME:
-        SETTINGS_CHANGED = True
-        log.message('`theme` is changed')
-        CURRENT_UI_THEME = theme
+        if theme != CURRENT_UI_THEME:
+            SETTINGS_CHANGED = True
+            log.message('`theme` is changed')
+            CURRENT_UI_THEME = theme
 
-    if SETTINGS_CHANGED:
-        log.message('Current theme')
-        log.value(CURRENT_UI_THEME)
-        activate()
-        SETTINGS_CHANGED = False
-    else:
-        log.done()
+        if SETTINGS_CHANGED:
+            log.message('Current theme')
+            log.value(CURRENT_UI_THEME)
+            activate()
+            SETTINGS_CHANGED = False
+        else:
+            log.done()
 
 
 def on_changed_package_settings():
     global CURRENT_SETTINGS
     global SETTINGS_CHANGED
 
-    package_settings = get_package_settings()
-    log.DEBUG = package_settings.get('debug')
+    if 'zzFileIcons' not in get_sublime_settings().get('ignored_packages'):
+        package_settings = get_package_settings()
+        log.DEBUG = package_settings.get('debug')
 
-    log.separator()
-    log.message('The settings are changed')
+        log.separator()
+        log.message('The settings are changed')
 
-    for k in CURRENT_SETTINGS.keys():
-        if CURRENT_SETTINGS[k] != package_settings.get(k):
-            SETTINGS_CHANGED = True
-            log.message('`', k, '` is changed')
-            CURRENT_SETTINGS[k] = package_settings.get(k)
+        for k in CURRENT_SETTINGS.keys():
+            if CURRENT_SETTINGS[k] != package_settings.get(k):
+                SETTINGS_CHANGED = True
+                log.message('`', k, '` is changed')
+                CURRENT_SETTINGS[k] = package_settings.get(k)
 
-    if SETTINGS_CHANGED:
-        log.message('Current settings')
-        log.value(CURRENT_SETTINGS)
-        activate()
-        SETTINGS_CHANGED = False
-    else:
-        log.done()
+        if SETTINGS_CHANGED:
+            log.message('Current settings')
+            log.value(CURRENT_SETTINGS)
+            activate()
+            SETTINGS_CHANGED = False
+        else:
+            log.done()
 
 
 def init():
@@ -261,3 +279,9 @@ def init():
 def plugin_loaded():
     init()
     activate()
+
+
+def plugin_unloaded():
+    clear_all_patches()
+    get_package_settings().clear_on_change('zzfiocss')
+    get_sublime_settings().clear_on_change('zzfiocps')
