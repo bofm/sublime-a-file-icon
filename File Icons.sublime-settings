@@ -1,9 +1,9 @@
 // File Icons Preferences – Default
-// ===================================================
+// ================================================================
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// ! RESTART SUBLIME TEXT AFTER CHANGING PREFERENCES !
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// ! PLEASE RESTART SUBLIME TEXT FOR THESE CHANGES TO TAKE EFFECT !
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 {
 	// File type icons have different colors by default. However you can
@@ -12,22 +12,32 @@
 	// you like multi colored icons.
 	"color": "",
 
-	// This is the default size of Sublime Text icons. However you can
-	// change it to better fit your custom theme.
-	"size": 8,
+	// Provide your color in #RRGGBB format if you want to use an other color
+	// for the hovered icon. Works only when you set a custom color in the
+	// `color` option.
+	"color_on_hover": "",
 
-	// The opacity level of the default icon state.
-	"default_opacity": 0.75,
+	// Provide your color in #RRGGBB format if you want to use an other color
+	// for the selected icon. Works only when you set a custom color in the
+	// `color` option.
+	"color_on_select": "",
 
-	// The opacity level of the hovered icon state.
-	"hovered_opacity": 1.0,
-
-	// The opacity level of the selected icon state.
-	"selected_opacity": 1.0,
+	// Show debug logging
+	"debug": false,
 
 	// Set to true to override icons of the supported themes
 	"force_override": false,
 
-	// Show debug logging
-	"debug": false
+	// The opacity level of the default icon state.
+	"opacity": 0.75,
+
+	// The opacity level of the hovered icon state.
+	"opacity_on_hover": 1.0,
+
+	// The opacity level of the selected icon state.
+	"opacity_on_select": 1.0,
+
+	// This is the default size of Sublime Text icons. However you can
+	// change it to better fit your custom theme.
+	"size": 8
 }

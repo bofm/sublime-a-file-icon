@@ -3,9 +3,10 @@
 import sublime
 import os
 import re
-
 import zzFileIcons.Log as log
+
 from zzFileIcons.Themes import SUPPORTED
+from zzFileIcons.Template import TEMPLATE
 
 PACKAGE_SETTINGS = 'File Icons.sublime-settings'
 SUBLIME_SETTINGS = 'Preferences.sublime-settings'
@@ -13,49 +14,17 @@ SUBLIME_SETTINGS = 'Preferences.sublime-settings'
 CURRENT_UI_THEME = ''
 CURRENT_SETTINGS = {
     'color': '',
-    'size': '',
-    'default_opacity': '',
-    'hovered_opacity': '',
-    'selected_opacity': '',
-    'force_override': ''
+    'color_on_hover': '',
+    'color_on_select': '',
+    'force_override': '',
+    'opacity': '',
+    'opacity_on_hover': '',
+    'opacity_on_select': '',
+    'size': ''
 }
 
 DEST = os.path.join('zzFileIcons', 'dist', 'zpatches')
 SETTINGS_CHANGED = False
-
-TEMPLATE = '''
-// %(name)s Theme Overlay
-// ============================================================================
-
-[
-  // Sidebar File Icons
-  // --------------------------------------------------------------------------
-
-  // Default
-
-  {
-    "class": "icon_file_type",
-    "layer0.opacity": %(default_opacity)s,%(color)s
-    "content_margin": [%(size)s, %(size)s]
-  },
-
-  // Hovered
-
-  {
-    "class": "icon_file_type",
-    "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-    "layer0.opacity": %(hovered_opacity)s
-  },
-
-  // Selected
-
-  {
-    "class": "icon_file_type",
-    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-    "layer0.opacity": %(selected_opacity)s
-  }
-]
-'''
 
 
 def get_sublime_settings():
@@ -79,8 +48,8 @@ def get_installed_themes():
         installed_themes.setdefault(os.path.basename(os.path.dirname(r)),
                                     []).append(os.path.basename(r))
 
-    if 'zicons' in installed_themes:
-        del installed_themes['zicons']
+    if 'zpatches' in installed_themes:
+        del installed_themes['zpatches']
 
     log.value(installed_themes)
 
@@ -108,28 +77,42 @@ def is_theme_supported(theme):
     return False
 
 
-def get_color():
-    log.message('Getting a color of the icons')
+def get_colors():
+    log.message('Getting colors of the icons')
 
-    color = get_package_settings().get('color', '')
+    colors = []
+    is_provided = False
+    package_settings = get_package_settings()
     pattern = re.compile('#([A-Fa-f0-9]{6})')
+    options = ['color', 'color_on_hover', 'color_on_select']
 
-    if pattern.match(color):
-        hex_color = color.lstrip('#')
-        rgb_color = [
-            int(hex_color[i: i + 2], 16) for i in (0, 2, 4)
-        ]
+    if package_settings.get('color'):
+        for opt in options:
+            color = package_settings.get(opt)
 
-        color = ', '.join(str(e) for e in rgb_color)
+            if pattern.match(color):
+                is_provided = True
 
-        log.value('[', color, ']')
+                hex_color = color.lstrip('#')
+                rgb_color = [
+                    int(hex_color[i: i + 2], 16) for i in (0, 2, 4)
+                ]
 
-        return '\n    "layer0.tint": [' + color + '],'
+                color = ', '.join(str(e) for e in rgb_color)
+
+                log.value('`', opt, '`: ', '[', color, ']')
+
+                colors.append('\n    "layer0.tint": [' + color + '],')
+            else:
+                colors.append('')
+
+        if is_provided:
+            return colors
 
     return ''
 
 
-def patch(theme, color):
+def patch(theme, colors):
     log.message('Patching the current theme')
 
     dest = os.path.join(get_dest_path(), theme)
@@ -137,11 +120,13 @@ def patch(theme, color):
     with open(dest, 'w') as t:
         t.write(TEMPLATE % {
             'name': os.path.splitext(theme)[0],
-            'color': color,
+            'color': colors[0],
+            'color_on_hover': colors[1],
+            'color_on_select': colors[2],
             'size': CURRENT_SETTINGS['size'],
-            'default_opacity': CURRENT_SETTINGS['default_opacity'],
-            'hovered_opacity': CURRENT_SETTINGS['hovered_opacity'],
-            'selected_opacity': CURRENT_SETTINGS['selected_opacity']
+            'opacity': CURRENT_SETTINGS['opacity'],
+            'opacity_on_hover': CURRENT_SETTINGS['opacity_on_hover'],
+            'opacity_on_select': CURRENT_SETTINGS['opacity_on_select']
         })
         t.close()
 
@@ -155,13 +140,13 @@ def activate():
 
     if not supported or force_override:
         dest = get_dest_path()
-        color = get_color()
+        colors = get_colors()
         icons = os.path.join(dest, 'icons')
         multi = os.path.join(dest, 'multi')
         single = os.path.join(dest, 'single')
         patched = os.path.join(dest, theme)
 
-        if color:
+        if colors:
             if os.path.isdir(single):
                 log.message('Activating the single color mode')
                 os.rename(icons, multi)
@@ -176,8 +161,10 @@ def activate():
             else:
                 log.message('The multi color mode is already activated')
 
+            colors = ['', '', '']
+
         if not os.path.isfile(patched) or SETTINGS_CHANGED:
-            patch(theme, color)
+            patch(theme, colors)
             log.warning('Please restart your Sulbime Text for these changes ',
                         'to take effect ...')
         else:
