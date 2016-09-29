@@ -19,7 +19,7 @@ CURRENT_SETTINGS = {
     'force_override': ''
 }
 
-DIR = 'zzFileIcons'
+DEST = os.path.join('zzFileIcons', 'dist', 'zpatches')
 SETTINGS_CHANGED = False
 
 TEMPLATE = '''
@@ -66,7 +66,7 @@ def get_package_settings():
 
 
 def get_dest_path():
-    return os.path.join(sublime.packages_path(), DIR, 'zicons')
+    return os.path.join(sublime.packages_path(), DEST)
 
 
 def get_installed_themes():
