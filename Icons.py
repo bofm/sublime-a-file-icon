@@ -24,7 +24,6 @@ CURRENT_SETTINGS = {
     'size': ''
 }
 
-MSG = 'Please restart Sulbime Text for the applied icons to take effect ...'
 
 DEST = os.path.join('zzFileIcons', 'dist', 'zpatches')
 SETTINGS_CHANGED = False
@@ -168,7 +167,7 @@ def activate():
 
         if not os.path.isfile(patched) or SETTINGS_CHANGED:
             patch(theme, colors)
-            sublime.message_dialog(MSG)
+            sublime.set_timeout_async(log.warning, 500)
 
         else:
             log.message('The theme is already patched')
@@ -205,24 +204,22 @@ def clear_all_patches():
 
 def on_changed_sublime_settings():
     global CURRENT_UI_THEME
-    global SETTINGS_CHANGED
 
-    if 'zzFileIcons' not in get_sublime_settings().get('ignored_packages'):
+    sublime_settings = get_sublime_settings()
+
+    if 'zzFileIcons' not in sublime_settings.get('ignored_packages'):
         log.separator()
         log.message('The settings are changed')
 
-        theme = get_sublime_settings().get('theme')
+        theme = sublime_settings.get('theme')
 
         if theme != CURRENT_UI_THEME:
-            SETTINGS_CHANGED = True
             log.message('`theme` is changed')
             CURRENT_UI_THEME = theme
 
-        if SETTINGS_CHANGED:
             log.message('Current theme')
             log.value(CURRENT_UI_THEME)
             activate()
-            SETTINGS_CHANGED = False
         else:
             log.done()
 
@@ -231,8 +228,10 @@ def on_changed_package_settings():
     global CURRENT_SETTINGS
     global SETTINGS_CHANGED
 
-    if 'zzFileIcons' not in get_sublime_settings().get('ignored_packages'):
-        package_settings = get_package_settings()
+    sublime_settings = get_sublime_settings()
+    package_settings = get_package_settings()
+
+    if 'zzFileIcons' not in sublime_settings.get('ignored_packages'):
         log.DEBUG = package_settings.get('debug')
 
         log.separator()

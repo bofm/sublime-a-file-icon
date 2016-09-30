@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 
+import sublime
+
 DEBUG = False
+WARN = 'Please restart Sulbime Text for the applied icons to take effect ...'
 
 
 def log(*args):
@@ -30,3 +33,7 @@ def done():
 def separator():
     if DEBUG:
         log('\n***')
+
+
+def warning():
+    sublime.message_dialog(WARN)
