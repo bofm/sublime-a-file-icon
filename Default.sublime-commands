@@ -1,7 +1,7 @@
 [
 	{
-		"caption": "File Icons: Clean",
-		"command": "file_icons_clean"
+		"caption": "File Icons: Clear All",
+		"command": "file_icons_clear_all"
 	},
 	{
 		"caption": "File Icons: Settings",

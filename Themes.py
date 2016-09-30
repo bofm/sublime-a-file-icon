@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 '''
-Should be such as theme name in Package Control
+Themes those already have support of this package
 '''
 
-SUPPORTED = [
+SUPPORTED_THEMES = [
     'Boxy Theme'
 ]

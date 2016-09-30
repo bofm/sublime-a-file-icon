@@ -6,14 +6,16 @@ import os
 import re
 import zzFileIcons.Log as log
 
-from zzFileIcons.Themes import SUPPORTED
-from zzFileIcons.Template import TEMPLATE
+from zzFileIcons.Themes import SUPPORTED_THEMES
+from zzFileIcons.Template import PATCH_TEMPLATE
 
-PACKAGE_SETTINGS = 'File Icons.sublime-settings'
-SUBLIME_SETTINGS = 'Preferences.sublime-settings'
+PKG = 'zzFileIcons'
+SETTINGS = 'File Icons.sublime-settings'
+SETTINGS_CHANGED = False
+THEME_EXTENSION = '.sublime-theme'
+UUID = '9ebcce78-4cac-4089-8bd7-d551c634b064'
 
-CURRENT_UI_THEME = ''
-CURRENT_SETTINGS = {
+CURRENT = {
     'color': '',
     'color_on_hover': '',
     'color_on_select': '',
@@ -24,58 +26,51 @@ CURRENT_SETTINGS = {
     'size': ''
 }
 
-
-DEST = os.path.join('zzFileIcons', 'dist', 'zpatches')
-SETTINGS_CHANGED = False
-
-
-def get_sublime_settings():
-    return sublime.load_settings(SUBLIME_SETTINGS)
+DIST = 'dist'
+PATCHES = 'zpatches'
+THEMES = '*' + THEME_EXTENSION
 
 
-def get_package_settings():
-    return sublime.load_settings(PACKAGE_SETTINGS)
+def get_settings():
+    return sublime.load_settings(SETTINGS)
 
 
 def get_dest_path():
-    return os.path.join(sublime.packages_path(), DEST)
+    return os.path.join(sublime.packages_path(), PKG, DIST, PATCHES)
 
 
-def get_installed_themes():
+def get_installed():
     log.message('Getting installed themes')
 
     installed_themes = {}
 
-    for r in sublime.find_resources('*.sublime-theme'):
+    for r in sublime.find_resources(THEMES):
         installed_themes.setdefault(os.path.basename(os.path.dirname(r)),
                                     []).append(os.path.basename(r))
 
-    if 'zpatches' in installed_themes:
-        del installed_themes['zpatches']
+    if PATCHES in installed_themes:
+        del installed_themes[PATCHES]
 
     log.value(installed_themes)
 
     return installed_themes
 
 
-def is_theme_supported(theme):
-    log.message('Checking if the current theme is supported')
-
-    current_theme = ''
-    installed_themes = get_installed_themes()
-
-    for pkg in installed_themes.values():
-        if theme in pkg:
-            for k, v in installed_themes.items():
-                if set(v) == set(pkg):
-                    current_theme = k
-            break
-
-    if current_theme in SUPPORTED:
-        log.message(theme, ' is supported')
+def is_supported(pkg):
+    if pkg in SUPPORTED_THEMES:
+        log.message(pkg, ' is supported')
         return True
 
-    log.message(theme, ' isn\'t supported')
+    log.message(pkg, ' isn\'t supported')
+    return False
+
+
+def is_ignored():
+    preferences = sublime.load_settings('Preferences.sublime-settings')
+
+    if PKG in preferences.get('ignored_packages'):
+        return True
+
     return False
 
 
@@ -83,18 +78,15 @@ def get_colors():
     log.message('Getting colors of the icons')
 
     colors = []
-    is_provided = False
-    package_settings = get_package_settings()
+    settings = get_settings()
     pattern = re.compile('#([A-Fa-f0-9]{6})')
     options = ['color', 'color_on_hover', 'color_on_select']
 
-    if package_settings.get('color'):
+    if settings.get('color'):
         for opt in options:
-            color = package_settings.get(opt)
+            color = settings.get(opt)
 
             if pattern.match(color):
-                is_provided = True
-
                 hex_color = color.lstrip('#')
                 rgb_color = [
                     int(hex_color[i: i + 2], 16) for i in (0, 2, 4)
@@ -108,187 +100,200 @@ def get_colors():
             else:
                 colors.append('')
 
-        if is_provided:
-            return colors
-
-    return ''
+    return colors
 
 
-def patch(theme, colors):
-    log.message('Patching the current theme')
+def patch(themes, colors):
+    log.message('Patching the themes')
 
-    dest = os.path.join(get_dest_path(), theme)
+    dest = get_dest_path()
 
-    with open(dest, 'w') as t:
-        t.write(TEMPLATE % {
-            'name': os.path.splitext(theme)[0],
-            'color': colors[0],
-            'color_on_hover': colors[1],
-            'color_on_select': colors[2],
-            'size': CURRENT_SETTINGS['size'],
-            'opacity': CURRENT_SETTINGS['opacity'],
-            'opacity_on_hover': CURRENT_SETTINGS['opacity_on_hover'],
-            'opacity_on_select': CURRENT_SETTINGS['opacity_on_select']
-        })
-        t.close()
+    theme_dest = ''
+    theme_name = ''
+
+    color = colors[0]
+    color_on_hover = colors[1]
+    color_on_select = colors[2]
+
+    size = CURRENT['size']
+
+    opacity = CURRENT['opacity']
+    opacity_on_hover = CURRENT['opacity_on_hover']
+    opacity_on_select = CURRENT['opacity_on_select']
+
+    for theme in themes:
+        theme_dest = os.path.join(dest, theme)
+        theme_name = os.path.splitext(theme)[0]
+
+        with open(theme_dest, 'w') as t:
+            t.write(PATCH_TEMPLATE % {
+                'name': theme_name,
+                'color': color,
+                'color_on_hover': color_on_hover,
+                'color_on_select': color_on_select,
+                'size': size,
+                'opacity': opacity,
+                'opacity_on_hover': opacity_on_hover,
+                'opacity_on_select': opacity_on_select
+            })
+            t.close()
 
 
 def activate():
     log.message('Activating the icons')
 
-    theme = CURRENT_UI_THEME
-    supported = is_theme_supported(theme)
-    force_override = CURRENT_SETTINGS['force_override']
+    dest = get_dest_path()
 
-    if not supported or force_override:
-        dest = get_dest_path()
-        colors = get_colors()
-        icons = os.path.join(dest, 'icons')
-        multi = os.path.join(dest, 'multi')
-        single = os.path.join(dest, 'single')
-        patched = os.path.join(dest, theme)
+    colors = get_colors()
+    icons = os.path.join(dest, 'icons')
+    multi = os.path.join(dest, 'multi')
+    single = os.path.join(dest, 'single')
 
-        if colors:
-            if os.path.isdir(single):
-                log.message('Activating the single color mode')
-                os.rename(icons, multi)
-                os.rename(single, icons)
-            else:
-                log.message('The single color mode is already activated')
+    installed = get_installed()
+    force_override = CURRENT['force_override']
+    supported = []
+    themes = []
+
+    for pkg in installed:
+        tset = installed[pkg]
+
+        if force_override:
+            themes.extend(tset)
+        elif not is_supported(pkg):
+                themes.extend(tset)
         else:
-            if os.path.isdir(multi):
-                log.message('Activating the multi color mode')
-                os.rename(icons, single)
-                os.rename(multi, icons)
-            else:
-                log.message('The multi color mode is already activated')
+            supported.extend(tset)
 
-            colors = ['', '', '']
+    if not SETTINGS_CHANGED:
+        tmp = themes
+        for theme in tmp:
+            theme_path = os.path.join(dest, theme)
 
-        if not os.path.isfile(patched) or SETTINGS_CHANGED:
-            patch(theme, colors)
-            sublime.set_timeout_async(log.warning, 500)
+            if os.path.isfile(theme_path):
+                themes = [t for t in themes if t != theme]
 
+    if colors:
+        if os.path.isdir(single):
+            log.message('Activating the single color mode')
+            os.rename(icons, multi)
+            os.rename(single, icons)
         else:
-            log.message('The theme is already patched')
+            log.message('The single color mode is already activated')
     else:
-        clear_supported_patches()
+        if os.path.isdir(multi):
+            log.message('Activating the multi color mode')
+            os.rename(icons, single)
+            os.rename(multi, icons)
+        else:
+            log.message('The multi color mode is already activated')
+
+        colors = ['', '', '']
+
+    if not force_override:
+        clear_patches(supported)
+
+    if themes:
+        patch(themes, colors)
+        sublime.set_timeout_async(log.warning, 500)
+    else:
+        log.message('Themes are already patched')
 
     log.done()
 
 
-def clear_supported_patches():
-    log.message('Clearing patches of the supported themes')
+def clear_patches(patches):
+    log.message('Clearing patches')
 
-    theme = get_sublime_settings().get('theme')
-    path = os.path.join(get_dest_path(), theme)
-
-    if is_theme_supported(theme) and os.path.isfile(path):
-        os.remove(path)
-
-
-def clear_all_patches():
     dest = get_dest_path()
 
-    for theme in os.listdir(dest):
-        path = os.path.join(dest, theme)
+    for patch in patches:
+        path = os.path.join(dest, patch)
 
         try:
             if os.path.isfile(path):
-                name, ext = os.path.splitext(path)
-                if ext == '.sublime-theme':
-                    os.remove(path)
+                os.remove(path)
         except Exception as e:
             print(e)
 
 
-def on_changed_sublime_settings():
-    global CURRENT_UI_THEME
+def clear_all():
+    patches = []
+    dest = get_dest_path()
 
-    sublime_settings = get_sublime_settings()
+    for patch in os.listdir(dest):
+        path = os.path.join(dest, patch)
 
-    if 'zzFileIcons' not in sublime_settings.get('ignored_packages'):
-        log.separator()
-        log.message('The settings are changed')
+        if os.path.isfile(path):
+            name, ext = os.path.splitext(path)
+            if ext == '.sublime-theme':
+                patches.append(path)
 
-        theme = sublime_settings.get('theme')
-
-        if theme != CURRENT_UI_THEME:
-            log.message('`theme` is changed')
-            CURRENT_UI_THEME = theme
-
-            log.message('Current theme')
-            log.value(CURRENT_UI_THEME)
-            activate()
-        else:
-            log.done()
+    clear_patches(patches)
 
 
-def on_changed_package_settings():
-    global CURRENT_SETTINGS
+def on_change():
+    global CURRENT
     global SETTINGS_CHANGED
 
-    sublime_settings = get_sublime_settings()
-    package_settings = get_package_settings()
+    settings = get_settings()
 
-    if 'zzFileIcons' not in sublime_settings.get('ignored_packages'):
-        log.DEBUG = package_settings.get('debug')
+    if not is_ignored():
+        log.DEBUG = settings.get('debug')
 
         log.separator()
         log.message('The settings are changed')
 
-        for k in CURRENT_SETTINGS.keys():
-            if CURRENT_SETTINGS[k] != package_settings.get(k):
+        for k in CURRENT.keys():
+            if CURRENT[k] != settings.get(k):
                 SETTINGS_CHANGED = True
                 log.message('`', k, '` is changed')
-                CURRENT_SETTINGS[k] = package_settings.get(k)
+                CURRENT[k] = settings.get(k)
 
         if SETTINGS_CHANGED:
             log.message('Current settings')
-            log.value(CURRENT_SETTINGS)
+            log.value(CURRENT)
             activate()
             SETTINGS_CHANGED = False
         else:
             log.done()
 
 
+def add_listener():
+    get_settings().add_on_change(UUID, on_change)
+
+
+def remove_listener():
+    get_settings().clear_on_change(UUID, on_change)
+
+
 def init():
-    global CURRENT_SETTINGS
-    global CURRENT_UI_THEME
+    global CURRENT
 
-    package_settings = get_package_settings()
-    sublime_settings = get_sublime_settings()
+    settings = get_settings()
 
-    log.DEBUG = package_settings.get('debug')
+    log.DEBUG = settings.get('debug')
 
     log.separator()
     log.message('Initializing')
+    log.message('Getting the settings')
 
-    log.message('Getting the current theme')
-    CURRENT_UI_THEME = sublime_settings.get('theme')
-    log.value(CURRENT_UI_THEME)
+    for k in CURRENT.keys():
+        CURRENT[k] = settings.get(k)
 
-    log.message('Getting the current package settings')
-    for k in CURRENT_SETTINGS.keys():
-        CURRENT_SETTINGS[k] = package_settings.get(k)
-    log.value(CURRENT_SETTINGS)
-
-    sublime_settings.add_on_change('zzfiocss', on_changed_sublime_settings)
-    package_settings.add_on_change('zzfiocps', on_changed_package_settings)
+    log.value(CURRENT)
 
 
-class FileIconsCleanCommand(sublime_plugin.WindowCommand):
+class FileIconsClearAllCommand(sublime_plugin.WindowCommand):
     def run(self):
-        clear_all_patches()
+        clear_all()
 
 
 def plugin_loaded():
     init()
     activate()
+    add_listener()
 
 
 def plugin_unloaded():
-    get_package_settings().clear_on_change('zzfiocss')
-    get_sublime_settings().clear_on_change('zzfiocps')
-
-    clear_all_patches()
+    clear_all()
+    remove_listener()
