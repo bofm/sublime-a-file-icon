@@ -48,7 +48,9 @@ var getIconScope = function(iconOpts) {
     for (var syntax in syntaxes) {
       scope = scope + syntaxes[syntax].scope + ', ';
     }
-  } else if (aliases) {
+  }
+
+  if (aliases) {
     for (var alias in aliases) {
       scope = scope + aliases[alias].scope + ', ';
     }

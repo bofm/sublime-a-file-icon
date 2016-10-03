@@ -62,5 +62,29 @@
         "scope": "text.plain.font"
       }
     ]
+  },
+  "file_type_git": {
+    "color": "red",
+    "syntaxes": [
+      {
+        "name": "GitSyntaxes",
+        "scope": "text.git"
+      },
+      {
+        "name": "Git Misc Packages",
+        "scope": "source.git"
+      }
+    ],
+    "aliases": [
+      {
+        "name": "Shell Script (Git)",
+        "extensions": [
+          "gitignore",
+          "gitkeep"
+        ],
+        "base": "source.shell",
+        "scope": "source.shell.git"
+      }
+    ]
   }
 }
