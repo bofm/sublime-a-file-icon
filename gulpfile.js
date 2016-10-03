@@ -166,6 +166,11 @@ gulp.task('build:icons', function() {
             width: size.size,
             height: size.size
           }))
+          .pipe($.imagemin([$.imagemin.optipng({
+            bitDepthReduction: false,
+            colorTypeReduction: false,
+            paletteReduction: false
+          })]))
           .pipe($.if(size.size, $.rename({suffix: size.suffix})))
           .pipe(gulp.dest('./dist/zpatches/icons'));
 
@@ -174,6 +179,11 @@ gulp.task('build:icons', function() {
             width: size.size,
             height: size.size
           }))
+          .pipe($.imagemin([$.imagemin.optipng({
+            bitDepthReduction: false,
+            colorTypeReduction: false,
+            paletteReduction: false
+          })]))
           .pipe($.if(size.size, $.rename({suffix: size.suffix})))
           .pipe(gulp.dest('./dist/zpatches/single'));
 
