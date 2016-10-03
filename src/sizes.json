@@ -1,0 +1,22 @@
+[
+  {
+    "size": 16,
+    "description": "Default size of the Sublime Text icons. It left for testing purposes only.",
+    "suffix": "@test"
+  },
+  {
+    "size": 32,
+    "description": "We are using this size by default to improve HiDPI support.",
+    "suffix": false
+  },
+  {
+    "size": 64,
+    "description": "The size of @2x icons.",
+    "suffix": "@2x"
+  },
+  {
+    "size": 96,
+    "description": "The size of @3x icons.",
+    "suffix": "@3x"
+  }
+]
