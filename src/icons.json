@@ -11,5 +11,26 @@
         "scope": "text.plain.ai"
       }
     ]
+  },
+  "file_type_archive": {
+    "color": "graphite",
+    "aliases":[
+      {
+        "name": "Plain Text (Archive)",
+        "extensions": [
+          "zip",
+          "7z",
+          "rar",
+          "7zip",
+          "tgz",
+          "gz",
+          "pzip",
+          "tar",
+          "wim"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.archive"
+      }
+    ]
   }
 }
