@@ -1,14 +1,14 @@
-# Sublime Text 3 File Icons Extended
+# Sublime File Icons
 
 [![Release][img-release]][release]
 [![Downloads][img-downloads]][downloads]
 [![Make a donation at patreon.com][img-patreon]][patreon]
 
-This package is a storage of syntax aliases to the [Default Sublime Text Packages][default-packages].
+Adds file specific icons to Sublime Text for improved visual grepping.
 
-Its aim is to add support of such icons as NPM, Gulpfile, Font & etc.
+> WIP. Wait 2.0.0 . . .
 
-## Get It
+<!-- ## Get It
 
 ### Package Control
 
@@ -62,6 +62,7 @@ If you are a theme developer and you want to have extended file icons support, y
 
 * Remove [these][preferences] syntax alias `.tmPreferences` files from your theme.
 * Check the name of the each icon that you provide with the theme. They should be the same as in [ICONS.md][icons].
+ -->
 
 ## Supports
 
