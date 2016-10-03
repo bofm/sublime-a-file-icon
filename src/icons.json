@@ -32,5 +32,19 @@
         "scope": "text.plain.archive"
       }
     ]
+  },
+  "file_type_bower": {
+    "color": "yellow",
+    "aliases":[
+      {
+        "name": "JSON (Bower)",
+        "extensions": [
+          "bowerrc",
+          "bower.json"
+        ],
+        "base": "source.json",
+        "scope": "source.json.bower"
+      }
+    ]
   }
 }
