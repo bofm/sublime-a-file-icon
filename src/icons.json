@@ -46,5 +46,21 @@
         "scope": "source.json.bower"
       }
     ]
+  },
+  "file_type_font": {
+    "color": "green",
+    "aliases":[
+      {
+        "name": "Plain Text (Font)",
+        "extensions": [
+          "ttf",
+          "otf",
+          "woff",
+          "eot"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.font"
+      }
+    ]
   }
 }
