@@ -75,7 +75,6 @@ gulp.task('build:settings', function() {
       console.log('[build:settings]'.bold.magenta + ' There was an issue building icon settings:\n'.bold.red + error.message);
       this.emit('end');
     }))
-    .pipe($.changed('./dist/preferences', {extension: '.tmPreferences'}))
     .pipe($.flatmap(function(stream, file) {
       var iconName = path.basename(file.path, path.extname(file.path));
       var iconOpts = opts.icons[iconName];
