@@ -131,5 +131,27 @@
         "scope": "source.js.gulpfile"
       }
     ]
+  },
+  "file_type_npm": {
+    "color": "red",
+    "aliases": [
+      {
+        "name": "Shell Script (NPM)",
+        "extensions": [
+          "npmrc",
+          "npmignore"
+        ],
+        "base": "source.shell",
+        "scope": "source.shell.npm"
+      },
+      {
+        "name": "JSON (NPM)",
+        "extensions": [
+          "package.json"
+        ],
+        "base": "source.json",
+        "scope": "source.json.npm"
+      }
+    ]
   }
 }
