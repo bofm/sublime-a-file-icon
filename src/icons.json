@@ -194,6 +194,19 @@
       }
     ]
   },
+  "file_type_settings": {
+    "color": "graphite",
+    "aliases": [
+      {
+        "name": "JSON (Settings)",
+        "extensions": [
+          "jsbeautifyrc"
+        ],
+        "base": "source.json",
+        "scope": "source.json.settings"
+      }
+    ]
+  },
   "file_type_sublime": {
     "color": "orange",
     "aliases": [
