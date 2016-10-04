@@ -64,7 +64,7 @@
     ]
   },
   "file_type_git": {
-    "color": "red",
+    "color": "orange",
     "syntaxes": [
       {
         "name": "GitSyntaxes",
