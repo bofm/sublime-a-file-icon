@@ -6,8 +6,8 @@
     <string>Plain Text (Adobe Photoshop)</string>
     <key>fileTypes</key>
     <array>
-      <string>.psd</string>
       <string>.psb</string>
+      <string>.psd</string>
     </array>
     <key>patterns</key>
     <array>

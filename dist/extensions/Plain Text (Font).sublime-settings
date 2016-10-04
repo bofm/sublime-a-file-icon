@@ -1,8 +1,8 @@
 {
   "extensions": [
-    "ttf",
+    "eot",
     "otf",
-    "woff",
-    "eot"
+    "ttf",
+    "woff"
   ]
 }

@@ -6,8 +6,8 @@
     <string>Shell Script (NPM)</string>
     <key>fileTypes</key>
     <array>
-      <string>.npmrc</string>
       <string>.npmignore</string>
+      <string>.npmrc</string>
     </array>
     <key>patterns</key>
     <array>

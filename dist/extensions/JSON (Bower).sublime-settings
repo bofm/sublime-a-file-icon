@@ -1,6 +1,6 @@
 {
   "extensions": [
-    "bowerrc",
-    "bower.json"
+    "bower.json",
+    "bowerrc"
   ]
 }

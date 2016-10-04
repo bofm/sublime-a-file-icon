@@ -18,15 +18,15 @@
       {
         "name": "Plain Text (Archive)",
         "extensions": [
-          "zip",
           "7z",
-          "rar",
           "7zip",
-          "tgz",
           "gz",
           "pzip",
+          "rar",
           "tar",
-          "wim"
+          "tgz",
+          "wim",
+          "zip"
         ],
         "base": "text.plain",
         "scope": "text.plain.archive"
@@ -39,8 +39,8 @@
       {
         "name": "JSON (Bower)",
         "extensions": [
-          "bowerrc",
-          "bower.json"
+          "bower.json",
+          "bowerrc"
         ],
         "base": "source.json",
         "scope": "source.json.bower"
@@ -53,10 +53,10 @@
       {
         "name": "Plain Text (Font)",
         "extensions": [
-          "ttf",
+          "eot",
           "otf",
-          "woff",
-          "eot"
+          "ttf",
+          "woff"
         ],
         "base": "text.plain",
         "scope": "text.plain.font"
@@ -138,8 +138,8 @@
       {
         "name": "Shell Script (NPM)",
         "extensions": [
-          "npmrc",
-          "npmignore"
+          "npmignore",
+          "npmrc"
         ],
         "base": "source.shell",
         "scope": "source.shell.npm"
@@ -186,8 +186,8 @@
       {
         "name": "Plain Text (Adobe Photoshop)",
         "extensions": [
-          "psd",
-          "psb"
+          "psb",
+          "psd"
         ],
         "base": "text.plain",
         "scope": "text.plain.ps"

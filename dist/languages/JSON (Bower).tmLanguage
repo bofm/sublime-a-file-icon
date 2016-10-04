@@ -6,8 +6,8 @@
     <string>JSON (Bower)</string>
     <key>fileTypes</key>
     <array>
-      <string>.bowerrc</string>
       <string>.bower.json</string>
+      <string>.bowerrc</string>
     </array>
     <key>patterns</key>
     <array>

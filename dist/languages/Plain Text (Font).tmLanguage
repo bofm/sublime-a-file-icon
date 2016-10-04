@@ -6,10 +6,10 @@
     <string>Plain Text (Font)</string>
     <key>fileTypes</key>
     <array>
-      <string>.ttf</string>
-      <string>.otf</string>
-      <string>.woff</string>
       <string>.eot</string>
+      <string>.otf</string>
+      <string>.ttf</string>
+      <string>.woff</string>
     </array>
     <key>patterns</key>
     <array>
