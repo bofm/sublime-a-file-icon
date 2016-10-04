@@ -118,5 +118,18 @@
         "scope": "source.js.gruntfile"
       }
     ]
+  },
+  "file_type_gulpfile": {
+    "color": "pink",
+    "aliases": [
+      {
+        "name": "JavaScript (Gulpfile)",
+        "extensions": [
+          "gulpfile.js"
+        ],
+        "base": "source.js",
+        "scope": "source.js.gulpfile"
+      }
+    ]
   }
 }
