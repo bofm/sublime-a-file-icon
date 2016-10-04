@@ -105,5 +105,18 @@
         "scope": "source.groovy.gradle"
       }
     ]
+  },
+  "file_type_gruntfile": {
+    "color": "orange",
+    "aliases": [
+      {
+        "name": "JavaScript (Gruntfile)",
+        "extensions": [
+          "gruntfile.js"
+        ],
+        "base": "source.js",
+        "scope": "source.js.gruntfile"
+      }
+    ]
   }
 }
