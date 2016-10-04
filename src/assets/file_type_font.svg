@@ -7,5 +7,5 @@
       }
     </style>
   </defs>
-  <path id="file_type_font.svg" class="cls-1" d="M1,7H7V9H5v6H3V9H1V7ZM15,3H11.066V15H8.934V3H5V1H15V3Z" transform="translate(0 -1)"/>
+  <path id="file_type_font.svg" class="cls-1" d="M1,7H7V9H5v5H3V9H1V7ZM15,4H11.066V14H8.934V4H5V2H15V4Z" transform="translate(0 -1)"/>
 </svg>
