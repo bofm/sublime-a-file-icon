@@ -7,6 +7,8 @@ This file contains a list of possible packages those you may need to install.
 
 ## Git
 
-**Packages**:
-
 [GitSyntaxes](https://packagecontrol.io/packages/GitSyntaxes)
+
+## Gradle
+
+[Gradle_Language](https://packagecontrol.io/packages/Gradle_Language)
