@@ -33,6 +33,9 @@
       }
     ]
   },
+  "file_type_binary": {
+    "color": "graphite"
+  },
   "file_type_bower": {
     "color": "yellow",
     "aliases":[
@@ -46,6 +49,9 @@
         "scope": "source.json.bower"
       }
     ]
+  },
+  "file_type_default": {
+    "color": "graphite"
   },
   "file_type_font": {
     "color": "green",
@@ -132,6 +138,12 @@
       }
     ]
   },
+  "file_type_image": {
+    "color": "green"
+  },
+  "file_type_markup": {
+    "color": "purple"
+  },
   "file_type_npm": {
     "color": "red",
     "aliases": [
@@ -207,6 +219,9 @@
       }
     ]
   },
+  "file_type_source": {
+    "color": "sky"
+  },
   "file_type_sublime": {
     "color": "orange",
     "aliases": [
@@ -220,5 +235,8 @@
         "scope": "source.json.sublime"
       }
     ]
+  },
+  "file_type_text": {
+    "color": "cyan"
   }
 }
