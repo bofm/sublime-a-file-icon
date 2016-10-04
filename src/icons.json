@@ -193,5 +193,19 @@
         "scope": "text.plain.ps"
       }
     ]
+  },
+  "file_type_sublime": {
+    "color": "orange",
+    "aliases": [
+      {
+        "name": "JSON (Sublime)",
+        "extensions": [
+          "sublime-settings",
+          "sublime-workspace"
+        ],
+        "base": "source.json",
+        "scope": "source.json.sublime"
+      }
+    ]
   }
 }
