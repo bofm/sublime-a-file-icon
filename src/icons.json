@@ -179,5 +179,19 @@
         "scope": "source.yaml.procfile"
       }
     ]
+  },
+  "file_type_psd": {
+    "color": "sky",
+    "aliases": [
+      {
+        "name": "Plain Text (Adobe Photoshop)",
+        "extensions": [
+          "psd",
+          "psb"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.ps"
+      }
+    ]
   }
 }
