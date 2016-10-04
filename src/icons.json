@@ -166,5 +166,18 @@
         "scope": "text.plain.pdf"
       }
     ]
+  },
+  "file_type_procfile": {
+    "color": "purple",
+    "aliases": [
+      {
+        "name": "YAML (Procfile)",
+        "extensions": [
+          "Procfile"
+        ],
+        "base": "source.yaml",
+        "scope": "source.yaml.procfile"
+      }
+    ]
   }
 }
