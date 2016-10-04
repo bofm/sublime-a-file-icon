@@ -78,23 +78,26 @@ gulp.task('build:settings', function() {
     .pipe($.flatmap(function(stream, file) {
       var iconName = path.basename(file.path, path.extname(file.path));
       var iconOpts = opts.icons[iconName];
+      var iconScope = getIconScope(iconOpts);
       var iconAliases = iconOpts.aliases;
-
       var iconSettings = merge();
 
-      var pref = gulp.src('./src/templates/preference.xml')
-        .pipe($.data(function() {
-          return {
-            name: iconName,
-            scope: getIconScope(iconOpts)
-          };
-        }))
-        .pipe($.template())
-        .pipe($.rename({
-          basename: iconName,
-          extname: '.tmPreferences'
-        }))
-        .pipe(gulp.dest('./dist/preferences'));
+      if (iconScope) {
+        iconSettings.add(gulp.src('./src/templates/preference.xml')
+          .pipe($.data(function() {
+            return {
+              name: iconName,
+              scope: iconScope
+            };
+          }))
+          .pipe($.template())
+          .pipe($.rename({
+            basename: iconName,
+            extname: '.tmPreferences'
+          }))
+          .pipe(gulp.dest('./dist/preferences'))
+        );
+      }
 
       if (iconAliases) {
         iconSettings.add(iconAliases.map(function(alias) {
@@ -131,9 +134,7 @@ gulp.task('build:settings', function() {
         }));
       }
 
-      iconSettings.add(pref);
-
-      return iconSettings;
+      return iconSettings.isEmpty() ? stream : iconSettings;
     }));
 });
 
