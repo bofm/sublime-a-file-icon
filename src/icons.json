@@ -13,7 +13,7 @@
     ]
   },
   "file_type_archive": {
-    "color": "green",
+    "color": "graphite",
     "aliases":[
       {
         "name": "Plain Text (Archive)",
