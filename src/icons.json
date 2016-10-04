@@ -153,5 +153,18 @@
         "scope": "source.json.npm"
       }
     ]
+  },
+  "file_type_pdf": {
+    "color": "red",
+    "aliases": [
+      {
+        "name": "Plain Text (PDF)",
+        "extensions": [
+          "pdf"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.pdf"
+      }
+    ]
   }
 }
