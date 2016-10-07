@@ -236,6 +236,19 @@
       }
     ]
   },
+  "file_type_svg": {
+    "color": "orange",
+    "aliases": [
+      {
+        "name": "XML (SVG)",
+        "extensions": [
+          "svg"
+        ],
+        "base": "text.xml",
+        "scope": "text.xml.svg"
+      }
+    ]
+  },
   "file_type_text": {
     "color": "cyan"
   }
