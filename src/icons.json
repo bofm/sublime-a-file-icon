@@ -86,6 +86,15 @@
       }
     ]
   },
+  "file_type_c#": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "C#",
+        "scope": "source.cs"
+      }
+    ]
+  },
   "file_type_default": {
     "color": "graphite"
   },
