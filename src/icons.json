@@ -197,6 +197,15 @@
       }
     ]
   },
+  "file_type_preferences": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "ApacheConf",
+        "scope": "source.apacheconf"
+      }
+    ]
+  },
   "file_type_procfile": {
     "color": "purple",
     "aliases": [
