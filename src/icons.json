@@ -1,4 +1,13 @@
 {
+  "file_type_actionscript": {
+    "color": "red",
+    "syntaxes": [
+      {
+        "name": "ActionScript",
+        "scope": "source.actionscript"
+      }
+    ]
+  },
   "file_type_ai": {
     "color": "orange",
     "aliases":[
