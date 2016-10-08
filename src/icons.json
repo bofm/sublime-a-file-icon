@@ -30,6 +30,15 @@
       }
     ]
   },
+  "file_type_applescript": {
+    "color": "graphite",
+    "syntaxes": [
+      {
+        "name": "AppleScript",
+        "scope": "source.applescript"
+      }
+    ]
+  },
   "file_type_archive": {
     "color": "graphite",
     "aliases":[
