@@ -63,6 +63,15 @@
   "file_type_binary": {
     "color": "graphite"
   },
+  "file_type_blade": {
+    "color": "orange",
+    "syntaxes": [
+      {
+        "name": "Laravel Blade Highlighter",
+        "scope": "text.blade"
+      }
+    ]
+  },
   "file_type_bower": {
     "color": "yellow",
     "aliases":[
