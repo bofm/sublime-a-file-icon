@@ -98,6 +98,19 @@
   "file_type_default": {
     "color": "graphite"
   },
+  "file_type_dotnet": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "ASP",
+        "scope": "source.asp"
+      },
+      {
+        "name": "HTML (ASP)",
+        "scope": "text.html.asp"
+      }
+    ]
+  },
   "file_type_font": {
     "color": "green",
     "aliases":[
