@@ -168,12 +168,12 @@ gulp.task('build:icons', function() {
             width: size.size,
             height: size.size
           }))
+          .pipe($.if(size.size, $.rename({suffix: size.suffix})))
           .pipe($.imagemin([$.imagemin.optipng({
             bitDepthReduction: false,
             colorTypeReduction: false,
             paletteReduction: false
-          })]))
-          .pipe($.if(size.size, $.rename({suffix: size.suffix})))
+          })], {verbose: true}))
           .pipe(gulp.dest('./dist/zpatches/icons'));
 
         var single = gulp.src(file.path)
@@ -181,12 +181,12 @@ gulp.task('build:icons', function() {
             width: size.size,
             height: size.size
           }))
+          .pipe($.if(size.size, $.rename({suffix: size.suffix})))
           .pipe($.imagemin([$.imagemin.optipng({
             bitDepthReduction: false,
             colorTypeReduction: false,
             paletteReduction: false
-          })]))
-          .pipe($.if(size.size, $.rename({suffix: size.suffix})))
+          })], {verbose: true}))
           .pipe(gulp.dest('./dist/zpatches/single'));
 
         return merge(multi, single);
