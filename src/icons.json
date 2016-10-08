@@ -208,6 +208,12 @@
   },
   "file_type_settings": {
     "color": "graphite",
+    "syntaxes": [
+      {
+        "name": "INI",
+        "scope": "source.ini"
+      }
+    ],
     "aliases": [
       {
         "name": "JSON (Settings)",
