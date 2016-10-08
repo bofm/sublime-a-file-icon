@@ -235,7 +235,8 @@
         "name": "JSON (Sublime)",
         "extensions": [
           "sublime-settings",
-          "sublime-workspace"
+          "sublime-workspace",
+          "sublime-project"
         ],
         "base": "source.json",
         "scope": "source.json.sublime"
