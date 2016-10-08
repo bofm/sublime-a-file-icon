@@ -1,6 +1,7 @@
 {
   "extensions": [
     "sublime-settings",
-    "sublime-workspace"
+    "sublime-workspace",
+    "sublime-project"
   ]
 }

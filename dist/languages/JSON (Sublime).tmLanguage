@@ -8,6 +8,7 @@
     <array>
       <string>.sublime-settings</string>
       <string>.sublime-workspace</string>
+      <string>.sublime-project</string>
     </array>
     <key>patterns</key>
     <array>

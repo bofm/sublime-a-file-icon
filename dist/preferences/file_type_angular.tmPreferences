@@ -3,11 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.ini, source.json.settings</string>
+    <string>text.html.basic.angularjs</string>
     <key>settings</key>
     <dict>
       <key>icon</key>
-      <string>file_type_settings</string>
+      <string>file_type_angular</string>
     </dict>
   </dict>
 </plist>
