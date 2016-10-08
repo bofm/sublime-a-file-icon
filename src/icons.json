@@ -21,6 +21,15 @@
       }
     ]
   },
+  "file_type_angular": {
+    "color": "pink",
+    "syntaxes": [
+      {
+        "name": "Angular​JS",
+        "scope": "text.html.basic.angularjs"
+      }
+    ]
+  },
   "file_type_archive": {
     "color": "graphite",
     "aliases":[
