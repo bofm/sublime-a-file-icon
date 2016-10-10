@@ -321,6 +321,15 @@
       }
     ]
   },
+  "file_type_haml": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "Ruby Haml",
+        "scope": "text.haml"
+      }
+    ]
+  },
   "file_type_image": {
     "color": "green"
   },
