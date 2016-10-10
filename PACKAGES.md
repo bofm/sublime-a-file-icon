@@ -37,6 +37,14 @@ This file contains a list of possible packages those you may need to install to 
 
 - [AngularJS](https://packagecontrol.io/packages/AngularJS)
 
+## Julia
+
+- [Julia](https://packagecontrol.io/packages/Julia)
+
+## LESS
+
+- [LessImproved](https://packagecontrol.io/packages/LessImproved)
+
 ## PHP
 
 - [Laravel Blade Highlighter](https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter)

@@ -402,6 +402,15 @@
       }
     ]
   },
+  "file_type_less": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "LESS",
+        "scope": "source.less"
+      }
+    ]
+  },
   "file_type_image": {
     "color": "green"
   },
