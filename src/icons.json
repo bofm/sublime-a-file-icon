@@ -86,7 +86,7 @@
       }
     ]
   },
-  "file_type_c#": {
+  "file_type_csharp": {
     "color": "blue",
     "syntaxes": [
       {
