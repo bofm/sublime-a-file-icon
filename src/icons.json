@@ -384,6 +384,15 @@
       }
     ]
   },
+  "file_type_jsp": {
+    "color": "purple",
+    "syntaxes": [
+      {
+        "name": "JSP",
+        "scope": "text.html.jsp"
+      }
+    ]
+  },
   "file_type_image": {
     "color": "green"
   },
