@@ -121,6 +121,15 @@
       }
     ]
   },
+  "file_type_coffeescript": {
+    "color": "orange",
+    "syntaxes": [
+      {
+        "name": "CoffeeScript",
+        "scope": "source.coffee"
+      }
+    ]
+  },
   "file_type_cpp": {
     "color": "sky",
     "syntaxes": [
