@@ -18,5 +18,7 @@
 
 ## Rename
 
-`file_type_c#` -> `file_type_csharp`
-`file_type_c++` -> `file_type_cpp`
+- `file_type_c#` -> `file_type_csharp`
+- `file_type_c++` -> `file_type_cpp`
+- `file_type_coffee` -> `file_type_coffeescript`
+- `file_type_coffescript` -> `file_type_coffeescript`
