@@ -393,6 +393,15 @@
       }
     ]
   },
+  "file_type_julia": {
+    "color": "purple",
+    "syntaxes": [
+      {
+        "name": "Julia",
+        "scope": "source.julia"
+      }
+    ]
+  },
   "file_type_image": {
     "color": "green"
   },
