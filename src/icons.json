@@ -277,6 +277,15 @@
       }
     ]
   },
+  "file_type_graphviz": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "Graphviz (DOT)",
+        "scope": "source.dot"
+      }
+    ]
+  },
   "file_type_gruntfile": {
     "color": "orange",
     "aliases": [
