@@ -8,12 +8,15 @@
 - Mixer Icon: `file_type_preferences`
 - SVG Icon: `file_type_svg`
 - .NET Icon: `file_type_dotnet`
+- Cold Fusion Icon: `file_type_cf`
 
 ## Remove
 
-- Apache Icon: `file_type_apache`
+- `file_type_apache`
+- `file_type_cfc`
+- `file_type_cfm`
 
 ## Rename
 
-- C# Icon: `file_type_c#` -> `file_type_csharp`
-- C++ Icon: `file_type_c++` -> `file_type_cpp`
+`file_type_c#` -> `file_type_csharp`
+`file_type_c++` -> `file_type_cpp`
