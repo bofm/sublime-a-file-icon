@@ -86,6 +86,19 @@
       }
     ]
   },
+  "file_type_c": {
+    "color": "purple",
+    "syntaxes": [
+      {
+        "name": "C",
+        "scope": "source.c"
+      },
+      {
+        "name": "Objective-C",
+        "scope": "source.objc"
+      }
+    ]
+  },
   "file_type_cpp": {
     "color": "sky",
     "syntaxes": [
