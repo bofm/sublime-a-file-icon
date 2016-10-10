@@ -4,6 +4,10 @@ The icons for custom packages require them to be installed. E.g. if you want to 
 
 This file contains a list of possible packages those you may need to install to see their icons.
 
+## Adobe
+
+[CFML](https://packagecontrol.io/packages/CFML)
+[ColdFusion](https://github.com/SublimeText/ColdFusion/tree/st3-readme)
 
 ## Git
 
