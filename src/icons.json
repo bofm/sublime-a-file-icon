@@ -357,16 +357,12 @@
       }
     ]
   },
-  "file_type_pug": {
-    "color": "yellow",
+  "file_type_java": {
+    "color": "red",
     "syntaxes": [
       {
-        "name": "Jade",
-        "scope": "text.jade"
-      },
-      {
-        "name": "Pug",
-        "scope": "text.pug"
+        "name": "Java",
+        "scope": "source.java"
       }
     ]
   },
@@ -444,6 +440,19 @@
         ],
         "base": "text.plain",
         "scope": "text.plain.ps"
+      }
+    ]
+  },
+  "file_type_pug": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "Jade",
+        "scope": "text.jade"
+      },
+      {
+        "name": "Pug",
+        "scope": "text.pug"
       }
     ]
   },
