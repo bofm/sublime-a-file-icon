@@ -112,6 +112,15 @@
       }
     ]
   },
+  "file_type_clojure": {
+    "color": "purple",
+    "syntaxes": [
+      {
+        "name": "Clojure",
+        "scope": "source.clojure"
+      }
+    ]
+  },
   "file_type_cpp": {
     "color": "sky",
     "syntaxes": [
