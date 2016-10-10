@@ -9,6 +9,8 @@
       <string>.sublime-settings</string>
       <string>.sublime-workspace</string>
       <string>.sublime-project</string>
+      <string>.sublime-commands</string>
+      <string>.sublime-menu</string>
     </array>
     <key>patterns</key>
     <array>

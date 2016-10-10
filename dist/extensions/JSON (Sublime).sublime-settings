@@ -2,6 +2,8 @@
   "extensions": [
     "sublime-settings",
     "sublime-workspace",
-    "sublime-project"
+    "sublime-project",
+    "sublime-commands",
+    "sublime-menu"
   ]
 }
