@@ -249,6 +249,15 @@
       }
     ]
   },
+  "file_type_go": {
+    "color": "sky",
+    "syntaxes": [
+      {
+        "name": "Go",
+        "scope": "source.go"
+      }
+    ]
+  },
   "file_type_gradle": {
     "color": "cyan",
     "syntaxes": [
