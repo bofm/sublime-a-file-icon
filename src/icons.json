@@ -286,6 +286,15 @@
       }
     ]
   },
+  "file_type_groovy": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "Groovy",
+        "scope": "source.groovy"
+      }
+    ]
+  },
   "file_type_gruntfile": {
     "color": "orange",
     "aliases": [
