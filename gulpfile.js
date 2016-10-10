@@ -244,4 +244,4 @@ gulp.task('watch', function() {
  * > Default
  */
 
-gulp.task('default', ['build:icons']);
+gulp.task('default', ['build']);
