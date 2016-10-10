@@ -357,6 +357,19 @@
       }
     ]
   },
+  "file_type_pug": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "Jade",
+        "scope": "text.jade"
+      },
+      {
+        "name": "Pug",
+        "scope": "text.pug"
+      }
+    ]
+  },
   "file_type_image": {
     "color": "green"
   },

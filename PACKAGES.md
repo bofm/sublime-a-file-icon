@@ -41,6 +41,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Laravel Blade Highlighter](https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter)
 
+## Pug (PKA Jade)
+
+[Pug](https://github.com/davidrios/pug-tmbundle)
+
 ## Settings
 
 - [ApacheConf](https://packagecontrol.io/packages/ApacheConf.tmLanguage)
