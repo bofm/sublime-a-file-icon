@@ -330,6 +330,15 @@
       }
     ]
   },
+  "file_type_haskell": {
+    "color": "purple",
+    "syntaxes": [
+      {
+        "name": "Haskell",
+        "scope": "source.haskell"
+      }
+    ]
+  },
   "file_type_image": {
     "color": "green"
   },
