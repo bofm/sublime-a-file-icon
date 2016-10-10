@@ -29,6 +29,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Gradle_Language](https://packagecontrol.io/packages/Gradle_Language)
 
+## Haxe
+
+- [Haxe](https://packagecontrol.io/packages/Haxe)
+
 ## JavaScript
 
 - [AngularJS](https://packagecontrol.io/packages/AngularJS)

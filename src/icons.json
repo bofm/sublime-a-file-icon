@@ -339,6 +339,15 @@
       }
     ]
   },
+  "file_type_haxe": {
+    "color": "orange",
+    "syntaxes": [
+      {
+        "name": "Haxe",
+        "scope": "source.haxe"
+      }
+    ]
+  },
   "file_type_image": {
     "color": "green"
   },
