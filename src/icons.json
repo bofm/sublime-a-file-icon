@@ -191,6 +191,15 @@
       }
     ]
   },
+  "file_type_erlang": {
+    "color": "red",
+    "syntaxes": [
+      {
+        "name": "Erlang",
+        "scope": "source.erlang"
+      }
+    ]
+  },
   "file_type_font": {
     "color": "green",
     "aliases":[
