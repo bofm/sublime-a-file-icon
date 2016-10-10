@@ -366,6 +366,15 @@
       }
     ]
   },
+  "file_type_js": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "JavaScript",
+        "scope": "source.js"
+      }
+    ]
+  },
   "file_type_image": {
     "color": "green"
   },
