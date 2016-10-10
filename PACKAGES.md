@@ -13,6 +13,10 @@ This file contains a list of possible packages those you may need to install to 
 - [CFML](https://packagecontrol.io/packages/CFML)
 - [ColdFusion](https://github.com/SublimeText/ColdFusion/tree/st3-readme)
 
+## Docker
+
+- [Dockerfile Syntax Highlighting](https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting)
+
 ## Git
 
 - [GitSyntaxes](https://packagecontrol.io/packages/GitSyntaxes)

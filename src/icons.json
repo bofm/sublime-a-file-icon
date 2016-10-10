@@ -169,6 +169,15 @@
       }
     ]
   },
+  "file_type_docker": {
+    "color": "sky",
+    "syntaxes": [
+      {
+        "name": "Dockerfile",
+        "scope": "source.dockerfile"
+      }
+    ]
+  },
   "file_type_dotnet": {
     "color": "cyan",
     "syntaxes": [
