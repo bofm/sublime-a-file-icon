@@ -436,5 +436,14 @@
   },
   "file_type_text": {
     "color": "yellow"
+  },
+  "file_type_windows": {
+    "color": "sky",
+    "syntaxes": [
+      {
+        "name": "Batch File",
+        "scope": "source.dosbatch"
+      }
+    ]
   }
 }

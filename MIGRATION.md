@@ -9,6 +9,7 @@
 - SVG Icon: `file_type_svg`
 - .NET Icon: `file_type_dotnet`
 - Cold Fusion Icon: `file_type_cf`
+- Windows Icon: `file_type_windows`
 
 ## Remove
 
