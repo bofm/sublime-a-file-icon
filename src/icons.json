@@ -200,6 +200,15 @@
       }
     ]
   },
+  "file_type_ex": {
+    "color": "purple",
+    "syntaxes": [
+      {
+        "name": "Elixir",
+        "scope": "source.elixir"
+      }
+    ]
+  },
   "file_type_font": {
     "color": "green",
     "aliases":[
