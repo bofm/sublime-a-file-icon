@@ -1,7 +1,16 @@
-Migration notes for Boxy & Material and those themes which have file icons based on them.
+# Migrating from 1.0.2 to 2.0.0
 
-- Add SublimeText icon `file_type_sublime`
-- Remove `file_type_apache`
-- Add preferences icon `file_type_preferences`
-- Add SVG icon `file_type_svg`
-- Add .NET icon `file_type_dotnet`
+> Currently related to `Boxy Theme`, `Material Theme` and others those have file icons based on one of these themes.
+
+## Add
+
+- Sublime Text Icon :: `file_type_sublime`
+- Mixer Icon        :: `file_type_preferences`
+- SVG Icon          :: `file_type_svg`
+- .NET Icon         :: `file_type_dotnet`
+
+## Remove
+
+- Apache Icon       :: `file_type_apache`
+
+## Rename
