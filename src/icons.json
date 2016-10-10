@@ -348,6 +348,15 @@
       }
     ]
   },
+  "file_type_html": {
+    "color": "orange",
+    "syntaxes": [
+      {
+        "name": "HTML",
+        "scope": "text.html.basic"
+      }
+    ]
+  },
   "file_type_image": {
     "color": "green"
   },
