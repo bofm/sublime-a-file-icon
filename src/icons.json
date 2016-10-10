@@ -148,6 +148,15 @@
       }
     ]
   },
+  "file_type_css": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "CSS",
+        "scope": "source.css"
+      }
+    ]
+  },
   "file_type_default": {
     "color": "graphite"
   },
