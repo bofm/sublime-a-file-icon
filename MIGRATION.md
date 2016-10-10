@@ -15,6 +15,7 @@
 - `file_type_apache`
 - `file_type_cfc`
 - `file_type_cfm`
+- `file_type_fish`
 
 ## Rename
 

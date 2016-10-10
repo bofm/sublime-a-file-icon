@@ -390,6 +390,19 @@
       }
     ]
   },
+  "file_type_shell": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "Shell Script (Bash)",
+        "scope": "source.shell"
+      },
+      {
+        "name": "Shell Script (Fish)",
+        "scope": "source.fish"
+      }
+    ]
+  },
   "file_type_source": {
     "color": "sky"
   },
