@@ -375,6 +375,15 @@
       }
     ]
   },
+  "file_type_json": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "JSON",
+        "scope": "source.json"
+      }
+    ]
+  },
   "file_type_image": {
     "color": "green"
   },
@@ -532,6 +541,15 @@
   },
   "file_type_text": {
     "color": "yellow"
+  },
+  "file_type_yaml": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "YAML",
+        "scope": "source.yaml"
+      }
+    ]
   },
   "file_type_windows": {
     "color": "sky",
