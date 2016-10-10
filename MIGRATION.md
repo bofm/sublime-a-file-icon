@@ -4,13 +4,16 @@
 
 ## Add
 
-- Sublime Text Icon :: `file_type_sublime`
-- Mixer Icon        :: `file_type_preferences`
-- SVG Icon          :: `file_type_svg`
-- .NET Icon         :: `file_type_dotnet`
+- Sublime Text Icon: `file_type_sublime`
+- Mixer Icon: `file_type_preferences`
+- SVG Icon: `file_type_svg`
+- .NET Icon: `file_type_dotnet`
 
 ## Remove
 
-- Apache Icon       :: `file_type_apache`
+- Apache Icon: `file_type_apache`
 
 ## Rename
+
+- C# Icon: `file_type_c#` -> `file_type_csharp`
+- C++ Icon: `file_type_c++` -> `file_type_cpp`
