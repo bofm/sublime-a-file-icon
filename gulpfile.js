@@ -142,7 +142,6 @@ gulp.task('build:settings', function() {
 
 gulp.task('build:icons', function() {
   var baseColor = $.recolorSvg.ColorMatcher(color('#000'));
-  var singleColor = $.recolorSvg.ColorMatcher(color('#fff'));
 
   opts.icons = getIconOpts();
 
@@ -180,7 +179,7 @@ gulp.task('build:icons', function() {
         var single = gulp.src(file.path)
           .pipe($.recolorSvg.Replace(
             [baseColor],
-            [singleColor]
+            [color('white')]
           ))
           .pipe($.svg2png({
             width: size.size,
