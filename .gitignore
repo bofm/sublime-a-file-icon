@@ -3,14 +3,10 @@
 
 *.sublime-project
 *.sublime-workspace
-*@test.*
 !test/*
 
 node_modules/
-temp/
-
-dist/zpatches/multi
-dist/zpatches/*.sublime-theme
+dist/
 
 
 # OS
