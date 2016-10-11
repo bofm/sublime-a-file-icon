@@ -15,7 +15,7 @@ Its aims are:
 
 If you have some problems, first search for a similar issue, and then report with [new one][new-issue]. Please read the [known issues][known-issues] before reporting a new one.
 
-## End Users
+## Users
 
 <!-- ### Getting Started -->
 
@@ -123,6 +123,12 @@ It does these steps when:
 
 The real process is just a little bit more complex to minimize hard drive I/O.
 
+### Contributing
+
+Want to contribute some code? Excellent! Read up on our [guidelines][contributing].
+
+Together we will make **Sublime File Icons** even better than it is today!
+
 ## Resources
 
 ### Colors
@@ -159,6 +165,12 @@ This package requires you to restart Sublime Text for the applied icons to take 
 - you've changed its preferences,
 - you've installed a new theme that should be patched.
 
+## Share The Love
+
+I've put a lot of time and effort into making **Sublime File Icons** awesome. If you love it, you can buy me a coffee. I promise it will be a good investment 😉
+
+**Donate with:** [Patreon][patreon].
+
 <!-- Resources -->
 
 [atom-file-icons]: https://github.com/DanBrooker/file-icons
@@ -175,6 +187,7 @@ This package requires you to restart Sublime Text for the applied icons to take 
 [bring-support]: https://github.com/oivva/zz-file-icons#bring-support-to-your-theme
 [changelog]: https://github.com/oivva/zz-file-icons/blob/dev/CHANGELOG.md
 [coming-soon]: https://github.com/wbond/package_control_channel/pull/5852
+[contributing]: https://github.com/oivva/zz-file-icons/blob/dev/.github/CONTRIBUTING.md
 [customization]: https://github.com/oivva/zz-file-icons#customization
 [details]: https://forum.sublimetext.com/t/sublime-text-3-file-icons-in-sidebar/21134/4
 [downloads]: https://packagecontrol.io/packages/File%20Icons%20Extended
