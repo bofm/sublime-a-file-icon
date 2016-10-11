@@ -22,10 +22,10 @@
 	// `color` option.
 	"color_on_select": "",
 
-	// Show debug logging
+	// Show debug logging.
 	"debug": false,
 
-	// Set to true to override icons of the supported themes
+	// Set to true to override icons of the supported themes.
 	"force_override": false,
 
 	// The opacity level of the default icon state.
