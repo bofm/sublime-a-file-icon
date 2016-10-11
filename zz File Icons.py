@@ -302,9 +302,10 @@ def init():
     log.value(CURRENT)
 
 
-class FileIconsClearAllCommand(sublime_plugin.WindowCommand):
+class FileIconsCleanUpCommand(sublime_plugin.WindowCommand):
     def run(self):
         clear_all()
+        activate()
 
 
 def plugin_loaded():

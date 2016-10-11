@@ -19,7 +19,7 @@ This file contains a list of possible packages those you may need to install to 
 
 ## Elixir
 
-[Elixir](https://packagecontrol.io/packages/Elixir)
+- [Elixir](https://packagecontrol.io/packages/Elixir)
 
 ## Git
 
@@ -51,7 +51,7 @@ This file contains a list of possible packages those you may need to install to 
 
 ## Pug (PKA Jade)
 
-[Pug](https://github.com/davidrios/pug-tmbundle)
+- [Pug](https://github.com/davidrios/pug-tmbundle)
 
 ## Settings
 
