@@ -17,9 +17,9 @@ If you have some problems, first search for a similar issue, and then report wit
 
 ## End Users
 
-### Installation
+<!-- ### Getting Started -->
 
-> **Note:** Don't forget to restart Sublime Text after installing this package. 
+### Installation
 
 #### Package Control ([coming soon][coming-soon])
 
@@ -29,13 +29,28 @@ The easiest way to install is using [Package Control][downloads], where it's lis
 2. Choose `Package Control: Install Package`
 3. Find `zz File Icons` and hit `Enter`
 
-#### Manually
+#### Download
 
 1. [Download the .zip][release]
 2. Unzip and rename the folder to `zz File Icons`
 3. Copy the folder into `Packages` directory, which you can find using the menu item `Preferences → Browse Packages...`
 
+> **Note:** Don't forget to restart Sublime Text after installing this package. 
+
+### Customization
+
+You can change the color, opacity level and size of the icons by modifying your user preferences file, which you can find using:
+
+* menu item `Preferences → Package Settings → File Icons → Settings`,
+* choose `File Icons: Settings` in `Command Palette`.
+
 ### Troubleshooting
+
+If something going wrong try to:
+
+1. Open `Command Palette` using menu item `Tools → Command Palette...`
+2. Choose `File Icons: Clean Up`
+3. Restart Sublime Text
 
 #### Wrong Icons
 
@@ -52,7 +67,7 @@ In some cases you can see that some icons from your current theme are missing. Y
 
 [More details here →][details] 
 
-#### Sublime Linter
+#### Sublime Linter Setup
 
 This package adds some syntax aliases which Sublime Linter doesn't recognize. Just update your Sublime Linter settings, e.g.:
 
@@ -76,21 +91,13 @@ This package adds some syntax aliases which Sublime Linter doesn't recognize. Ju
 
 Full list of the syntax aliases can be found [here][aliases].
 
-#### Known Issues
-
-This package requires you to restart Sublime Text when:
-
-- you've installed it,
-- you've changed its preferences,
-- you've installed new theme that should be patched.
-
-## Theme Developers
+## Developers
 
 ### Bring Support to Your Theme
 
 If you are a theme developer and you want to have support of `zz File Icons`, you should:
 
-* Remove all stuff related to the icon setup: `.tmPreferences`, `.sublime-settings` and `.tmLanguage` files.
+* Remove all stuff related to the icon setup: `.tmPreferences`, `.sublime-settings` and `.tmLanguage` files
 * Rename all your icons to match [these ones][icons]
 * Add `.zz-file-icons` file to the root of your theme (this is how we check if the theme is **supported**)
 
@@ -108,7 +115,21 @@ In simple terms, `zz File Icons` does next steps:
 4. For the themes those have support of it, it just provides `.tmPreferences` files by default (user can override icons provided by the theme via `"force_override": true`)
 5. After restarting Sublime Text, the patched themes will be enhanced to use the icons provided by `zz File Icons`
 
+It does these steps when:
+
+- you've installed it,
+- plugins loaded,
+- you've changed its preferences.
+
 The real process is just a little bit more complex to minimize hard drive I/O.
+
+## Known Issues
+
+This package requires you to restart Sublime Text for the applied icons to take effect when:
+
+- you've installed it,
+- you've changed its preferences,
+- you've installed a new theme that should be patched.
 
 <!-- Resources -->
 
