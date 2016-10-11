@@ -141,7 +141,8 @@ gulp.task('build:settings', function() {
 // >> Icons
 
 gulp.task('build:icons', function() {
-  var baseColor = $.recolorSvg.ColorMatcher(color('#fff'));
+  var baseColor = $.recolorSvg.ColorMatcher(color('#000'));
+  var singleColor = $.recolorSvg.ColorMatcher(color('#fff'));
 
   opts.icons = getIconOpts();
 
@@ -177,6 +178,10 @@ gulp.task('build:icons', function() {
           .pipe(gulp.dest('./dist/zpatches/icons'));
 
         var single = gulp.src(file.path)
+          .pipe($.recolorSvg.Replace(
+            [baseColor],
+            [singleColor]
+          ))
           .pipe($.svg2png({
             width: size.size,
             height: size.size
