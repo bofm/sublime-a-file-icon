@@ -123,6 +123,34 @@ It does these steps when:
 
 The real process is just a little bit more complex to minimize hard drive I/O.
 
+## Resources
+
+### Colors
+
+Colors are from the [Boxy Theme][boxy-theme] icon color palette. They are bright because they should look good with the most themes. However you can change the color and the opacity level of all icons, see [customization][customization].
+
+![Palette][img-palette]
+
+### Icons
+
+This package contains icons provided by:
+
+- [Atom File Icons][atom-file-icons]
+- [Boxy Theme][boxy-theme]
+- [Devicons][devicons]
+- [Font Awesome][font-awesome]
+- [Font Mfizz][font-mfizz]
+- [Icomoon][icomoon]
+- [Octicons][octicons]
+
+Source icons provided in SVG format (currently Sublime Text doesn't support it). We convert them to @1x, @2x and @3x PNG assets before each release via `gulp` task. 
+
+Rasterized icons can be found in `dist/zpatches` folder.
+
+## Change Log
+
+See [CHANGELOG.md][changelog].
+
 ## Known Issues
 
 This package requires you to restart Sublime Text for the applied icons to take effect when:
@@ -135,12 +163,19 @@ This package requires you to restart Sublime Text for the applied icons to take 
 
 [atom-file-icons]: https://github.com/DanBrooker/file-icons
 [boxy-theme]: https://github.com/oivva/st-boxy
+[devicons]: http://vorillaz.github.io/devicons/#/main
+[font-awesome]: http://fontawesome.io/
+[font-mfizz]: http://fizzed.com/oss/font-mfizz
+[icomoon]: https://icomoon.io/
+[octicons]: https://octicons.github.com/
 
 <!-- Misc -->
 
 [aliases]: https://github.com/oivva/zz-file-icons/tree/dev/dist/languages
 [bring-support]: https://github.com/oivva/zz-file-icons#bring-support-to-your-theme
+[changelog]: https://github.com/oivva/zz-file-icons/blob/dev/CHANGELOG.md
 [coming-soon]: https://github.com/wbond/package_control_channel/pull/5852
+[customization]: https://github.com/oivva/zz-file-icons#customization
 [details]: https://forum.sublimetext.com/t/sublime-text-3-file-icons-in-sidebar/21134/4
 [downloads]: https://packagecontrol.io/packages/File%20Icons%20Extended
 [icons]: https://github.com/oivva/zz-file-icons/tree/dev/dist/zpatches/icons
@@ -157,3 +192,4 @@ This package requires you to restart Sublime Text for the applied icons to take 
 [img-downloads]: https://img.shields.io/packagecontrol/dt/File%20Icons%20Extended.svg?maxAge=3600&style=flat-square
 [img-patreon]: https://img.shields.io/badge/donate-patreon-orange.svg?maxAge=2592000&style=flat-square
 [img-release]: https://img.shields.io/github/release/oivva/zz-file-icons.svg?maxAge=86400&style=flat-square
+[img-palette]: https://github.com/oivva/zz-file-icons/blob/dev/media/palette.png
