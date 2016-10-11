@@ -6,6 +6,7 @@ import os
 import re
 
 from .util import log
+from .util.env import *
 from .util.tpl import PATCH_TEMPLATE
 
 PKG = 'zz File Icons'

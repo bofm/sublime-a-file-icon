@@ -35,6 +35,11 @@
 								{
 									"file": "${packages}/User/File Icons.sublime-settings"
 								}
+							},
+							{ "caption": "-" },
+							{
+								"caption": "Environment",
+								"command": "file_icons_env"
 							}
 						]
 					}

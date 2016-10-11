@@ -4,6 +4,10 @@
 		"command": "file_icons_clean_up"
 	},
 	{
+		"caption": "File Icons: Environment",
+		"command": "file_icons_env"
+	},
+	{
 		"caption": "File Icons: Settings",
 		"command": "edit_settings", "args":
 		{

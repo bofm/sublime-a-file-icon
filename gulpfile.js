@@ -28,6 +28,7 @@ var opts = {};
 
 opts.colors = require('./src/colors.json');
 opts.sizes = require('./src/sizes.json');
+opts.envRegEx = new RegExp('([\'|\"]?__version__[\'|\"]?[ ]*[:|=][ ]*[\'|\"]?)(\\d+\\.\\d+\\.\\d+)(-[0-9A-Za-z\.-]+)?([\'|\"]?)', 'i');
 
 
 /*
@@ -212,13 +213,22 @@ gulp.task('changelog', function() {
   .pipe(fs.createWriteStream('CHANGELOG.md'));
 });
 
-gulp.task('bump-version', function() {
+gulp.task('bump-version', ['bump-pkg-version', 'bump-env-version']);
+
+gulp.task('bump-pkg-version', function() {
   return gulp.src('./package.json')
-    .pipe($.if((Object.keys(argv).length === 2), $.bump()))
     .pipe($.if(argv.patch, $.bump()))
     .pipe($.if(argv.minor, $.bump({ type: 'minor' })))
     .pipe($.if(argv.major, $.bump({ type: 'major' })))
     .pipe(gulp.dest('./'));
+});
+
+gulp.task('bump-env-version', function() {
+  return gulp.src('./util/env.py')
+    .pipe($.if(argv.patch, $.bump({ regex: opts.envRegEx })))
+    .pipe($.if(argv.minor, $.bump({ type: 'minor', regex: opts.envRegEx })))
+    .pipe($.if(argv.major, $.bump({ type: 'major', regex: opts.envRegEx })))
+    .pipe(gulp.dest('./util'));
 });
 
 gulp.task('github-release', function(done) {

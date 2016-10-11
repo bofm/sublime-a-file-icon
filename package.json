@@ -27,6 +27,7 @@
     "conventional-github-releaser": "^1.1.3",
     "gulp": "^3.9.1",
     "gulp-batch": "^1.0.5",
+    "gulp-bump": "^2.4.0",
     "gulp-changed": "^1.3.2",
     "gulp-data": "^1.2.1",
     "gulp-flatmap": "^1.0.0",
