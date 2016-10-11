@@ -17,7 +17,7 @@
 								"caption": "Settings",
 								"command": "edit_settings", "args":
 								{
-									"base_file": "${packages}/zzFileIcons/File Icons.sublime-settings",
+									"base_file": "${packages}/zz File Icons/File Icons.sublime-settings",
 									"default": "// File Icons Preferences – User\n// ================================================================\n\n// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n// ! PLEASE RESTART SUBLIME TEXT FOR THESE CHANGES TO TAKE EFFECT !\n// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n{\n\t$0\n}\n"
 								}
 							},
@@ -26,7 +26,7 @@
 								"caption": "Settings - Default",
 								"command": "open_file", "args":
 								{
-									"file": "${packages}/zzFileIcons/File Icons.sublime-settings"
+									"file": "${packages}/zz File Icons/File Icons.sublime-settings"
 								}
 							},
 							{

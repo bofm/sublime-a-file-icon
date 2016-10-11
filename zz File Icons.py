@@ -4,12 +4,11 @@ import sublime
 import sublime_plugin
 import os
 import re
-import zzFileIcons.Log as log
 
-from zzFileIcons.Themes import SUPPORTED_THEMES
-from zzFileIcons.Template import PATCH_TEMPLATE
+from .util import log
+from .util.tpl import PATCH_TEMPLATE
 
-PKG = 'zzFileIcons'
+PKG = 'zz File Icons'
 SETTINGS = 'File Icons.sublime-settings'
 SETTINGS_CHANGED = False
 THEME_EXTENSION = '.sublime-theme'
@@ -29,6 +28,7 @@ CURRENT = {
 DIST = 'dist'
 PATCHES = 'zpatches'
 THEMES = '*' + THEME_EXTENSION
+SUPPORTED_THEMES = '.zz-file-icons'
 
 
 def get_settings():
@@ -42,11 +42,12 @@ def get_dest_path():
 def get_installed():
     log.message('Getting installed themes')
 
+    installed_res = sublime.find_resources(THEMES)
     installed_themes = {}
 
-    for r in sublime.find_resources(THEMES):
-        installed_themes.setdefault(os.path.basename(os.path.dirname(r)),
-                                    []).append(os.path.basename(r))
+    for ires in installed_res:
+        installed_themes.setdefault(os.path.basename(os.path.dirname(ires)),
+                                    []).append(os.path.basename(ires))
 
     if PATCHES in installed_themes:
         del installed_themes[PATCHES]
@@ -56,8 +57,28 @@ def get_installed():
     return installed_themes
 
 
-def is_supported(pkg):
-    if pkg in SUPPORTED_THEMES:
+def get_supported():
+    log.message('Getting supported themes')
+
+    installed_res = sublime.find_resources(THEMES)
+    supported_res = sublime.find_resources(SUPPORTED_THEMES)
+
+    supported = {}
+
+    for sres in supported_res:
+        pkg = os.path.basename(os.path.dirname(sres))
+
+        for ires in installed_res:
+            if pkg in ires:
+                supported.setdefault(pkg, []).append(os.path.basename(ires))
+
+    log.value(supported)
+
+    return supported
+
+
+def is_supported(pkg, supported):
+    if pkg in supported:
         log.message(pkg, ' is supported')
         return True
 
@@ -150,8 +171,8 @@ def activate():
     single = os.path.join(dest, 'single')
 
     installed = get_installed()
+    supported = get_supported()
     force_override = CURRENT['force_override']
-    supported = []
     themes = []
 
     for pkg in installed:
@@ -159,10 +180,8 @@ def activate():
 
         if force_override:
             themes.extend(tset)
-        elif not is_supported(pkg):
+        elif not is_supported(pkg, supported):
                 themes.extend(tset)
-        else:
-            supported.extend(tset)
 
     if not SETTINGS_CHANGED:
         tmp = themes
@@ -190,7 +209,7 @@ def activate():
         colors = ['', '', '']
 
     if not force_override:
-        clear_patches(supported)
+        clear_patches(list(set([i for sl in supported.values() for i in sl])))
 
     if themes:
         patch(themes, colors)
