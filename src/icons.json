@@ -542,11 +542,12 @@
       {
         "name": "JSON (Sublime)",
         "extensions": [
+          "no-sublime-package",
+          "sublime-commands",
+          "sublime-menu",
+          "sublime-project",
           "sublime-settings",
           "sublime-workspace",
-          "sublime-project",
-          "sublime-commands",
-          "sublime-menu"
         ],
         "base": "source.json",
         "scope": "source.json.sublime"
