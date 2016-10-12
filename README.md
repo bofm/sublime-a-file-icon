@@ -1,6 +1,6 @@
 > **Coming soon ...** 
 
-![Logo][img-logo]
+# ![Logo][img-logo]
 
 [![Release][img-release]][release]
 [![Downloads][img-downloads]][downloads]
