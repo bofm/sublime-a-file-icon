@@ -205,6 +205,12 @@ gulp.task('build:icons', function() {
  * > Release
  */
 
+gulp.task('media', function() {
+  return gulp.src('./media/*.png')
+    .pipe($.imagemin({verbose: true}))
+    .pipe(gulp.dest('./media'));
+});
+
 gulp.task('changelog', function() {
   return conventionalChangelog({
     preset: 'angular',
