@@ -6,11 +6,12 @@
     <string>JSON (Sublime)</string>
     <key>fileTypes</key>
     <array>
-      <string>.sublime-settings</string>
-      <string>.sublime-workspace</string>
-      <string>.sublime-project</string>
+      <string>.no-sublime-package</string>
       <string>.sublime-commands</string>
       <string>.sublime-menu</string>
+      <string>.sublime-project</string>
+      <string>.sublime-settings</string>
+      <string>.sublime-workspace</string>
     </array>
     <key>patterns</key>
     <array>
