@@ -547,7 +547,7 @@
           "sublime-menu",
           "sublime-project",
           "sublime-settings",
-          "sublime-workspace",
+          "sublime-workspace"
         ],
         "base": "source.json",
         "scope": "source.json.sublime"
