@@ -40,8 +40,8 @@ If you want to add new icon please follow next steps:
 3. Add `icon` settings to the [src/icons.json](https://github.com/oivva/zz-file-icons/blob/dev/src/icons.json) file
 
 > All that you need to add are the SVG icon and its settings.
-> Note: all settings should be alphabetically sorted.
 
+> All settings should be alphabetically sorted.
 
 > Please do not change any other files, especially in `dist` folder.
 > We always build distribution files once right before the release.
@@ -70,7 +70,7 @@ Example:
 </svg>
 ```
 
-### Preferences
+### Settings
 
 Currently Sublime Text requires syntax definitions to apply the icons. It means that you need to have installed syntax package to see its icon. However we can abuse syntax definitions in order to provide different file icons to files with the same underlying syntax but different semantics (`Gulpfile.js`, `package.json` & etc.). That's why we provide two types of icons:
 
@@ -115,4 +115,4 @@ These settings will create three files after the building:
 * `dist\languages\Shell Script (Git).tmLanguage`
 * `dist\preferences\file_type_git.tmPreferences`
 
-Git icons will be applied to such files as `.gitconfig`, `.gitmodules` and etc when you install `GitSyntaxes` package. However this package doesn't provide syntaxes for `.gitignore` and `.gitkeep` that's why `zz File Icons` creates syntax alias to `Shell Script` to use it highlighting and git icon on these files.
+Git icons will be applied to such files as `.gitconfig`, `.gitmodules` and etc when you install `GitSyntaxes` package. However this package doesn't provide syntaxes for `.gitignore` and `.gitkeep` that's why `zz File Icons` creates syntax alias to `Shell Script` to use its highlighting and git icon on these files.
