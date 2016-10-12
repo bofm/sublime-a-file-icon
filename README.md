@@ -1,6 +1,6 @@
-> **WIP:** 2.0.0 coming soon ...
+> **Coming soon ...** 
 
-# Sublime File Icons
+![Logo][img-logo]
 
 [![Release][img-release]][release]
 [![Downloads][img-downloads]][downloads]
@@ -203,6 +203,7 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 <!-- Assets -->
 
 [img-downloads]: https://img.shields.io/packagecontrol/dt/File%20Icons%20Extended.svg?maxAge=3600&style=flat-square
+[img-logo]: https://github.com/oivva/zz-file-icons/blob/dev/media/logo.png
 [img-patreon]: https://img.shields.io/badge/donate-patreon-orange.svg?maxAge=2592000&style=flat-square
 [img-release]: https://img.shields.io/github/release/oivva/zz-file-icons.svg?maxAge=86400&style=flat-square
 [img-palette]: https://github.com/oivva/zz-file-icons/blob/dev/media/palette.png
