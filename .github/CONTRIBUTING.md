@@ -56,6 +56,8 @@ Requirements:
 
 Example:
 
+[![ActionScript Icon](https://cdn.rawgit.com/oivva/zz-file-icons/dev/src/assets/file_type_actionscript.svg)](https://github.com/oivva/zz-file-icons/blob/dev/src/assets/file_type_actionscript.svg)
+
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
   <defs>
