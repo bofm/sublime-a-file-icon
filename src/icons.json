@@ -644,6 +644,15 @@
       }
     ]
   },
+  "file_type_rails": {
+    "color": "red",
+    "syntaxes": [
+      {
+        "name": "Rails",
+        "scope": "source.ruby.rails, text.html.ruby"
+      }
+    ]
+  },
   "file_type_settings": {
     "color": "graphite",
     "syntaxes": [
