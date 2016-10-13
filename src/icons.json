@@ -519,6 +519,15 @@
       }
     ]
   },
+  "file_type_ocaml": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "OCaml",
+        "scope": "source.ocaml, source.ocamllex, source.ocamlyacc, source.camlp4.ocaml"
+      }
+    ]
+  },
   "file_type_pdf": {
     "color": "red",
     "aliases": [
