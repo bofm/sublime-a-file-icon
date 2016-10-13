@@ -680,6 +680,15 @@
       }
     ]
   },
+  "file_type_scala": {
+    "color": "red",
+    "syntaxes": [
+      {
+        "name": "Scala",
+        "scope": "source.scala"
+      }
+    ]
+  },
   "file_type_scss": {
     "color": "pink",
     "syntaxes": [
