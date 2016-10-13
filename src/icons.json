@@ -550,6 +550,15 @@
       }
     ]
   },
+  "file_type_php": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "PHP",
+        "scope": "embedding.php, source.php"
+      }
+    ]
+  },
   "file_type_preferences": {
     "color": "yellow",
     "syntaxes": [
