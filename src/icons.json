@@ -742,6 +742,15 @@
   "file_type_source": {
     "color": "sky"
   },
+  "file_type_sql": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "SQL",
+        "scope": "source.sql"
+      }
+    ]
+  },
   "file_type_sublime": {
     "color": "orange",
     "aliases": [
