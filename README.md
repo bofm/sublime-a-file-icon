@@ -1,6 +1,6 @@
 > **Coming soon ...** 
 
-# ![Logo][img-logo]
+# ![Sublime File Icons][img-logo]
 
 [![Release][img-release]][release]
 [![Downloads][img-downloads]][downloads]
