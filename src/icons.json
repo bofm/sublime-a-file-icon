@@ -848,6 +848,15 @@
       }
     ]
   },
+  "file_type_twig": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "PHP-Twig",
+        "scope": "text.html.twig"
+      }
+    ]
+  },
   "file_type_windows": {
     "color": "sky",
     "syntaxes": [

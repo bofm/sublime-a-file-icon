@@ -113,3 +113,7 @@ This file contains a list of possible packages those you may need to install to 
 ## TODO
 
 - [PlainTasks](https://packagecontrol.io/packages/PlainTasks)
+
+## Twig
+
+- [PHP-Twig](https://packagecontrol.io/packages/PHP-Twig)
