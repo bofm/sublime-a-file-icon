@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.elixir</string>
+    <string>source.elixir, text.html.elixir</string>
     <key>settings</key>
     <dict>
       <key>icon</key>

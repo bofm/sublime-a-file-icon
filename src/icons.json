@@ -205,7 +205,7 @@
     "syntaxes": [
       {
         "name": "Elixir",
-        "scope": "source.elixir"
+        "scope": "source.elixir, text.html.elixir"
       }
     ]
   },
