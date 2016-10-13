@@ -866,6 +866,15 @@
       }
     ]
   },
+  "file_type_vue": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "Vue Syntax Highlight",
+        "scope": "text.html.vue"
+      }
+    ]
+  },
   "file_type_windows": {
     "color": "sky",
     "syntaxes": [

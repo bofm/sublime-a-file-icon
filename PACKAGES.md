@@ -121,3 +121,7 @@ This file contains a list of possible packages those you may need to install to 
 ## TypeScript
 
 - [TypeScript](https://packagecontrol.io/packages/TypeScript)
+
+## Vue.js
+
+- [Vue Syntax Highlight](https://packagecontrol.io/packages/Vue%20Syntax%20Highlight)
