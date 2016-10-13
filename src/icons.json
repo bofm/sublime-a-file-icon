@@ -635,6 +635,15 @@
       }
     ]
   },
+  "file_type_r": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "R",
+        "scope": "source.r"
+      }
+    ]
+  },
   "file_type_settings": {
     "color": "graphite",
     "syntaxes": [
