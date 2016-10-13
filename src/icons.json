@@ -450,6 +450,15 @@
       }
     ]
   },
+  "file_type_markdown": {
+    "color": "graphite",
+    "syntaxes": [
+      {
+        "name": "Markdown",
+        "scope": "text.html.markdown"
+      }
+    ]
+  },
   "file_type_markup": {
     "color": "purple"
   },
