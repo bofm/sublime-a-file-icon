@@ -14,6 +14,7 @@
 - Babel Icon: `file_type_babel`
 - LICENSE Icon: `file_type_license`
 - ESLint Icon: `file_type_eslint`
+- Sketch Icons: `file_type_sketch`
 
 ## Remove
 

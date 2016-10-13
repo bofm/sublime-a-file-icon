@@ -804,6 +804,19 @@
       }
     ]
   },
+  "file_type_sketch": {
+    "color": "purple",
+    "aliases":[
+      {
+        "name": "Plain Text (Sketch)",
+        "extensions": [
+          "sketch"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.sketch"
+      }
+    ]
+  },
   "file_type_slim": {
     "color": "cyan",
     "syntaxes": [
