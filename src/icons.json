@@ -818,6 +818,15 @@
       }
     ]
   },
+  "file_type_tex": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "LaTeX",
+        "scope": "text.tex, text.bibtex, text.log.latex"
+      }
+    ]
+  },
   "file_type_text": {
     "color": "yellow"
   },
