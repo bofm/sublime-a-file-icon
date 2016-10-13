@@ -100,3 +100,7 @@ This file contains a list of possible packages those you may need to install to 
 ## Stata
 
 - [Stata Enhanced](https://packagecontrol.io/packages/Stata%20Enhanced)
+
+## Stylus
+
+- [Stylus](https://packagecontrol.io/packages/Stylus)
