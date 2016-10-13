@@ -36,22 +36,25 @@ Build process consists of next parts:
 If you want to add new icon please follow next steps:
 
 1. Try to find an icon in the one of [these resources](https://github.com/oivva/zz-file-icons#icons). We always try to be pretty similar to [Atom File Icons](https://github.com/DanBrooker/file-icons) package. If you unable to find anything – add your own.
-2. Provide the icon in SVG format and put it to the `src/assets` directory
-3. Add `icon` settings to the [src/icons.json](https://github.com/oivva/zz-file-icons/blob/dev/src/icons.json) file
+2. Add an example file that shows this icon to the `test` folder
+3. Provide the icon in SVG format and put it to the `src/assets` directory
+4. Add `icon` settings to the [src/icons.json](https://github.com/oivva/zz-file-icons/blob/dev/src/icons.json) file
+5. Build it to test
+6. It's recommended to add a link to the package which provides the syntax (see [PACKAGES.md](https://github.com/oivva/zz-file-icons/blob/dev/PACKAGES.md))
 
-> All that you need to add are the SVG icon and its settings.
+> All that you need to add are the SVG icon, its settings and the example file(s).
 
 > All settings should be alphabetically sorted.
 
 > Please do not change any other files, especially in `dist` folder.
-> We always build distribution files once right before the release.
+> We build and provide distribution files once, right before the release.
 
 ### Icon
 
 Requirements:
 
 - The size should be `16x16` (`width`, `height` and `viewBox`)
-- The color should be black via `class`
+- The color should be black via `i-color` class
 - You should build and check if it looks good, if not make some tweaks to fit the pixel grid
 
 Example:
