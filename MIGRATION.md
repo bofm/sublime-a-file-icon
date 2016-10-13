@@ -11,6 +11,7 @@
 - Cold Fusion Icon: `file_type_cf`
 - Windows Icon: `file_type_windows`
 - JSX Icon: `file_type_jsx`
+- Babel Icon: `file_type_babel`
 
 ## Remove
 

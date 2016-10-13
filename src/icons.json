@@ -60,6 +60,19 @@
       }
     ]
   },
+  "file_type_babel": {
+    "color": "yellow",
+    "aliases": [
+      {
+        "name": "JSON (Babel)",
+        "extensions": [
+          "babelrc"
+        ],
+        "base": "source.json",
+        "scope": "source.json.babel"
+      }
+    ]
+  },
   "file_type_binary": {
     "color": "graphite"
   },
