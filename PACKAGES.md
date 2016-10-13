@@ -117,3 +117,7 @@ This file contains a list of possible packages those you may need to install to 
 ## Twig
 
 - [PHP-Twig](https://packagecontrol.io/packages/PHP-Twig)
+
+## TypeScript
+
+- [TypeScript](https://packagecontrol.io/packages/TypeScript)

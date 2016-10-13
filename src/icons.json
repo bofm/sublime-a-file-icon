@@ -857,6 +857,15 @@
       }
     ]
   },
+  "file_type_typescript": {
+    "color": "sky",
+    "syntaxes": [
+      {
+        "name": "TypeScript",
+        "scope": "source.ts"
+      }
+    ]
+  },
   "file_type_windows": {
     "color": "sky",
     "syntaxes": [
