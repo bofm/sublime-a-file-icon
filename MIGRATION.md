@@ -12,6 +12,7 @@
 - Windows Icon: `file_type_windows`
 - JSX Icon: `file_type_jsx`
 - Babel Icon: `file_type_babel`
+- LICENSE Icon: `file_type_license`
 
 ## Remove
 

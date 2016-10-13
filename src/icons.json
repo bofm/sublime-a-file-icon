@@ -436,6 +436,27 @@
       }
     ]
   },
+  "file_type_license": {
+    "color": "cyan",
+    "aliases": [
+      {
+        "name": "Plain Text (License)",
+        "extensions": [
+          "license"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.license"
+      },
+      {
+        "name": "Markdown (License)",
+        "extensions": [
+          "license.md"
+        ],
+        "base": "text.html.markdown",
+        "scope": "text.html.markdown.license"
+      }
+    ]
+  },
   "file_type_liquid": {
     "color": "green",
     "syntaxes": [
