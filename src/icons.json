@@ -541,6 +541,15 @@
       }
     ]
   },
+  "file_type_perl": {
+    "color": "graphite",
+    "syntaxes": [
+      {
+        "name": "Perl",
+        "scope": "source.perl"
+      }
+    ]
+  },
   "file_type_preferences": {
     "color": "yellow",
     "syntaxes": [
