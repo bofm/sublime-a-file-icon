@@ -471,6 +471,23 @@
       }
     ]
   },
+  "file_type_mustache": {
+    "color": "orange",
+    "syntaxes": [
+      {
+        "name": "HTML Mustache",
+        "scope": "txt.html.mustache, text.html.hgn"
+      },
+      {
+        "name": "Handlebars",
+        "scope": "text.html.handlebars"
+      },
+      {
+        "name": "Hamlbars",
+        "scope": "source.hamlbars"
+      }
+    ]
+  },
   "file_type_npm": {
     "color": "red",
     "aliases": [

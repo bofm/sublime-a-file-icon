@@ -53,6 +53,11 @@ This file contains a list of possible packages those you may need to install to 
 
 - [LSL](https://packagecontrol.io/packages/LSL)
 
+## Mustache & Handlebars
+
+- [HTML Mustache](https://packagecontrol.io/packages/HTML%20Mustache)
+- [Handlebars](https://packagecontrol.io/packages/Handlebars)
+
 ## PHP
 
 - [Laravel Blade Highlighter](https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter)
