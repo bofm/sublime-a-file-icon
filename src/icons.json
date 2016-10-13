@@ -800,6 +800,15 @@
       }
     ]
   },
+  "file_type_swift": {
+    "color": "orange",
+    "syntaxes": [
+      {
+        "name": "Swift",
+        "scope": "source.swift"
+      }
+    ]
+  },
   "file_type_text": {
     "color": "yellow"
   },
