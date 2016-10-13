@@ -78,6 +78,12 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Puppet](https://packagecontrol.io/packages/Puppet)
 
+## SASS & SCSS
+
+- [Sass](https://packagecontrol.io/packages/Sass)
+- [Syntax Highlighting for Sass](https://packagecontrol.io/packages/Syntax%20Highlighting%20for%20Sass)
+- [SCSS](https://packagecontrol.io/packages/SCSS)
+
 ## Settings
 
 - [ApacheConf](https://packagecontrol.io/packages/ApacheConf.tmLanguage)

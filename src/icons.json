@@ -671,6 +671,15 @@
       }
     ]
   },
+  "file_type_sass": {
+    "color": "pink",
+    "syntaxes": [
+      {
+        "name": "Sass",
+        "scope": "source.sass"
+      }
+    ]
+  },
   "file_type_settings": {
     "color": "graphite",
     "syntaxes": [
