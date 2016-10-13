@@ -462,6 +462,15 @@
   "file_type_markup": {
     "color": "purple"
   },
+  "file_type_matlab": {
+    "color": "orange",
+    "syntaxes": [
+      {
+        "name": "MATLAB",
+        "scope": "source.matlab"
+      }
+    ]
+  },
   "file_type_npm": {
     "color": "red",
     "aliases": [
