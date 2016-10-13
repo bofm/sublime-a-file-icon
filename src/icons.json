@@ -617,6 +617,15 @@
       }
     ]
   },
+  "file_type_puppet": {
+    "color": "purple",
+    "syntaxes": [
+      {
+        "name": "Puppet",
+        "scope": "source.puppet"
+      }
+    ]
+  },
   "file_type_settings": {
     "color": "graphite",
     "syntaxes": [

@@ -74,6 +74,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Pug](https://github.com/davidrios/pug-tmbundle)
 
+## Puppet
+
+- [Puppet](https://packagecontrol.io/packages/Puppet)
+
 ## Settings
 
 - [ApacheConf](https://packagecontrol.io/packages/ApacheConf.tmLanguage)
