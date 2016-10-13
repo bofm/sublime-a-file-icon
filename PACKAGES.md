@@ -66,6 +66,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Laravel Blade Highlighter](https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter)
 
+## PostCSS
+
+- [Syntax Highlighting for Post​CSS](https://packagecontrol.io/packages/Syntax%20Highlighting%20for%20PostCSS)
+
 ## Pug (PKA Jade)
 
 - [Pug](https://github.com/davidrios/pug-tmbundle)
