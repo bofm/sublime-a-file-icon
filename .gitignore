@@ -3,6 +3,7 @@
 
 *.sublime-project
 *.sublime-workspace
+*cache
 !test/*
 
 node_modules/
