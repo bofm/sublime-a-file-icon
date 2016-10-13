@@ -839,6 +839,15 @@
       }
     ]
   },
+  "file_type_todo": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "PlainTasks",
+        "scope": "text.todo"
+      }
+    ]
+  },
   "file_type_windows": {
     "color": "sky",
     "syntaxes": [
