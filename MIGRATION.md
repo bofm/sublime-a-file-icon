@@ -13,6 +13,7 @@
 - JSX Icon: `file_type_jsx`
 - Babel Icon: `file_type_babel`
 - LICENSE Icon: `file_type_license`
+- ESLint Icon: `file_type_eslint`
 
 ## Remove
 
