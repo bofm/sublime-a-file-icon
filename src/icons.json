@@ -626,6 +626,15 @@
       }
     ]
   },
+  "file_type_python": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "Python",
+        "scope": "source.python"
+      }
+    ]
+  },
   "file_type_settings": {
     "color": "graphite",
     "syntaxes": [
