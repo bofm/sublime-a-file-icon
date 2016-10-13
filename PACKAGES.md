@@ -45,6 +45,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [LessImproved](https://packagecontrol.io/packages/LessImproved)
 
+## Liquid
+
+- [Siteleaf Liquid Syntax](https://packagecontrol.io/packages/Siteleaf%20Liquid%20Syntax)
+
 ## PHP
 
 - [Laravel Blade Highlighter](https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter)

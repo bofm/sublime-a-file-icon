@@ -411,6 +411,15 @@
       }
     ]
   },
+  "file_type_liquid": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "Siteleaf Liquid Syntax",
+        "scope": "text.html.liquid"
+      }
+    ]
+  },
   "file_type_image": {
     "color": "green"
   },
