@@ -680,6 +680,15 @@
       }
     ]
   },
+  "file_type_scss": {
+    "color": "pink",
+    "syntaxes": [
+      {
+        "name": "SCSS",
+        "scope": "source.scss"
+      }
+    ]
+  },
   "file_type_settings": {
     "color": "graphite",
     "syntaxes": [
