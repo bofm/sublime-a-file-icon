@@ -809,6 +809,15 @@
       }
     ]
   },
+  "file_type_tcl": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "Tcl",
+        "scope": "source.tcl"
+      }
+    ]
+  },
   "file_type_text": {
     "color": "yellow"
   },
