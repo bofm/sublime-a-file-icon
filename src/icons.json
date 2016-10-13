@@ -730,6 +730,15 @@
       }
     ]
   },
+  "file_type_slim": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "Ruby Slim",
+        "scope": "text.slim"
+      }
+    ]
+  },
   "file_type_source": {
     "color": "sky"
   },
