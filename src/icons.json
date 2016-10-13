@@ -357,6 +357,9 @@
       }
     ]
   },
+  "file_type_image": {
+    "color": "green"
+  },
   "file_type_java": {
     "color": "red",
     "syntaxes": [
@@ -420,8 +423,14 @@
       }
     ]
   },
-  "file_type_image": {
-    "color": "green"
+  "file_type_lisp": {
+    "color": "red",
+    "syntaxes": [
+      {
+        "name": "Lisp",
+        "scope": "source.lisp"
+      }
+    ]
   },
   "file_type_markup": {
     "color": "purple"
