@@ -96,3 +96,7 @@ This file contains a list of possible packages those you may need to install to 
 ## Slim
 
 - [Ruby Slim](https://packagecontrol.io/packages/Ruby%20Slim)
+
+## Stata
+
+- [Stata Enhanced](https://packagecontrol.io/packages/Stata%20Enhanced)

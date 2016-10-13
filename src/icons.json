@@ -751,6 +751,15 @@
       }
     ]
   },
+  "file_type_stata": {
+    "color": "sky",
+    "syntaxes": [
+      {
+        "name": "Stata",
+        "scope": "source.stata"
+      }
+    ]
+  },
   "file_type_sublime": {
     "color": "orange",
     "aliases": [
