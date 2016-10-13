@@ -441,6 +441,15 @@
       }
     ]
   },
+  "file_type_lua": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "Lua",
+        "scope": "source.lua"
+      }
+    ]
+  },
   "file_type_markup": {
     "color": "purple"
   },
