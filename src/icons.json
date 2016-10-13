@@ -830,12 +830,12 @@
   "file_type_text": {
     "color": "yellow"
   },
-  "file_type_yaml": {
-    "color": "yellow",
+  "file_type_textile": {
+    "color": "pink",
     "syntaxes": [
       {
-        "name": "YAML",
-        "scope": "source.yaml"
+        "name": "Textile",
+        "scope": "text.html.textile"
       }
     ]
   },
@@ -845,6 +845,15 @@
       {
         "name": "Batch File",
         "scope": "source.dosbatch"
+      }
+    ]
+  },
+  "file_type_yaml": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "YAML",
+        "scope": "source.yaml"
       }
     ]
   }
