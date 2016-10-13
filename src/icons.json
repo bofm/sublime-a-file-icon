@@ -662,6 +662,15 @@
       }
     ]
   },
+  "file_type_rust": {
+    "color": "sky",
+    "syntaxes": [
+      {
+        "name": "Rust",
+        "scope": "source.rust"
+      }
+    ]
+  },
   "file_type_settings": {
     "color": "graphite",
     "syntaxes": [
