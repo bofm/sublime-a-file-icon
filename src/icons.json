@@ -432,6 +432,15 @@
       }
     ]
   },
+  "file_type_lsl": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "LSL",
+        "scope": "source.lsl, source.ossl"
+      }
+    ]
+  },
   "file_type_markup": {
     "color": "purple"
   },

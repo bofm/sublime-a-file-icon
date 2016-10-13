@@ -49,6 +49,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Siteleaf Liquid Syntax](https://packagecontrol.io/packages/Siteleaf%20Liquid%20Syntax)
 
+## LSL
+
+- [LSL](https://packagecontrol.io/packages/LSL)
+
 ## PHP
 
 - [Laravel Blade Highlighter](https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter)
