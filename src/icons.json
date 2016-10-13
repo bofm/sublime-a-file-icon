@@ -488,6 +488,15 @@
       }
     ]
   },
+  "file_type_note": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "PlainNotes",
+        "scope": "text.html.markdown.note"
+      }
+    ]
+  },
   "file_type_npm": {
     "color": "red",
     "aliases": [

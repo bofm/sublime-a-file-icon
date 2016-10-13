@@ -58,6 +58,10 @@ This file contains a list of possible packages those you may need to install to 
 - [HTML Mustache](https://packagecontrol.io/packages/HTML%20Mustache)
 - [Handlebars](https://packagecontrol.io/packages/Handlebars)
 
+## Notes
+
+- [PlainNotes](https://packagecontrol.io/packages/PlainNotes)
+
 ## PHP
 
 - [Laravel Blade Highlighter](https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter)
