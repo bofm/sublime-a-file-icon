@@ -10,6 +10,7 @@
 - .NET Icon: `file_type_dotnet`
 - Cold Fusion Icon: `file_type_cf`
 - Windows Icon: `file_type_windows`
+- JSX Icon: `file_type_jsx`
 
 ## Remove
 

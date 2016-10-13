@@ -36,6 +36,7 @@ This file contains a list of possible packages those you may need to install to 
 ## JavaScript
 
 - [AngularJS](https://packagecontrol.io/packages/AngularJS)
+- [JSX](https://packagecontrol.io/packages/JSX)
 
 ## Julia
 

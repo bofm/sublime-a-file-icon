@@ -396,6 +396,15 @@
       }
     ]
   },
+  "file_type_jsx": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "JSX",
+        "scope": "source.js.jsx"
+      }
+    ]
+  },
   "file_type_julia": {
     "color": "purple",
     "syntaxes": [
