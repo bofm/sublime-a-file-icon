@@ -11,6 +11,7 @@
       <string>.sublime-menu</string>
       <string>.sublime-project</string>
       <string>.sublime-settings</string>
+      <string>.sublime-theme</string>
       <string>.sublime-workspace</string>
     </array>
     <key>patterns</key>

@@ -867,6 +867,7 @@
           "sublime-menu",
           "sublime-project",
           "sublime-settings",
+          "sublime-theme",
           "sublime-workspace"
         ],
         "base": "source.json",
