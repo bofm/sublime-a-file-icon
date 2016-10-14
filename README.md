@@ -159,11 +159,11 @@ See [CHANGELOG.md][changelog].
 
 ## Known Issues
 
-This package requires you to restart Sublime Text for the applied icons to take effect when:
-
-- you've installed it,
-- you've changed its preferences,
-- you've installed a new theme that should be patched.
+1. This package requires you to restart Sublime Text for the applied icons to take effect when:
+    - you've installed it,
+    - you've changed its preferences,
+    - you've installed a new theme that should be patched.
+2. The icons for custom packages require them to be installed. E.g. if you want to see `SCSS` icon you should install one of the `SCSS` syntax packages.
 
 ## Share The Love
 
