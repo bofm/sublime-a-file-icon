@@ -219,28 +219,10 @@
       {
         "name": "JSON (ESLint)",
         "extensions": [
-          "eslintrc",
-          "eslintrc.json"
+          "eslintrc"
         ],
         "base": "source.json",
         "scope": "source.json.eslint"
-      },
-      {
-        "name": "JS (ESLint)",
-        "extensions": [
-          "eslintrc.js"
-        ],
-        "base": "source.js",
-        "scope": "source.js.eslint"
-      },
-      {
-        "name": "YAML (ESLint)",
-        "extensions": [
-          "eslintrc.yml",
-          "eslintrc.yaml"
-        ],
-        "base": "source.yaml",
-        "scope": "source.yaml.eslint"
       }
     ]
   },
