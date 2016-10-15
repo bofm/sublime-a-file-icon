@@ -44,6 +44,10 @@ You can change the color, opacity level and size of the icons by modifying your 
 * menu item `Preferences → Package Settings → File Icons → Settings`,
 * choose `File Icons: Settings` in `Command Palette`.
 
+### Themes
+
+I'm happy to announce that [Boxy Theme][boxy-theme] and [Material Theme][material-theme] bring the support of this package in the next releases. So you'll be able to choose what icons you want to use – provided by the theme or provided by the package.
+
 ### Troubleshooting
 
 If something going wrong try to:
@@ -179,6 +183,7 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 [font-awesome]: http://fontawesome.io/
 [font-mfizz]: http://fizzed.com/oss/font-mfizz
 [icomoon]: https://icomoon.io/
+[material-theme]: https://github.com/equinusocio/material-theme
 [octicons]: https://octicons.github.com/
 
 <!-- Misc -->
