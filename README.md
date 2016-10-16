@@ -17,7 +17,9 @@ If you have some problems, first search for a similar issue, and then report wit
 
 ## Users
 
-<!-- ### Getting Started -->
+### Getting Started
+
+[![Getting Started with Sublime File Icons][img-getting-started]][getting-started]
 
 ### Installation
 
@@ -196,6 +198,7 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 [customization]: https://github.com/oivva/zz-file-icons#customization
 [details]: https://forum.sublimetext.com/t/sublime-text-3-file-icons-in-sidebar/21134/4
 [downloads]: https://packagecontrol.io/packages/File%20Icons%20Extended
+[getting-started]: https://youtu.be/ltJma25eXRs 'Watch "Getting Started with File Icons" on YouTube'
 [icons]: https://github.com/oivva/zz-file-icons/tree/dev/dist/zpatches/icons
 [known-issues]: https://github.com/oivva/zz-file-icons#known-issues
 [migration]: https://github.com/oivva/zz-file-icons/blob/dev/MIGRATION.md
@@ -208,6 +211,7 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 <!-- Assets -->
 
 [img-downloads]: https://img.shields.io/packagecontrol/dt/File%20Icons%20Extended.svg?maxAge=3600&style=flat-square
+[img-getting-started]: https://github.com/oivva/zz-file-icons/blob/dev/media/getting-started.png
 [img-logo]: https://github.com/oivva/zz-file-icons/blob/dev/media/logo.png
 [img-patreon]: https://img.shields.io/badge/donate-patreon-orange.svg?maxAge=2592000&style=flat-square
 [img-release]: https://img.shields.io/github/release/oivva/zz-file-icons.svg?maxAge=86400&style=flat-square
