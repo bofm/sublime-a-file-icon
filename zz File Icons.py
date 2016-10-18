@@ -283,7 +283,7 @@ def add_listener():
 
 
 def remove_listener():
-    get_settings().clear_on_change(UUID, on_change)
+    get_settings().clear_on_change(UUID)
 
 
 def init():
@@ -316,5 +316,5 @@ def plugin_loaded():
 
 
 def plugin_unloaded():
-    clear_all()
     remove_listener()
+    clear_all()
