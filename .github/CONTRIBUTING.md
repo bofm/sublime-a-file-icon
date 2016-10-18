@@ -2,7 +2,7 @@
 
 If you have any problems, please search for [a similar issue] first, before creating [a new one](https://github.com/oivva/zz-file-icons/issues) (don't forget to **follow the issue template**).
 
-> Also, check the list of [known issues][known-issues] before doing so.
+> Also, check the list of [known issues](https://github.com/oivva/zz-file-icons#known-issues) before doing so.
 
 Don't forget to provide your environment details:
 
@@ -25,7 +25,7 @@ $ npm install
 Then run the task to build the icon you've added:
 
 ```bash
-$ gulp
+$ npm run build
 ```
 
 Build process consists of:
@@ -41,7 +41,7 @@ If you want to add a new icon, please follow these steps:
 2. Add an example file that shows this icon to the `test` folder.
 3. Provide the icon in SVG format and put it in the `src/assets` directory.
 4. Add `icon` settings to the [src/icons.json](https://github.com/oivva/zz-file-icons/blob/dev/src/icons.json) file.
-5. Build it to test.
+5. Build and check if the icon looks good.
 6. It's recommended to add a link to the package which provides the syntax (see [PACKAGES.md](https://github.com/oivva/zz-file-icons/blob/dev/PACKAGES.md))
 
 > All that you need to add are the SVG icon, its settings and the example file(s).
