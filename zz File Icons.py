@@ -29,7 +29,7 @@ CURRENT = {
 DIST = 'dist'
 PATCHES = 'zpatches'
 THEMES = '*' + THEME_EXTENSION
-SUPPORTED_THEMES = '.zz-file-icons'
+SUPPORTED_THEMES = '.st-file-icons'
 
 
 def get_settings():

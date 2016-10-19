@@ -107,7 +107,7 @@ If you are a theme developer and you want to support `zz File Icons`, you should
 
 * Remove all stuff related to the icon setup: `.tmPreferences`, `.sublime-settings` and `.tmLanguage` files.
 * Rename all your icons to match [these ones][icons].
-* Add `.zz-file-icons` file to the root of your theme (this is how we check if the theme is **supported**).
+* Add `.st-file-icons` file to the root of your theme (this is how we check if the theme is **supported**).
 
 Also see [MIGRATION.md][migration]. It contains a list of tasks that you have to follow to support the next version of `zz File Icons`.
 
@@ -192,30 +192,30 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 
 <!-- Misc -->
 
-[aliases]: https://github.com/oivva/zz-file-icons/tree/dev/dist/languages
-[bring-support]: https://github.com/oivva/zz-file-icons#bring-support-to-your-theme
-[changelog]: https://github.com/oivva/zz-file-icons/blob/dev/CHANGELOG.md
+[aliases]: https://github.com/oivva/st-file-icons/tree/dev/dist/languages
+[bring-support]: https://github.com/oivva/st-file-icons#bring-support-to-your-theme
+[changelog]: https://github.com/oivva/st-file-icons/blob/dev/CHANGELOG.md
 [coming-soon]: https://github.com/wbond/package_control_channel/pull/5852
-[contributing]: https://github.com/oivva/zz-file-icons/blob/dev/.github/CONTRIBUTING.md
-[customization]: https://github.com/oivva/zz-file-icons#customization
+[contributing]: https://github.com/oivva/st-file-icons/blob/dev/.github/CONTRIBUTING.md
+[customization]: https://github.com/oivva/st-file-icons#customization
 [details]: https://forum.sublimetext.com/t/sublime-text-3-file-icons-in-sidebar/21134/4
 [downloads]: https://packagecontrol.io/packages/File%20Icons%20Extended
 [getting-started]: https://youtu.be/ltJma25eXRs 'Watch "Getting Started with File Icons" on YouTube'
-[icons]: https://github.com/oivva/zz-file-icons/tree/dev/dist/zpatches/icons
-[known-issues]: https://github.com/oivva/zz-file-icons#known-issues
-[migration]: https://github.com/oivva/zz-file-icons/blob/dev/MIGRATION.md
-[new-issue]: https://github.com/oivva/zz-file-icons/issues/new
-[packages]: https://github.com/oivva/zz-file-icons/blob/dev/PACKAGES.md
+[icons]: https://github.com/oivva/st-file-icons/tree/dev/dist/zpatches/icons
+[known-issues]: https://github.com/oivva/st-file-icons#known-issues
+[migration]: https://github.com/oivva/st-file-icons/blob/dev/MIGRATION.md
+[new-issue]: https://github.com/oivva/st-file-icons/issues/new
+[packages]: https://github.com/oivva/st-file-icons/blob/dev/PACKAGES.md
 [patreon]: https://www.patreon.com/oivva
-[release]: https://github.com/oivva/zz-file-icons/releases
-[template]: https://github.com/oivva/zz-file-icons/blob/dev/util/tpl.py
-[issues]: https://github.com/oivva/zz-file-icons/issues
+[release]: https://github.com/oivva/st-file-icons/releases
+[template]: https://github.com/oivva/st-file-icons/blob/dev/util/tpl.py
+[issues]: https://github.com/oivva/st-file-icons/issues
 
 <!-- Assets -->
 
 [img-downloads]: https://img.shields.io/packagecontrol/dt/File%20Icons%20Extended.svg?maxAge=3600&style=flat-square
-[img-getting-started]: https://github.com/oivva/zz-file-icons/blob/dev/media/getting-started.png
-[img-logo]: https://github.com/oivva/zz-file-icons/blob/dev/media/logo.png
+[img-getting-started]: https://github.com/oivva/st-file-icons/blob/dev/media/getting-started.png
+[img-logo]: https://github.com/oivva/st-file-icons/blob/dev/media/logo.png
 [img-patreon]: https://img.shields.io/badge/donate-patreon-orange.svg?maxAge=2592000&style=flat-square
-[img-release]: https://img.shields.io/github/release/oivva/zz-file-icons.svg?maxAge=86400&style=flat-square
-[img-palette]: https://github.com/oivva/zz-file-icons/blob/dev/media/palette.png
+[img-release]: https://img.shields.io/github/release/oivva/st-file-icons.svg?maxAge=86400&style=flat-square
+[img-palette]: https://github.com/oivva/st-file-icons/blob/dev/media/palette.png
