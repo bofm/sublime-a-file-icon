@@ -212,8 +212,8 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 <!-- Assets -->
 
 [img-downloads]: https://img.shields.io/packagecontrol/dt/zz%20File%20Icons.svg?maxAge=3600&style=flat-square
-[img-getting-started]: https://github.com/oivva/st-file-icons/blob/dev/media/getting-started.png
-[img-logo]: https://github.com/oivva/st-file-icons/blob/dev/media/logo.png
+[img-getting-started]: https://raw.githubusercontent.com/oivva/st-file-icons/dev/media/getting-started.png
+[img-logo]: https://raw.githubusercontent.com/oivva/st-file-icons/dev/media/logo.png
 [img-patreon]: https://img.shields.io/badge/donate-patreon-orange.svg?maxAge=2592000&style=flat-square
 [img-release]: https://img.shields.io/github/release/oivva/st-file-icons.svg?maxAge=86400&style=flat-square
-[img-palette]: https://github.com/oivva/st-file-icons/blob/dev/media/palette.png
+[img-palette]: https://raw.githubusercontent.com/oivva/st-file-icons/dev/media/palette.png
