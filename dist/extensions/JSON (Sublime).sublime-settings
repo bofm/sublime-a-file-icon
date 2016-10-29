@@ -1,0 +1,11 @@
+{
+  "extensions": [
+    "no-sublime-package",
+    "sublime-commands",
+    "sublime-menu",
+    "sublime-project",
+    "sublime-settings",
+    "sublime-theme",
+    "sublime-workspace"
+  ]
+}

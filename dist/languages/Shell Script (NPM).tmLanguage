@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>Shell Script (NPM)</string>
+    <key>fileTypes</key>
+    <array>
+      <string>.npmignore</string>
+      <string>.npmrc</string>
+    </array>
+    <key>patterns</key>
+    <array>
+      <dict>
+        <key>include</key>
+        <string>source.shell</string>
+      </dict>
+    </array>
+    <key>scopeName</key>
+    <string>source.shell, source.shell.npm</string>
+  </dict>
+</plist>

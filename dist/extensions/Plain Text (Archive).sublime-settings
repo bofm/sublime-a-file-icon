@@ -1,0 +1,13 @@
+{
+  "extensions": [
+    "7z",
+    "7zip",
+    "gz",
+    "pzip",
+    "rar",
+    "tar",
+    "tgz",
+    "wim",
+    "zip"
+  ]
+}
