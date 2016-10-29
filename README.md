@@ -1,5 +1,3 @@
-> **Coming soon ...** 
-
 # ![Sublime File Icons][img-logo]
 
 [![Release][img-release]][release]
@@ -13,7 +11,7 @@ Its aims are:
 * To be a `tmPreferences` storage for UI themes that support file icons.
 * To provide file type icons for themes those don't (fully) support file icons.
 
-If you have any problems, please search for [a similar issue] first, before creating [a new one][new-issue]. 
+If you have any problems, please search for a similar issue first, before creating [a new one][new-issue]. 
 
 > Also, check the list of [known issues][known-issues] before doing so.
 
@@ -25,7 +23,7 @@ If you have any problems, please search for [a similar issue] first, before crea
 
 ### Installation
 
-#### Package Control ([coming soon][coming-soon])
+#### Package Control
 
 The easiest way to install is using Sublime's [Package Control][downloads]. It's listed as `zz File Icons`.
 
@@ -199,8 +197,8 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 [contributing]: https://github.com/oivva/st-file-icons/blob/dev/.github/CONTRIBUTING.md
 [customization]: https://github.com/oivva/st-file-icons#customization
 [details]: https://forum.sublimetext.com/t/sublime-text-3-file-icons-in-sidebar/21134/4
-[downloads]: https://packagecontrol.io/packages/File%20Icons%20Extended
-[getting-started]: https://youtu.be/ltJma25eXRs 'Watch "Getting Started with File Icons" on YouTube'
+[downloads]: https://packagecontrol.io/packages/zz%20File%20Icons
+[getting-started]: https://youtu.be/bTIOL-5SxHY 'Watch "Getting Started with File Icons" on YouTube'
 [icons]: https://github.com/oivva/st-file-icons/tree/dev/dist/zpatches/icons
 [known-issues]: https://github.com/oivva/st-file-icons#known-issues
 [migration]: https://github.com/oivva/st-file-icons/blob/dev/MIGRATION.md
@@ -213,7 +211,7 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 
 <!-- Assets -->
 
-[img-downloads]: https://img.shields.io/packagecontrol/dt/File%20Icons%20Extended.svg?maxAge=3600&style=flat-square
+[img-downloads]: https://img.shields.io/packagecontrol/dt/zz%20File%20Icons.svg?maxAge=3600&style=flat-square
 [img-getting-started]: https://github.com/oivva/st-file-icons/blob/dev/media/getting-started.png
 [img-logo]: https://github.com/oivva/st-file-icons/blob/dev/media/logo.png
 [img-patreon]: https://img.shields.io/badge/donate-patreon-orange.svg?maxAge=2592000&style=flat-square
