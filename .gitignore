@@ -4,10 +4,10 @@
 *.sublime-project
 *.sublime-workspace
 *cache
-!test/*
 
 node_modules/
 dist/
+test/st/
 
 
 # OS
