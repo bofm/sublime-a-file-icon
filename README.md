@@ -48,7 +48,12 @@ You can change the color, opacity level and size of the icons by modifying your 
 
 ### Themes
 
-I'm happy to announce that [Boxy Theme][boxy-theme] and [Material Theme][material-theme] will support this package in their next releases. So you'll be able to choose what icons you want to use – provided by the theme or provided by the package.
+If your theme supports `zz File Icons` you can choose what icons you want to use – provided by the theme (by default) or provided by the package. Otherwise this package adds its own icons only.
+
+Themes that already have support of `zz File Icons` include:
+
+* [Boxy Theme][boxy-theme]
+* [Material Theme][material-theme]
 
 ### Troubleshooting
 
