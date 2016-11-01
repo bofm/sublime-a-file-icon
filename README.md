@@ -48,7 +48,12 @@ You can change the color, opacity level and size of the icons by modifying your 
 
 ### Themes
 
-I'm happy to announce that [Boxy Theme][boxy-theme] and [Material Theme][material-theme] will support this package in their next releases. So you'll be able to choose what icons you want to use – provided by the theme or provided by the package.
+If your theme supports `zz File Icons` you can choose what icons you want to use – provided by the theme (by default) or provided by the package. Otherwise this package adds its own icons only.
+
+Themes that already have support of `zz File Icons` include:
+
+* [Boxy Theme][boxy-theme]
+* [Material Theme][material-theme]
 
 ### Troubleshooting
 
@@ -212,8 +217,8 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 <!-- Assets -->
 
 [img-downloads]: https://img.shields.io/packagecontrol/dt/zz%20File%20Icons.svg?maxAge=3600&style=flat-square
-[img-getting-started]: https://github.com/oivva/st-file-icons/blob/dev/media/getting-started.png
-[img-logo]: https://github.com/oivva/st-file-icons/blob/dev/media/logo.png
+[img-getting-started]: https://raw.githubusercontent.com/oivva/st-file-icons/dev/media/getting-started.png
+[img-logo]: https://raw.githubusercontent.com/oivva/st-file-icons/dev/media/logo.png
 [img-patreon]: https://img.shields.io/badge/donate-patreon-orange.svg?maxAge=2592000&style=flat-square
 [img-release]: https://img.shields.io/github/release/oivva/st-file-icons.svg?maxAge=86400&style=flat-square
-[img-palette]: https://github.com/oivva/st-file-icons/blob/dev/media/palette.png
+[img-palette]: https://raw.githubusercontent.com/oivva/st-file-icons/dev/media/palette.png
