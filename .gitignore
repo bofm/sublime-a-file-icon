@@ -3,12 +3,11 @@
 
 *.sublime-project
 *.sublime-workspace
+*.sublime-theme
 *cache
 
 node_modules/
 dist/
-test/st/
-
 
 # OS
 # =============================
