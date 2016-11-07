@@ -5,7 +5,7 @@
     <string>Plain Text (Adobe Illustrator)</string>
     <key>fileTypes</key>
     <array>
-      <string>.ai</string>
+      <string>ai</string>
     </array>
     <key>patterns</key>
     <array>
@@ -15,6 +15,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>text.plain, text.plain.ai</string>
+    <string>text.plain.ai</string>
   </dict>
 </plist>

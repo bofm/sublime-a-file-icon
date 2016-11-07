@@ -5,7 +5,7 @@
     <string>Markdown (License)</string>
     <key>fileTypes</key>
     <array>
-      <string>.license.md</string>
+      <string>license.md</string>
     </array>
     <key>patterns</key>
     <array>
@@ -15,6 +15,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>text.html.markdown, text.html.markdown.license</string>
+    <string>text.html.markdown.license</string>
   </dict>
 </plist>

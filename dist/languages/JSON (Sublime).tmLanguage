@@ -6,12 +6,12 @@
     <key>fileTypes</key>
     <array>
       <string>.no-sublime-package</string>
-      <string>.sublime-commands</string>
-      <string>.sublime-menu</string>
-      <string>.sublime-project</string>
-      <string>.sublime-settings</string>
-      <string>.sublime-theme</string>
-      <string>.sublime-workspace</string>
+      <string>sublime-commands</string>
+      <string>sublime-menu</string>
+      <string>sublime-project</string>
+      <string>sublime-settings</string>
+      <string>sublime-theme</string>
+      <string>sublime-workspace</string>
     </array>
     <key>patterns</key>
     <array>
@@ -21,6 +21,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>source.json, source.json.sublime</string>
+    <string>source.json.sublime</string>
   </dict>
 </plist>

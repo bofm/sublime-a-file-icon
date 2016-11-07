@@ -5,7 +5,7 @@
     <string>XML (SVG)</string>
     <key>fileTypes</key>
     <array>
-      <string>.svg</string>
+      <string>svg</string>
     </array>
     <key>patterns</key>
     <array>
@@ -15,6 +15,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>text.xml, text.xml.svg</string>
+    <string>text.xml.svg</string>
   </dict>
 </plist>

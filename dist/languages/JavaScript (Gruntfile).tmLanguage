@@ -5,7 +5,7 @@
     <string>JavaScript (Gruntfile)</string>
     <key>fileTypes</key>
     <array>
-      <string>.gruntfile.js</string>
+      <string>gruntfile.js</string>
     </array>
     <key>patterns</key>
     <array>
@@ -15,6 +15,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>source.js, source.js.gruntfile</string>
+    <string>source.js.gruntfile</string>
   </dict>
 </plist>

@@ -5,8 +5,8 @@
     <string>Plain Text (Adobe Photoshop)</string>
     <key>fileTypes</key>
     <array>
-      <string>.psb</string>
-      <string>.psd</string>
+      <string>psb</string>
+      <string>psd</string>
     </array>
     <key>patterns</key>
     <array>
@@ -16,6 +16,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>text.plain, text.plain.ps</string>
+    <string>text.plain.ps</string>
   </dict>
 </plist>
