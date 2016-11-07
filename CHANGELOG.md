@@ -1,3 +1,13 @@
+<a name="2.0.1"></a>
+## [2.0.1](https://github.com/oivva/st-file-icons/compare/v2.0.0...v2.0.1) (2016-11-07)
+
+
+### Bug Fixes
+
+* syntax definition conflicts ([45528b8](https://github.com/oivva/st-file-icons/commit/45528b8)), closes [#21](https://github.com/oivva/st-file-icons/issues/21)
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/oivva/st-file-icons/compare/v1.0.2...v2.0.0) (2016-10-29)
 
