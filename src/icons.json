@@ -66,7 +66,7 @@
       {
         "name": "JSON (Babel)",
         "extensions": [
-          "babelrc"
+          ".babelrc"
         ],
         "base": "source.json",
         "scope": "source.json.babel"
@@ -92,7 +92,7 @@
         "name": "JSON (Bower)",
         "extensions": [
           "bower.json",
-          "bowerrc"
+          ".bowerrc"
         ],
         "base": "source.json",
         "scope": "source.json.bower"
@@ -219,7 +219,7 @@
       {
         "name": "JSON (ESLint)",
         "extensions": [
-          "eslintrc"
+          ".eslintrc"
         ],
         "base": "source.json",
         "scope": "source.json.eslint"
@@ -267,8 +267,8 @@
       {
         "name": "Shell Script (Git)",
         "extensions": [
-          "gitignore",
-          "gitkeep"
+          ".gitignore",
+          ".gitkeep"
         ],
         "base": "source.shell",
         "scope": "source.shell.git"
@@ -559,8 +559,8 @@
       {
         "name": "Shell Script (NPM)",
         "extensions": [
-          "npmignore",
-          "npmrc"
+          ".npmignore",
+          ".npmrc"
         ],
         "base": "source.shell",
         "scope": "source.shell.npm"
@@ -844,7 +844,7 @@
       {
         "name": "JSON (Sublime)",
         "extensions": [
-          "no-sublime-package",
+          ".no-sublime-package",
           "sublime-commands",
           "sublime-menu",
           "sublime-project",
