@@ -5,10 +5,10 @@
     <string>Plain Text (Font)</string>
     <key>fileTypes</key>
     <array>
-      <string>.eot</string>
-      <string>.otf</string>
-      <string>.ttf</string>
-      <string>.woff</string>
+      <string>eot</string>
+      <string>otf</string>
+      <string>ttf</string>
+      <string>woff</string>
     </array>
     <key>patterns</key>
     <array>
@@ -18,6 +18,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>text.plain, text.plain.font</string>
+    <string>text.plain.font</string>
   </dict>
 </plist>

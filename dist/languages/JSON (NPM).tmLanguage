@@ -5,7 +5,7 @@
     <string>JSON (NPM)</string>
     <key>fileTypes</key>
     <array>
-      <string>.package.json</string>
+      <string>package.json</string>
     </array>
     <key>patterns</key>
     <array>
@@ -15,6 +15,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>source.json, source.json.npm</string>
+    <string>source.json.npm</string>
   </dict>
 </plist>

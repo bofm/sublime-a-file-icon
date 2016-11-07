@@ -5,7 +5,7 @@
     <string>JSON (Bower)</string>
     <key>fileTypes</key>
     <array>
-      <string>.bower.json</string>
+      <string>bower.json</string>
       <string>.bowerrc</string>
     </array>
     <key>patterns</key>
@@ -16,6 +16,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>source.json, source.json.bower</string>
+    <string>source.json.bower</string>
   </dict>
 </plist>

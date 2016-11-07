@@ -5,7 +5,7 @@
     <string>JavaScript (Gulpfile)</string>
     <key>fileTypes</key>
     <array>
-      <string>.gulpfile.js</string>
+      <string>gulpfile.js</string>
     </array>
     <key>patterns</key>
     <array>
@@ -15,6 +15,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>source.js, source.js.gulpfile</string>
+    <string>source.js.gulpfile</string>
   </dict>
 </plist>

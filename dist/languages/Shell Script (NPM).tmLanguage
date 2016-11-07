@@ -16,6 +16,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>source.shell, source.shell.npm</string>
+    <string>source.shell.npm</string>
   </dict>
 </plist>

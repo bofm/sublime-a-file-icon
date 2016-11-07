@@ -5,7 +5,7 @@
     <string>JSON (Settings)</string>
     <key>fileTypes</key>
     <array>
-      <string>.jsbeautifyrc</string>
+      <string>jsbeautifyrc</string>
     </array>
     <key>patterns</key>
     <array>
@@ -15,6 +15,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>source.json, source.json.settings</string>
+    <string>source.json.settings</string>
   </dict>
 </plist>
