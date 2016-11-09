@@ -67,6 +67,11 @@ This file contains a list of possible packages those you may need to install to 
 
 - [PlainNotes](https://packagecontrol.io/packages/PlainNotes)
 
+## NSIS
+
+- [NSIS](https://packagecontrol.io/packages/NSIS)
+- [BridleNSIS](https://packagecontrol.io/packages/BridleNSIS)
+
 ## PHP
 
 - [Laravel Blade Highlighter](https://packagecontrol.io/packages/Laravel%20Blade%20Highlighter)
