@@ -656,7 +656,7 @@
           "postcss.config.js"
         ],
         "base": "source.js",
-        "scope": "source.js.settings"
+        "scope": "source.js.postcss"
       }
     ]
   },
