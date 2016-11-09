@@ -640,6 +640,24 @@
         "name": "Syntax Highlighting for Post​CSS",
         "scope": "source.postcss"
       }
+    ],
+    "aliases": [
+      {
+        "name": "JSON (Post​CSS)",
+        "extensions": [
+          ".postcssrc"
+        ],
+        "base": "source.json",
+        "scope": "source.json.postcss"
+      },
+      {
+        "name": "JavaScript (Post​CSS)",
+        "extensions": [
+          "postcss.config.js"
+        ],
+        "base": "source.js",
+        "scope": "source.js.settings"
+      }
     ]
   },
   "file_type_preferences": {
