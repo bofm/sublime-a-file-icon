@@ -213,6 +213,15 @@
       }
     ]
   },
+  "file_type_editorconfig": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "EditorConfig",
+        "scope": "source.ini.editorconfig"
+      }
+    ]
+  },
   "file_type_erlang": {
     "color": "red",
     "syntaxes": [
