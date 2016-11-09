@@ -962,5 +962,18 @@
         "scope": "source.yaml"
       }
     ]
+  },
+  "file_type_yarn": {
+    "color": "blue",
+    "aliases": [
+      {
+        "name": "Plain Text (Yarn)",
+        "extensions": [
+          "yarn.lock"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.yarn"
+      }
+    ]
   }
 }
