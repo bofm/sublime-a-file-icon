@@ -223,6 +223,14 @@
         ],
         "base": "source.json",
         "scope": "source.json.eslint"
+      },
+      {
+        "name": "Shell Script (ESLint)",
+        "extensions": [
+          ".eslintignore"
+        ],
+        "base": "source.shell",
+        "scope": "source.shell.eslint"
       }
     ]
   },
