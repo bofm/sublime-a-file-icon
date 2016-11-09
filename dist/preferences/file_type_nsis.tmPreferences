@@ -2,11 +2,11 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.ini, source.json.settings, text.xml.config</string>
+    <string>source.nsis</string>
     <key>settings</key>
     <dict>
       <key>icon</key>
-      <string>file_type_settings</string>
+      <string>file_type_nsis</string>
     </dict>
   </dict>
 </plist>

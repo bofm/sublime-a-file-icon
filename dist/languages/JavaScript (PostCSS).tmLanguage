@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>JavaScript (PostCSS)</string>
+    <key>fileTypes</key>
+    <array>
+      <string>postcss.config.js</string>
+    </array>
+    <key>patterns</key>
+    <array>
+      <dict>
+        <key>include</key>
+        <string>source.js</string>
+      </dict>
+    </array>
+    <key>scopeName</key>
+    <string>source.js.postcss</string>
+  </dict>
+</plist>

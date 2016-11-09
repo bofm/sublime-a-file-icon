@@ -817,7 +817,7 @@
         "scope": "source.json.settings"
       },
       {
-        "name": "XML (config)",
+        "name": "XML (Config)",
         "extensions": [
           "config"
         ],
