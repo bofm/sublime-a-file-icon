@@ -106,6 +106,7 @@ This file contains a list of possible packages those you may need to install to 
 
 - [ApacheConf](https://packagecontrol.io/packages/ApacheConf.tmLanguage)
 - [EditorConfig](https://packagecontrol.io/packages/EditorConfig)
+- [INI](https://packagecontrol.io/packages/INI)
 
 ## Shell
 
