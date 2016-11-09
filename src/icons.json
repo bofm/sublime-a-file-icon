@@ -170,6 +170,15 @@
       }
     ]
   },
+  "file_type_csv": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "Advanced CSV",
+        "scope": "text.advanced_csv"
+      }
+    ]
+  },
   "file_type_default": {
     "color": "graphite"
   },
