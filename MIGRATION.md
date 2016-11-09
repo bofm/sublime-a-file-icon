@@ -10,6 +10,7 @@
 - Stylelint Icon: `file_type_stylelint`
 - NSIS Icons: `file_type_nsis`
 - EditorConfig Icon: `file_type_editorconfig`
+– Nginx Icon: `file_type_nginx`
 
 ## Migrating from 1.0.2 to 2.0.0
 

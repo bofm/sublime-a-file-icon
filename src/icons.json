@@ -571,6 +571,15 @@
       }
     ]
   },
+  "file_type_nginx": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "nginx",
+        "scope": "source.nginx"
+      }
+    ]
+  },
   "file_type_note": {
     "color": "green",
     "syntaxes": [
