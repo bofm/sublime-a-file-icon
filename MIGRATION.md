@@ -9,6 +9,7 @@
 - CSV Icon: `file_type_csv`
 - Stylelint Icon: `file_type_stylelint`
 - NSIS Icons: `file_type_nsis`
+- EditorConfig Icon: `file_type_editorconfig`
 
 ## Migrating from 1.0.2 to 2.0.0
 

@@ -21,6 +21,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Dockerfile Syntax Highlighting](https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting)
 
+## EditorConfig
+
+- [EditorConfig](https://packagecontrol.io/packages/EditorConfig)
+
 ## Elixir
 
 - [Elixir](https://packagecontrol.io/packages/Elixir)
