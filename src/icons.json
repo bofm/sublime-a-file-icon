@@ -593,6 +593,15 @@
       }
     ]
   },
+  "file_type_nsis": {
+    "color": "purple",
+    "syntaxes": [
+      {
+        "name": "NSIS",
+        "scope": "source.nsis"
+      }
+    ]
+  },
   "file_type_ocaml": {
     "color": "yellow",
     "syntaxes": [
