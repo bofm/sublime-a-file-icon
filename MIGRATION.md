@@ -1,4 +1,4 @@
-# Simplified change log for theme developers
+# A Simplified Change Log for the Theme Developers
 
 ## Migrating from 2.0.0 to 2.1.0
 
