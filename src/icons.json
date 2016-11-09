@@ -1017,12 +1017,12 @@
     "color": "blue",
     "aliases": [
       {
-        "name": "Plain Text (Yarn)",
+        "name": "YAML (Yarn)",
         "extensions": [
           "yarn.lock"
         ],
-        "base": "text.plain",
-        "scope": "text.plain.yarn"
+        "base": "source.yaml",
+        "scope": "source.yaml.yarn"
       }
     ]
   }
