@@ -199,7 +199,7 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 [bring-support]: https://github.com/oivva/st-file-icons#bring-support-to-your-theme
 [changelog]: https://github.com/oivva/st-file-icons/blob/dev/CHANGELOG.md
 [coming-soon]: https://github.com/wbond/package_control_channel/pull/5852
-[contributing]: https://github.com/oivva/st-file-icons/blob/dev/.github/CONTRIBUTING.md
+[contributing]: https://github.com/oivva/st-file-icons/blob/dev/CONTRIBUTING.md
 [customization]: https://github.com/oivva/st-file-icons#customization
 [details]: https://forum.sublimetext.com/t/sublime-text-3-file-icons-in-sidebar/21134/4
 [downloads]: https://packagecontrol.io/packages/zz%20File%20Icons
