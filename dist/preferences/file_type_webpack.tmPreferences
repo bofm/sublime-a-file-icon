@@ -2,11 +2,11 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.json.eslint, source.shell.eslint</string>
+    <string>source.js.webpack</string>
     <key>settings</key>
     <dict>
       <key>icon</key>
-      <string>file_type_eslint</string>
+      <string>file_type_webpack</string>
     </dict>
   </dict>
 </plist>

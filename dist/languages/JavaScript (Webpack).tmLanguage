@@ -2,11 +2,11 @@
 <plist version="1.0">
   <dict>
     <key>name</key>
-    <string>JavaScript (Gulpfile)</string>
+    <string>JavaScript (Webpack)</string>
     <key>fileTypes</key>
     <array>
-      <string>gulpfile.js</string>
-      <string>gulpfile.babel.js</string>
+      <string>webpack.config.js</string>
+      <string>webpack.config.babel.js</string>
     </array>
     <key>patterns</key>
     <array>
@@ -16,6 +16,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>source.js.gulpfile</string>
+    <string>source.js.webpack</string>
   </dict>
 </plist>

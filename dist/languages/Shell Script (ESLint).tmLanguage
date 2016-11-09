@@ -2,20 +2,19 @@
 <plist version="1.0">
   <dict>
     <key>name</key>
-    <string>JavaScript (Gulpfile)</string>
+    <string>Shell Script (ESLint)</string>
     <key>fileTypes</key>
     <array>
-      <string>gulpfile.js</string>
-      <string>gulpfile.babel.js</string>
+      <string>.eslintignore</string>
     </array>
     <key>patterns</key>
     <array>
       <dict>
         <key>include</key>
-        <string>source.js</string>
+        <string>source.shell</string>
       </dict>
     </array>
     <key>scopeName</key>
-    <string>source.js.gulpfile</string>
+    <string>source.shell.eslint</string>
   </dict>
 </plist>
