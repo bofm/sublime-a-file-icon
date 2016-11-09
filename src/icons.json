@@ -954,6 +954,20 @@
       }
     ]
   },
+  "file_type_webpack": {
+    "color": "blue",
+    "aliases": [
+      {
+        "name": "JavaScript (Webpack)",
+        "extensions": [
+          "webpack.config.js",
+          "webpack.config.babel.js"
+        ],
+        "base": "source.js",
+        "scope": "source.js.webpack"
+      }
+    ]
+  },
   "file_type_windows": {
     "color": "sky",
     "syntaxes": [
