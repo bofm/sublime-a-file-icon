@@ -112,6 +112,19 @@
       }
     ]
   },
+  "file_type_circleci": {
+    "color": "graphite",
+    "aliases":[
+      {
+        "name": "YAML (CircleCI)",
+        "extensions": [
+          "circle.yml"
+        ],
+        "base": "source.yaml",
+        "scope": "source.yaml.circleci"
+      }
+    ]
+  },
   "file_type_cf": {
     "color": "cyan",
     "syntaxes": [

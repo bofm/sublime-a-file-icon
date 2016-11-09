@@ -11,6 +11,7 @@
 - NSIS Icons: `file_type_nsis`
 - EditorConfig Icon: `file_type_editorconfig`
 – Nginx Icon: `file_type_nginx`
+– CircleCI Icon: `file_type_circleci`
 
 ## Migrating from 1.0.2 to 2.0.0
 
