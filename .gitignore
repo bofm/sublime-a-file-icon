@@ -4,11 +4,11 @@
 *.sublime-project
 *.sublime-workspace
 *.sublime-theme
+*.log
 *cache
 
 node_modules/
 dist/
-*.log
 
 # OS
 # =============================
