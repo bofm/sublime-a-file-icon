@@ -1,8 +1,16 @@
-# Migrating from 1.0.2 to 2.0.0
+# Simplified change log for theme developers
 
-> Currently related to `Boxy Theme`, `Material Theme` and others those have file icons based on one of these themes.
+## Migrating from 2.0.0 to 2.1.0
 
-## Add
+### Add
+
+- Yarn Icon: `file_type_yarn`
+- Webpack Icon: `file_type_webpack`
+- CSV Icon: `file_type_csv`
+
+## Migrating from 1.0.2 to 2.0.0
+
+### Add
 
 - Sublime Text Icon: `file_type_sublime`
 - Mixer Icon: `file_type_preferences`
@@ -16,7 +24,7 @@
 - ESLint Icon: `file_type_eslint`
 - Sketch Icons: `file_type_sketch`
 
-## Remove
+### Remove
 
 - `file_type_apache`
 - `file_type_cfc`
@@ -24,7 +32,7 @@
 - `file_type_fish`
 - `file_type_jade`
 
-## Rename
+### Rename
 
 - `file_type_c#` -> `file_type_csharp`
 - `file_type_c++` -> `file_type_cpp`
