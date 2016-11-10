@@ -528,6 +528,19 @@
       }
     ]
   },
+  "file_type_log": {
+    "color": "graphite",
+    "aliases": [
+      {
+        "name": "Plain Text (Log)",
+        "extensions": [
+          "log"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.log"
+      }
+    ]
+  },
   "file_type_lsl": {
     "color": "cyan",
     "syntaxes": [
