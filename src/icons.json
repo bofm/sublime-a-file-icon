@@ -283,7 +283,8 @@
           "eot",
           "otf",
           "ttf",
-          "woff"
+          "woff",
+          "woff2"
         ],
         "base": "text.plain",
         "scope": "text.plain.font"
