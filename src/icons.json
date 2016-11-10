@@ -807,6 +807,26 @@
         "name": "Ruby",
         "scope": "source.ruby"
       }
+    ],
+    "aliases": [
+      {
+        "name": "Shell Script (Ruby)",
+        "extensions": [
+          ".rvmrc"
+        ],
+        "base": "source.shell",
+        "scope": "source.shell.ruby"
+      },
+      {
+        "name": "Plain Text (Ruby)",
+        "extensions": [
+          ".ruby-version",
+          ".ruby-gemset",
+          ".rspec"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.ruby"
+      }
     ]
   },
   "file_type_rust": {
