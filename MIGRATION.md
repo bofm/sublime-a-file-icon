@@ -13,6 +13,7 @@
 * Nginx Icon: `file_type_nginx`
 * CircleCI Icon: `file_type_circleci`
 * Log Icon: `file_type_log`
+* NodeJS Icon: `file_type_nodejs`
 
 ## Migrating from 1.0.2 to 2.0.0
 

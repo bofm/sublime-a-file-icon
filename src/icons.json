@@ -608,6 +608,20 @@
       }
     ]
   },
+  "file_type_nodejs": {
+    "color": "green",
+    "aliases":[
+      {
+        "name": "Plain Text (NodeJS)",
+        "extensions": [
+          ".node-version",
+          ".nvmrc"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.nodejs"
+      }
+    ]
+  },
   "file_type_note": {
     "color": "green",
     "syntaxes": [
