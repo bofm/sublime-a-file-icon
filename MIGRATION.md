@@ -16,6 +16,7 @@
 * NodeJS Icon: `file_type_nodejs`
 * Composer Icon: `file_type_composer`
 * Lock Icon: `file_type_lock`
+* Plist Icons: `file_type_plist`
 
 ## Migrating from 1.0.2 to 2.0.0
 

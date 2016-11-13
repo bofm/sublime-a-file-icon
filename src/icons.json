@@ -737,6 +737,15 @@
       }
     ]
   },
+  "file_type_plist": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "plist",
+        "scope": "text.plist"
+      }
+    ]
+  },
   "file_type_postcss": {
     "color": "red",
     "syntaxes": [
