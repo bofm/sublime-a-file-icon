@@ -544,6 +544,19 @@
       }
     ]
   },
+  "file_type_lock": {
+    "color": "red",
+    "aliases": [
+      {
+        "name": "YAML (Lock)",
+        "extensions": [
+          "Gemfile.lock"
+        ],
+        "base": "source.yaml",
+        "scope": "source.yaml.lock"
+      }
+    ]
+  },
   "file_type_log": {
     "color": "graphite",
     "aliases": [

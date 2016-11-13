@@ -15,6 +15,7 @@
 * Log Icon: `file_type_log`
 * NodeJS Icon: `file_type_nodejs`
 * Composer Icon: `file_type_composer`
+* Lock Icon: `file_type_lock`
 
 ## Migrating from 1.0.2 to 2.0.0
 
