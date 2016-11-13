@@ -157,6 +157,20 @@
       }
     ]
   },
+  "file_type_composer": {
+    "color": "orange",
+    "aliases": [
+      {
+        "name": "JSON (Composer)",
+        "extensions": [
+          "composer.json",
+          "composer.lock"
+        ],
+        "base": "source.json",
+        "scope": "source.json.composer"
+      }
+    ]
+  },
   "file_type_cpp": {
     "color": "sky",
     "syntaxes": [

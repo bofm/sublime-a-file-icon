@@ -14,6 +14,7 @@
 * CircleCI Icon: `file_type_circleci`
 * Log Icon: `file_type_log`
 * NodeJS Icon: `file_type_nodejs`
+* Composer Icon: `file_type_composer`
 
 ## Migrating from 1.0.2 to 2.0.0
 
