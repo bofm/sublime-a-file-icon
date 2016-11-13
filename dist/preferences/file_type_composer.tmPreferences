@@ -2,11 +2,11 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.ruby, source.shell.ruby, text.plain.ruby</string>
+    <string>source.json.composer</string>
     <key>settings</key>
     <dict>
       <key>icon</key>
-      <string>file_type_ruby</string>
+      <string>file_type_composer</string>
     </dict>
   </dict>
 </plist>

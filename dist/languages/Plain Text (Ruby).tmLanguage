@@ -2,14 +2,12 @@
 <plist version="1.0">
   <dict>
     <key>name</key>
-    <string>Plain Text (Font)</string>
+    <string>Plain Text (Ruby)</string>
     <key>fileTypes</key>
     <array>
-      <string>eot</string>
-      <string>otf</string>
-      <string>ttf</string>
-      <string>woff</string>
-      <string>woff2</string>
+      <string>.ruby-version</string>
+      <string>.ruby-gemset</string>
+      <string>.rspec</string>
     </array>
     <key>patterns</key>
     <array>
@@ -19,6 +17,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>text.plain.font</string>
+    <string>text.plain.ruby</string>
   </dict>
 </plist>

@@ -2,14 +2,11 @@
 <plist version="1.0">
   <dict>
     <key>name</key>
-    <string>Plain Text (Font)</string>
+    <string>Plain Text (NodeJS)</string>
     <key>fileTypes</key>
     <array>
-      <string>eot</string>
-      <string>otf</string>
-      <string>ttf</string>
-      <string>woff</string>
-      <string>woff2</string>
+      <string>.node-version</string>
+      <string>.nvmrc</string>
     </array>
     <key>patterns</key>
     <array>
@@ -19,6 +16,6 @@
       </dict>
     </array>
     <key>scopeName</key>
-    <string>text.plain.font</string>
+    <string>text.plain.nodejs</string>
   </dict>
 </plist>

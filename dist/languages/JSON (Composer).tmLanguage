@@ -2,23 +2,20 @@
 <plist version="1.0">
   <dict>
     <key>name</key>
-    <string>Plain Text (Font)</string>
+    <string>JSON (Composer)</string>
     <key>fileTypes</key>
     <array>
-      <string>eot</string>
-      <string>otf</string>
-      <string>ttf</string>
-      <string>woff</string>
-      <string>woff2</string>
+      <string>composer.json</string>
+      <string>composer.lock</string>
     </array>
     <key>patterns</key>
     <array>
       <dict>
         <key>include</key>
-        <string>text.plain</string>
+        <string>source.json</string>
       </dict>
     </array>
     <key>scopeName</key>
-    <string>text.plain.font</string>
+    <string>source.json.composer</string>
   </dict>
 </plist>
