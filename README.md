@@ -1,4 +1,4 @@
-> **Starting 3.0.0** `zz File Icons` will be renamed to `A File Icon`. I've found the way how to fix/implement [#23](https://github.com/oivva/sublime-file-icons/issues/23), [#24](https://github.com/oivva/sublime-file-icons/issues/24). I apologise for any inconvenience caused.
+> **Starting 3.0.0** `zz File Icons` will be renamed to `A File Icon`. I've found the way how to fix/implement [#23](https://github.com/oivva/sublime-file-icons/issues/23), [#24](https://github.com/oivva/sublime-file-icons/issues/24). I have no plans to add new icons in 3.0.0, it will bring only the new way of applying them. I apologize for any inconvenience caused.
 
 # ![Sublime File Icons][img-logo]
 
