@@ -400,6 +400,14 @@
         ],
         "base": "source.js",
         "scope": "source.js.gulpfile"
+      },
+      {
+        "name": "CoffeeScript (Gulpfile)",
+        "extensions": [
+          "gulpfile.coffee"
+        ],
+        "base": "source.coffee",
+        "scope": "source.coffee.gulpfile"
       }
     ]
   },
