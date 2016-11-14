@@ -50,6 +50,7 @@
           "gz",
           "pzip",
           "rar",
+          "saz",
           "tar",
           "tgz",
           "wim",
@@ -112,6 +113,19 @@
       }
     ]
   },
+  "file_type_circleci": {
+    "color": "graphite",
+    "aliases":[
+      {
+        "name": "YAML (CircleCI)",
+        "extensions": [
+          "circle.yml"
+        ],
+        "base": "source.yaml",
+        "scope": "source.yaml.circleci"
+      }
+    ]
+  },
   "file_type_cf": {
     "color": "cyan",
     "syntaxes": [
@@ -143,6 +157,20 @@
       }
     ]
   },
+  "file_type_composer": {
+    "color": "orange",
+    "aliases": [
+      {
+        "name": "JSON (Composer)",
+        "extensions": [
+          "composer.json",
+          "composer.lock"
+        ],
+        "base": "source.json",
+        "scope": "source.json.composer"
+      }
+    ]
+  },
   "file_type_cpp": {
     "color": "sky",
     "syntaxes": [
@@ -167,6 +195,15 @@
       {
         "name": "CSS",
         "scope": "source.css"
+      }
+    ]
+  },
+  "file_type_csv": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "Advanced CSV",
+        "scope": "text.advanced_csv"
       }
     ]
   },
@@ -204,6 +241,15 @@
       }
     ]
   },
+  "file_type_editorconfig": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "EditorConfig",
+        "scope": "source.ini.editorconfig"
+      }
+    ]
+  },
   "file_type_erlang": {
     "color": "red",
     "syntaxes": [
@@ -223,6 +269,14 @@
         ],
         "base": "source.json",
         "scope": "source.json.eslint"
+      },
+      {
+        "name": "Shell Script (ESLint)",
+        "extensions": [
+          ".eslintignore"
+        ],
+        "base": "source.shell",
+        "scope": "source.shell.eslint"
       }
     ]
   },
@@ -244,7 +298,8 @@
           "eot",
           "otf",
           "ttf",
-          "woff"
+          "woff",
+          "woff2"
         ],
         "base": "text.plain",
         "scope": "text.plain.font"
@@ -340,10 +395,19 @@
       {
         "name": "JavaScript (Gulpfile)",
         "extensions": [
-          "gulpfile.js"
+          "gulpfile.js",
+          "gulpfile.babel.js"
         ],
         "base": "source.js",
         "scope": "source.js.gulpfile"
+      },
+      {
+        "name": "CoffeeScript (Gulpfile)",
+        "extensions": [
+          "gulpfile.coffee"
+        ],
+        "base": "source.coffee",
+        "scope": "source.coffee.gulpfile"
       }
     ]
   },
@@ -488,6 +552,32 @@
       }
     ]
   },
+  "file_type_lock": {
+    "color": "red",
+    "aliases": [
+      {
+        "name": "YAML (Lock)",
+        "extensions": [
+          "Gemfile.lock"
+        ],
+        "base": "source.yaml",
+        "scope": "source.yaml.lock"
+      }
+    ]
+  },
+  "file_type_log": {
+    "color": "graphite",
+    "aliases": [
+      {
+        "name": "Plain Text (Log)",
+        "extensions": [
+          "log"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.log"
+      }
+    ]
+  },
   "file_type_lsl": {
     "color": "cyan",
     "syntaxes": [
@@ -544,6 +634,29 @@
       }
     ]
   },
+  "file_type_nginx": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "nginx",
+        "scope": "source.nginx"
+      }
+    ]
+  },
+  "file_type_nodejs": {
+    "color": "green",
+    "aliases":[
+      {
+        "name": "Plain Text (NodeJS)",
+        "extensions": [
+          ".node-version",
+          ".nvmrc"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.nodejs"
+      }
+    ]
+  },
   "file_type_note": {
     "color": "green",
     "syntaxes": [
@@ -572,6 +685,15 @@
         ],
         "base": "source.json",
         "scope": "source.json.npm"
+      }
+    ]
+  },
+  "file_type_nsis": {
+    "color": "purple",
+    "syntaxes": [
+      {
+        "name": "NSIS",
+        "scope": "source.nsis"
       }
     ]
   },
@@ -615,12 +737,39 @@
       }
     ]
   },
+  "file_type_plist": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "plist",
+        "scope": "text.plist"
+      }
+    ]
+  },
   "file_type_postcss": {
     "color": "red",
     "syntaxes": [
       {
         "name": "Syntax Highlighting for Post​CSS",
         "scope": "source.postcss"
+      }
+    ],
+    "aliases": [
+      {
+        "name": "JSON (PostCSS)",
+        "extensions": [
+          ".postcssrc"
+        ],
+        "base": "source.json",
+        "scope": "source.json.postcss"
+      },
+      {
+        "name": "JavaScript (PostCSS)",
+        "extensions": [
+          "postcss.config.js"
+        ],
+        "base": "source.js",
+        "scope": "source.js.postcss"
       }
     ]
   },
@@ -716,6 +865,26 @@
         "name": "Ruby",
         "scope": "source.ruby"
       }
+    ],
+    "aliases": [
+      {
+        "name": "Shell Script (Ruby)",
+        "extensions": [
+          ".rvmrc"
+        ],
+        "base": "source.shell",
+        "scope": "source.shell.ruby"
+      },
+      {
+        "name": "Plain Text (Ruby)",
+        "extensions": [
+          ".ruby-version",
+          ".ruby-gemset",
+          ".rspec"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.ruby"
+      }
     ]
   },
   "file_type_rust": {
@@ -770,6 +939,14 @@
         ],
         "base": "source.json",
         "scope": "source.json.settings"
+      },
+      {
+        "name": "XML (Config)",
+        "extensions": [
+          "config"
+        ],
+        "base": "text.xml",
+        "scope": "text.xml.config"
       }
     ]
   },
@@ -826,6 +1003,19 @@
       {
         "name": "Stata",
         "scope": "source.stata"
+      }
+    ]
+  },
+  "file_type_stylelint": {
+    "color": "graphite",
+    "aliases": [
+      {
+        "name": "JSON (Stylelint)",
+        "extensions": [
+          ".stylelintrc"
+        ],
+        "base": "source.json",
+        "scope": "source.json.stylelint"
       }
     ]
   },
@@ -945,6 +1135,20 @@
       }
     ]
   },
+  "file_type_webpack": {
+    "color": "blue",
+    "aliases": [
+      {
+        "name": "JavaScript (Webpack)",
+        "extensions": [
+          "webpack.config.js",
+          "webpack.config.babel.js"
+        ],
+        "base": "source.js",
+        "scope": "source.js.webpack"
+      }
+    ]
+  },
   "file_type_windows": {
     "color": "sky",
     "syntaxes": [
@@ -960,6 +1164,19 @@
       {
         "name": "YAML",
         "scope": "source.yaml"
+      }
+    ]
+  },
+  "file_type_yarn": {
+    "color": "blue",
+    "aliases": [
+      {
+        "name": "YAML (Yarn)",
+        "extensions": [
+          "yarn.lock"
+        ],
+        "base": "source.yaml",
+        "scope": "source.yaml.yarn"
       }
     ]
   }

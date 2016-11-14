@@ -9,7 +9,7 @@ from .util import log
 from .util.env import *
 from .util.tpl import PATCH_TEMPLATE
 
-PKG = 'zz File Icons'
+PKG = os.path.basename(os.path.dirname(os.path.realpath(__file__)))
 SETTINGS = 'File Icons.sublime-settings'
 SETTINGS_CHANGED = False
 THEME_EXTENSION = '.sublime-theme'

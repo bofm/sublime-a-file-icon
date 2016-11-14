@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>Plain Text (Ruby)</string>
+    <key>fileTypes</key>
+    <array>
+      <string>.ruby-version</string>
+      <string>.ruby-gemset</string>
+      <string>.rspec</string>
+    </array>
+    <key>patterns</key>
+    <array>
+      <dict>
+        <key>include</key>
+        <string>text.plain</string>
+      </dict>
+    </array>
+    <key>scopeName</key>
+    <string>text.plain.ruby</string>
+  </dict>
+</plist>

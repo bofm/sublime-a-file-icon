@@ -9,6 +9,7 @@
       <string>otf</string>
       <string>ttf</string>
       <string>woff</string>
+      <string>woff2</string>
     </array>
     <key>patterns</key>
     <array>
