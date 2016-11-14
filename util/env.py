@@ -6,7 +6,7 @@ import sublime_plugin
 import textwrap
 
 
-__version__ = '2.0.1'
+__version__ = '2.1.0'
 __pc_name__ = 'zz File Icons'
 
 
