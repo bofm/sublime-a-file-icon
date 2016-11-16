@@ -103,8 +103,8 @@ For example:
       "name": "Shell Script (Git)",
       // `extensions` should be provided for aliases only
       "extensions": [
-        "gitignore",
-        "gitkeep"
+        ".gitignore",
+        ".gitkeep"
       ],
       // It's the scope of the syntax which this alias inherits
       // `base` should be provided for aliases only
@@ -117,7 +117,6 @@ For example:
 
 These settings will create three files after running the build: 
 
-* `dist\extensions\Shell Script (Git).sublime-settings`
 * `dist\languages\Shell Script (Git).tmLanguage`
 * `dist\preferences\file_type_git.tmPreferences`
 
