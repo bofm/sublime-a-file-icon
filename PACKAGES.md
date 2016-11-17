@@ -29,6 +29,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Elixir](https://packagecontrol.io/packages/Elixir)
 
+## Env
+
+- [DotENV](https://packagecontrol.io/packages/DotENV)
+
 ## Git
 
 - [GitSyntaxes](https://packagecontrol.io/packages/GitSyntaxes)
