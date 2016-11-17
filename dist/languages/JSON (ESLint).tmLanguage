@@ -6,6 +6,7 @@
     <key>fileTypes</key>
     <array>
       <string>.eslintrc</string>
+      <string>.eslintrc.json</string>
     </array>
     <key>patterns</key>
     <array>
