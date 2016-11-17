@@ -2,7 +2,7 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.json.stylelint</string>
+    <string>source.json.stylelint, source.js.stylelint, source.yaml.stylelint</string>
     <key>settings</key>
     <dict>
       <key>icon</key>

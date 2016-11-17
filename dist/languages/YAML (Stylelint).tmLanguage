@@ -2,20 +2,20 @@
 <plist version="1.0">
   <dict>
     <key>name</key>
-    <string>JSON (Stylelint)</string>
+    <string>YAML (Stylelint)</string>
     <key>fileTypes</key>
     <array>
-      <string>.stylelintrc</string>
-      <string>.stylelintrc.json</string>
+      <string>.stylelintrc.yaml</string>
+      <string>.stylelintrc.yml</string>
     </array>
     <key>patterns</key>
     <array>
       <dict>
         <key>include</key>
-        <string>source.json</string>
+        <string>source.yaml</string>
       </dict>
     </array>
     <key>scopeName</key>
-    <string>source.json.stylelint</string>
+    <string>source.yaml.stylelint</string>
   </dict>
 </plist>

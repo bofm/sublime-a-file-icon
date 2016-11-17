@@ -204,6 +204,10 @@
       {
         "name": "Advanced CSV",
         "scope": "text.advanced_csv"
+      },
+      {
+        "name": "CSV Misc",
+        "scope": "text.csv"
       }
     ]
   },

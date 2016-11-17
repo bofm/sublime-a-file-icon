@@ -2,20 +2,19 @@
 <plist version="1.0">
   <dict>
     <key>name</key>
-    <string>JSON (Stylelint)</string>
+    <string>JavaScript (ESLint)</string>
     <key>fileTypes</key>
     <array>
-      <string>.stylelintrc</string>
-      <string>.stylelintrc.json</string>
+      <string>.eslintrc.js</string>
     </array>
     <key>patterns</key>
     <array>
       <dict>
         <key>include</key>
-        <string>source.json</string>
+        <string>source.js</string>
       </dict>
     </array>
     <key>scopeName</key>
-    <string>source.json.stylelint</string>
+    <string>source.js.eslint</string>
   </dict>
 </plist>
