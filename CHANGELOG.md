@@ -1,3 +1,21 @@
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/oivva/sublime-file-icons/compare/v2.1.0...v2.2.0) (2016-11-17)
+
+
+### Bug Fixes
+
+* add icons for *lintrc.* files ([b624e3e](https://github.com/oivva/sublime-file-icons/commit/b624e3e)), closes [#48](https://github.com/oivva/sublime-file-icons/issues/48)
+* add the docker icon for `docker-compose.yml` ([b1ba0d7](https://github.com/oivva/sublime-file-icons/commit/b1ba0d7)), closes [#52](https://github.com/oivva/sublime-file-icons/issues/52)
+* add the gear icon for .env files ([c1d62fb](https://github.com/oivva/sublime-file-icons/commit/c1d62fb)), closes [#53](https://github.com/oivva/sublime-file-icons/issues/53)
+* make nsis icon much crisper ([abf09f0](https://github.com/oivva/sublime-file-icons/commit/abf09f0))
+
+
+### Features
+
+* add option to disable syntax aliases ([de27688](https://github.com/oivva/sublime-file-icons/commit/de27688)), closes [#56](https://github.com/oivva/sublime-file-icons/issues/56)
+
+
+
 <a name="2.1.0"></a>
 # [2.1.0](https://github.com/oivva/sublime-file-icons/compare/v2.0.1...v2.1.0) (2016-11-14)
 
