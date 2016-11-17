@@ -226,6 +226,16 @@
         "name": "Dockerfile",
         "scope": "source.dockerfile"
       }
+    ],
+    "aliases": [
+      {
+        "name": "YAML (Docker)",
+        "extensions": [
+          "docker-compose.yml"
+        ],
+        "base": "source.yaml",
+        "scope": "source.yaml.docker"
+      }
     ]
   },
   "file_type_dotnet": {
