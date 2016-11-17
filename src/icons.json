@@ -275,10 +275,28 @@
       {
         "name": "JSON (ESLint)",
         "extensions": [
-          ".eslintrc"
+          ".eslintrc",
+          ".eslintrc.json"
         ],
         "base": "source.json",
         "scope": "source.json.eslint"
+      },
+      {
+        "name": "JavaScript (ESLint)",
+        "extensions": [
+          ".eslintrc.js"
+        ],
+        "base": "source.js",
+        "scope": "source.js.eslint"
+      },
+      {
+        "name": "YAML (ESLint)",
+        "extensions": [
+          ".eslintrc.yaml",
+          ".eslintrc.yml"
+        ],
+        "base": "source.yaml",
+        "scope": "source.yaml.eslint"
       },
       {
         "name": "Shell Script (ESLint)",
@@ -1026,10 +1044,29 @@
       {
         "name": "JSON (Stylelint)",
         "extensions": [
-          ".stylelintrc"
+          ".stylelintrc",
+          ".stylelintrc.json"
         ],
         "base": "source.json",
         "scope": "source.json.stylelint"
+      },
+      {
+        "name": "JavaScript (Stylelint)",
+        "extensions": [
+          ".stylelintrc.js",
+          "stylelint.config.js"
+        ],
+        "base": "source.js",
+        "scope": "source.js.stylelint"
+      },
+      {
+        "name": "YAML (Stylelint)",
+        "extensions": [
+          ".stylelintrc.yaml",
+          ".stylelintrc.yml"
+        ],
+        "base": "source.yaml",
+        "scope": "source.yaml.stylelint"
       }
     ]
   },
