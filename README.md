@@ -19,9 +19,11 @@ If you have any problems, please search for a similar issue first, before creati
 
 ## Users
 
+<!--
 ### Getting Started
 
 [![Getting Started with Sublime File Icons][img-getting-started]][getting-started]
+-->
 
 ### Installation
 
