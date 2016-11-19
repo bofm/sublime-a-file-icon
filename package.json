@@ -10,14 +10,14 @@
     "text",
     "theme"
   ],
-  "author": "Ihor Oleksandrov <@oivva>",
+  "author": "Ihor Oleksandrov <@ihodev>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oivva/sublime-file-icons.git"
+    "url": "https://github.com/ihodev/sublime-file-icons.git"
   },
   "bugs": {
-    "url": "https://github.com/oivva/sublime-file-icons/issues"
+    "url": "https://github.com/ihodev/sublime-file-icons/issues"
   },
   "main": "gulpfile.js",
   "scripts": {
