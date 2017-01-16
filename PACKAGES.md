@@ -108,6 +108,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Puppet](https://packagecontrol.io/packages/Puppet)
 
+## Riot
+
+- [Riot Tag](https://packagecontrol.io/packages/Riot%20Tag)
+
 ## SASS & SCSS
 
 - [Sass](https://packagecontrol.io/packages/Sass)

@@ -899,6 +899,19 @@
       }
     ]
   },
+  "file_type_riot": {
+    "color": "red",
+    "syntaxes": [
+      {
+        "name": "Riot (Jade/Pug)",
+        "scope": "source.jade.riot"
+      },
+      {
+        "name": "Riot (HTML)",
+        "scope": "text.html.riot"
+      }
+    ]
+  },
   "file_type_ruby": {
     "color": "red",
     "syntaxes": [
