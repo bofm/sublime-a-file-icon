@@ -321,6 +321,15 @@
       }
     ]
   },
+  "file_type_elm": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "Elm",
+        "scope": "source.elm"
+      }
+    ]
+  },
   "file_type_font": {
     "color": "green",
     "aliases":[
