@@ -29,6 +29,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Elixir](https://packagecontrol.io/packages/Elixir)
 
+## Elm
+
+- [Elm Language Support](https://packagecontrol.io/packages/Elm%20Language%20Support)
+
 ## Env
 
 - [DotENV](https://packagecontrol.io/packages/DotENV)
