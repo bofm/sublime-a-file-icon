@@ -117,8 +117,6 @@ If you are a theme developer and you want to support `zz File Icons`, you should
 * Rename all your icons to match [these ones][icons].
 * Add `.st-file-icons` file to the root of your theme (this is how we check if the theme is **supported**).
 
-Also see [MIGRATION.md][migration]. It contains a list of tasks that you have to follow to support the next version of `zz File Icons`.
-
 ### How It Works
 
 In simple terms, `zz File Icons` does the following:
@@ -204,14 +202,13 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 [bring-support]: https://github.com/ihodev/sublime-file-icons#bring-support-to-your-theme
 [changelog]: https://github.com/ihodev/sublime-file-icons/blob/dev/CHANGELOG.md
 [coming-soon]: https://github.com/wbond/package_control_channel/pull/5852
-[contributing]: https://github.com/ihodev/sublime-file-icons/blob/dev/CONTRIBUTING.md
+[contributing]: https://github.com/ihodev/sublime-file-icons/blob/dev/.github/CONTRIBUTING.md
 [customization]: https://github.com/ihodev/sublime-file-icons#customization
 [details]: https://forum.sublimetext.com/t/sublime-text-3-file-icons-in-sidebar/21134/4
 [downloads]: https://packagecontrol.io/packages/zz%20File%20Icons
 [getting-started]: https://youtu.be/bTIOL-5SxHY 'Watch "Getting Started with File Icons" on YouTube'
 [icons]: https://github.com/ihodev/sublime-file-icons/tree/dev/dist/zpatches/icons
 [known-issues]: https://github.com/ihodev/sublime-file-icons#known-issues
-[migration]: https://github.com/ihodev/sublime-file-icons/blob/dev/MIGRATION.md
 [new-issue]: https://github.com/ihodev/sublime-file-icons/issues/new
 [packages]: https://github.com/ihodev/sublime-file-icons/blob/dev/PACKAGES.md
 [patreon]: https://www.patreon.com/ihodev
