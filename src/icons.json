@@ -1094,6 +1094,16 @@
   },
   "file_type_sublime": {
     "color": "orange",
+    "syntaxes": [
+      {
+        "name": "Sublime Text Key Map",
+        "scope": "source.sublimekeymap"
+      },
+      {
+        "name": "Sublime Settings",
+        "scope": "source.sublime-settings"
+      }
+    ],
     "aliases": [
       {
         "name": "JSON (Sublime)",
@@ -1104,7 +1114,9 @@
           "sublime-project",
           "sublime-settings",
           "sublime-theme",
-          "sublime-workspace"
+          "sublime-workspace",
+          "sublime-keymap",
+          "sublime-mousemap"
         ],
         "base": "source.json",
         "scope": "source.json.sublime"
