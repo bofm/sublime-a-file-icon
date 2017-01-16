@@ -2,11 +2,11 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.sublimekeymap, source.sublime-settings, source.json.sublime</string>
+    <string>source.jade.riot, text.html.riot</string>
     <key>settings</key>
     <dict>
       <key>icon</key>
-      <string>file_type_sublime</string>
+      <string>file_type_riot</string>
     </dict>
   </dict>
 </plist>

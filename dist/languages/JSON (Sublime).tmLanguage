@@ -12,6 +12,8 @@
       <string>sublime-settings</string>
       <string>sublime-theme</string>
       <string>sublime-workspace</string>
+      <string>sublime-keymap</string>
+      <string>sublime-mousemap</string>
     </array>
     <key>patterns</key>
     <array>
