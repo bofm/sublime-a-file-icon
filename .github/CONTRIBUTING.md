@@ -10,7 +10,7 @@ Don't forget to provide your environment details:
 
 ## Git Commit Guidelines
 
-We have very precise rules over how our git commit messages can be formatted. This leads to more readable messages that are easy to follow when looking through the project history. But also, we use git commit messages to generate **Sublime File Icons** change log. 
+We have very precise rules over how our git commit messages can be formatted. This leads to more readable messages that are easy to follow when looking through the project history. But also, we use git commit messages to generate **A File Icon** change log. 
 
 We use [**Angular JS commit guidelines**](https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines) (except scope notes: we don't need them).
 
@@ -120,4 +120,4 @@ These settings will create three files after running the build:
 * `dist\languages\Shell Script (Git).tmLanguage`
 * `dist\preferences\file_type_git.tmPreferences`
 
-Git icons will be applied to files such as `.gitconfig`, `.gitmodules`, etc. when you install `GitSyntaxes` package. However this package doesn't provide syntaxes for `.gitignore` and `.gitkeep`. That's why `zz File Icons` creates syntax alias to `Shell Script` to use its highlighting and git icon on these files.
+Git icons will be applied to files such as `.gitconfig`, `.gitmodules`, etc. when you install `GitSyntaxes` package. However this package doesn't provide syntaxes for `.gitignore` and `.gitkeep`. That's why `A File Icon` creates syntax alias to `Shell Script` to use its highlighting and git icon on these files.
