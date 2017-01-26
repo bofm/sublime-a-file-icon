@@ -115,7 +115,7 @@ For example:
 
 These settings will create three files after running the build: 
 
-* `aliases\Shell Script (Git).tmLanguage`
+* `aliases\Shell Script (Git).sublime-syntax`
 * `preferences\file_type_git.tmPreferences`
 
 Git icons will be applied to files such as `.gitconfig`, `.gitmodules`, etc. when you install `GitSyntaxes` package. However this package doesn't provide syntaxes for `.gitignore` and `.gitkeep`. That's why `A File Icon` creates syntax alias to `Shell Script` to use its highlighting and git icon on these files.

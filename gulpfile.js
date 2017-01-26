@@ -95,7 +95,7 @@ gulp.task("build:settings", function() {
 
       if (iconAliases) {
         iconSettings.add(iconAliases.map(function(alias) {
-          return gulp.src("./common/templates/alias.xml")
+          return gulp.src("./common/templates/alias.yaml")
             .pipe($.data(function() {
               return {
                 alias: alias.name,
@@ -107,7 +107,7 @@ gulp.task("build:settings", function() {
             .pipe($.template())
             .pipe($.rename({
               basename: alias.name,
-              extname: ".disabled-tmLanguage"
+              extname: ".disabled-sublime-syntax"
             }))
             .pipe(gulp.dest("./aliases"));
         }));
