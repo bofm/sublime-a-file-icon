@@ -4,9 +4,7 @@ If you have any problems, please search for [a similar issue] first, before crea
 
 > Also, check the list of [known issues](https://github.com/ihodev/sublime-file-icons#known-issues) before doing so.
 
-Don't forget to provide your environment details:
-
-[![Environment](https://github.com/ihodev/sublime-file-icons/blob/dev/media/env.gif)](https://github.com/ihodev/sublime-file-icons/blob/dev/media/env.gif)
+Don't forget to provide your environment details: just choose `A File Icon: Environment` in `Command Palette` and copy them.
 
 ## Git Commit Guidelines
 
@@ -31,16 +29,16 @@ $ npm run build
 Build process consists of:
 
 * Build settings that are required for applying icons.
-* Build SVG sources and move them to dist icons.
+* Build SVG sources to PNG icons.
 
 ## Want to add new icons?
 
 If you want to add a new icon, please follow these steps:
 
 1. Try to find an icon in one of [these resources](https://github.com/ihodev/sublime-file-icons#icons). We always try to be pretty similar to [Atom File Icons](https://github.com/DanBrooker/file-icons) package. If you are unable to find anything – add your own.
-2. Add an example file that shows this icon to the `test` folder.
-3. Provide the icon in SVG format and put it in the `src/assets` directory.
-4. Add `icon` settings to the [src/icons.json](https://github.com/ihodev/sublime-file-icons/blob/dev/src/icons.json) file.
+2. Add an example file that shows this icon to the `tests` folder.
+3. Provide the icon in SVG format and put it in the `common/assets` directory.
+4. Add icon settings to the [common/icons.json](https://github.com/ihodev/sublime-file-icons/blob/dev/common/icons.json) file.
 5. Build and check if the icon looks good.
 6. It's recommended to add a link to the package which provides the syntax (see [PACKAGES.md](https://github.com/ihodev/sublime-file-icons/blob/dev/PACKAGES.md))
 
@@ -48,7 +46,7 @@ If you want to add a new icon, please follow these steps:
 
 > All settings should be alphabetically sorted.
 
-> Please do not change any other files - specially in `dist` folder.
+> Please do not change any other files - specially in `aliases`, `icons` and `preferences` folders.
 
 ### Icon
 
@@ -60,7 +58,7 @@ Requirements:
 
 Example:
 
-[![ActionScript Icon](https://cdn.rawgit.com/ihodev/sublime-file-icons/dev/src/assets/file_type_actionscript.svg)](https://github.com/ihodev/sublime-file-icons/blob/dev/src/assets/file_type_actionscript.svg)
+[![ActionScript Icon](https://cdn.rawgit.com/ihodev/sublime-file-icons/dev/common/assets/file_type_actionscript.svg)](https://github.com/ihodev/sublime-file-icons/blob/dev/common/assets/file_type_actionscript.svg)
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
@@ -78,7 +76,7 @@ Example:
 
 ### Settings
 
-Currently Sublime Text requires syntax definitions to apply icons. This means that you need to have the right syntax package to be able to see icons associated with the language. However we can abuse syntax definitions in order to provide different file icons to files with the same underlying syntax but different semantics (`Gulpfile.js`, `package.json` & etc.). That's why we provide two types of icons:
+Currently Sublime Text requires syntax definitions to apply icons. This means that you need to have the right syntax package to be able to see icons associated with the language. However we can abuse syntax definitions in order to provide different icons to files with the same underlying syntax but different semantics (`Gulpfile.js`, `package.json` & etc.). That's why we provide two types of icons:
 
 - Syntax (apply via syntax scope).
 - Aliases (apply via syntax scope and syntax alias abuse).
@@ -117,7 +115,7 @@ For example:
 
 These settings will create three files after running the build: 
 
-* `dist\languages\Shell Script (Git).tmLanguage`
-* `dist\preferences\file_type_git.tmPreferences`
+* `aliases\Shell Script (Git).tmLanguage`
+* `preferences\file_type_git.tmPreferences`
 
 Git icons will be applied to files such as `.gitconfig`, `.gitmodules`, etc. when you install `GitSyntaxes` package. However this package doesn't provide syntaxes for `.gitignore` and `.gitkeep`. That's why `A File Icon` creates syntax alias to `Shell Script` to use its highlighting and git icon on these files.
