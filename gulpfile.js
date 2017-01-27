@@ -189,9 +189,26 @@ gulp.task("media", function() {
     .pipe(gulp.dest("./media"));
 });
 
-gulp.task("changelog", function() {
+gulp.task("changelog", ["changelog:markdown"], function() {
+  return gulp.src("./CHANGELOG.md")
+    .pipe($.markdown())
+    .pipe($.wrapper({
+      header: "<div id=\"afi-changelog\">\n" +
+                "<style>\n" +
+                "#afi-changelog { padding: 0 25px 25px; }\n" +
+                "#afi-changelog h1, #afi-changelog h2 { color: var(--redish); }\n" +
+                "#afi-changelog h1 a, #afi-changelog h2 a { color: var(--redish); }\n" +
+                "#afi-changelog h3 { color: var(--greenish); margin-top: 25px; }\n" +
+                "#afi-changelog li { margin-bottom: 10px; }\n" +
+                "</style>\n",
+      footer: "</div>\n"
+    }))
+    .pipe(gulp.dest("./.sublime"))
+});
+
+gulp.task("changelog:markdown", function() {
   return conventionalChangelog({
-    preset: "angular",
+    preset: "angular-2-in-title-case",
     releaseCount: 0
   })
   .pipe(fs.createWriteStream("CHANGELOG.md"));
