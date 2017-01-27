@@ -66,6 +66,7 @@
     "aliases": [
       {
         "name": "JSON (Babel)",
+        "linter": "json",
         "extensions": [
           ".babelrc"
         ],
@@ -91,6 +92,7 @@
     "aliases":[
       {
         "name": "JSON (Bower)",
+        "linter": "json",
         "extensions": [
           "bower.json",
           ".bowerrc"
@@ -118,6 +120,7 @@
     "aliases":[
       {
         "name": "YAML (CircleCI)",
+        "linter": "yaml",
         "extensions": [
           "circle.yml"
         ],
@@ -162,6 +165,7 @@
     "aliases": [
       {
         "name": "JSON (Composer)",
+        "linter": "json",
         "extensions": [
           "composer.json",
           "composer.lock"
@@ -234,6 +238,7 @@
     "aliases": [
       {
         "name": "YAML (Docker)",
+        "linter": "yaml",
         "extensions": [
           "docker-compose.yml"
         ],
@@ -278,6 +283,7 @@
     "aliases": [
       {
         "name": "JSON (ESLint)",
+        "linter": "json",
         "extensions": [
           ".eslintrc",
           ".eslintrc.json"
@@ -287,6 +293,7 @@
       },
       {
         "name": "JavaScript (ESLint)",
+        "linter": "javascript",
         "extensions": [
           ".eslintrc.js"
         ],
@@ -295,6 +302,7 @@
       },
       {
         "name": "YAML (ESLint)",
+        "linter": "yaml",
         "extensions": [
           ".eslintrc.yaml",
           ".eslintrc.yml"
@@ -422,6 +430,7 @@
     "aliases": [
       {
         "name": "JavaScript (Gruntfile)",
+        "linter": "javascript",
         "extensions": [
           "gruntfile.js"
         ],
@@ -435,6 +444,7 @@
     "aliases": [
       {
         "name": "JavaScript (Gulpfile)",
+        "linter": "javascript",
         "extensions": [
           "gulpfile.js",
           "gulpfile.babel.js"
@@ -444,6 +454,7 @@
       },
       {
         "name": "CoffeeScript (Gulpfile)",
+        "linter": "coffeescript",
         "extensions": [
           "gulpfile.coffee"
         ],
@@ -598,6 +609,7 @@
     "aliases": [
       {
         "name": "YAML (Lock)",
+        "linter": "yaml",
         "extensions": [
           "Gemfile.lock"
         ],
@@ -721,6 +733,7 @@
       },
       {
         "name": "JSON (NPM)",
+        "linter": "json",
         "extensions": [
           "package.json"
         ],
@@ -798,6 +811,7 @@
     "aliases": [
       {
         "name": "JSON (PostCSS)",
+        "linter": "json",
         "extensions": [
           ".postcssrc"
         ],
@@ -806,6 +820,7 @@
       },
       {
         "name": "JavaScript (PostCSS)",
+        "linter": "javascript",
         "extensions": [
           "postcss.config.js"
         ],
@@ -828,6 +843,7 @@
     "aliases": [
       {
         "name": "YAML (Procfile)",
+        "linter": "yaml",
         "extensions": [
           "Procfile"
         ],
@@ -992,6 +1008,7 @@
     "aliases": [
       {
         "name": "JSON (Settings)",
+        "linter": "json",
         "extensions": [
           "jsbeautifyrc"
         ],
@@ -1000,6 +1017,7 @@
       },
       {
         "name": "XML (Config)",
+        "linter": "xml",
         "extensions": [
           "config"
         ],
@@ -1069,6 +1087,7 @@
     "aliases": [
       {
         "name": "JSON (Stylelint)",
+        "linter": "json",
         "extensions": [
           ".stylelintrc",
           ".stylelintrc.json"
@@ -1078,6 +1097,7 @@
       },
       {
         "name": "JavaScript (Stylelint)",
+        "linter": "javascript",
         "extensions": [
           ".stylelintrc.js",
           "stylelint.config.js"
@@ -1087,6 +1107,7 @@
       },
       {
         "name": "YAML (Stylelint)",
+        "linter": "yaml",
         "extensions": [
           ".stylelintrc.yaml",
           ".stylelintrc.yml"
@@ -1120,6 +1141,7 @@
     "aliases": [
       {
         "name": "JSON (Sublime)",
+        "linter": "json",
         "extensions": [
           ".no-sublime-package",
           "sublime-commands",
@@ -1141,6 +1163,7 @@
     "aliases": [
       {
         "name": "XML (SVG)",
+        "linter": "xml",
         "extensions": [
           "svg"
         ],
@@ -1229,6 +1252,7 @@
     "aliases": [
       {
         "name": "JavaScript (Webpack)",
+        "linter": "javascript",
         "extensions": [
           "webpack.config.js",
           "webpack.config.babel.js"
@@ -1261,6 +1285,7 @@
     "aliases": [
       {
         "name": "YAML (Yarn)",
+        "linter": "yaml",
         "extensions": [
           "yarn.lock"
         ],

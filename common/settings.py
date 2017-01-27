@@ -35,6 +35,13 @@ def _get_default():
     return s
 
 
+def _merge(*settings):
+    result = {}
+    for dictionary in settings:
+        result.update(dictionary)
+    return result
+
+
 def _get_colors():
     colors = {}
     package_settings = package()
@@ -149,6 +156,54 @@ def icons():
     return s
 
 
+def sublinter():
+    sublime_packages_path = sublime.packages_path()
+
+    if not os.path.exists(os.path.join(sublime_packages_path, OVERLAY_ROOT)):
+        log("Updating linter settings")
+
+        icons = json.loads(sublime.load_resource("Packages/" + PACKAGE_NAME +
+                                                 "/common/icons.json"))
+        aliases = {}
+
+        sl_settings_file = "SublimeLinter.sublime-settings"
+        sl_default_resource_path = "Packages/SublimeLinter/" + sl_settings_file
+        sl_user_resource_path = "Packages/User/" + sl_settings_file
+        sl_user_settings_path = os.path.join(sublime_packages_path, "User",
+                                             sl_settings_file)
+
+        sl_input_settings = {}
+        sl_output_settings = {"user": {}}
+
+        if os.path.exists(sl_user_settings_path):
+            sl_input_settings = json.loads(jsonutils.sanitize_json(
+                sublime.load_resource(sl_user_resource_path)))["user"]
+        else:
+            sl_input_settings = json.loads(jsonutils.sanitize_json(
+                sublime.load_resource(sl_default_resource_path)))["default"]
+
+        for i in icons:
+            if "aliases" in icons[i]:
+                for a in icons[i]["aliases"]:
+                    if "linter" in a:
+                        aliases[a["name"].lower()] = a["linter"]
+
+        sl_input_settings[
+            "syntax_map"
+        ] = _merge(aliases, sl_input_settings["syntax_map"])
+
+        sl_output_settings["user"] = sl_input_settings
+
+        try:
+            with open(sl_user_settings_path, "w") as f:
+                json.dump(sl_output_settings, f, sort_keys=True, indent=4)
+                f.close()
+        except Exception as error:
+            log("Error during saving linter settings")
+            dump(error)
+
+
+# TODO: Clean up in 3.1.0
 def migrate():
     old_settings_file = "File Icons.sublime-settings"
     old_settings_path = os.path.join(sublime.packages_path(), "User",
@@ -195,6 +250,7 @@ def init():
     _default_settings = _get_default()
 
     migrate()
+    sublinter()
 
     _add_listener()
     _update()
