@@ -193,15 +193,19 @@ gulp.task("changelog", ["changelog:markdown"], function() {
   return gulp.src("./CHANGELOG.md")
     .pipe($.markdown())
     .pipe($.wrapper({
-      header: "<div id=\"afi-changelog\">\n" +
-                "<style>\n" +
-                "#afi-changelog { padding: 0 25px 25px; }\n" +
-                "#afi-changelog h1, #afi-changelog h2 { color: var(--redish); }\n" +
-                "#afi-changelog h1 a, #afi-changelog h2 a { color: var(--redish); }\n" +
-                "#afi-changelog h3 { color: var(--greenish); margin-top: 25px; }\n" +
-                "#afi-changelog li { margin-bottom: 10px; }\n" +
-                "</style>\n",
-      footer: "</div>\n"
+      header:
+        "<div id=\"afi-changelog\">\n" +
+          "<style>\n" +
+            "#afi-changelog { font-family: \"Segoe UI\", Frutiger, \"Frutiger Linotype\", \"Dejavu Sans\", \"Helvetica Neue\", Arial, sans-serif; }\n" +
+            "#afi-changelog { padding: 0 25px 25px; background-color: var(--background); }\n" +
+            "#afi-changelog h1, #afi-changelog h2 { color: var(--redish); }\n" +
+            "#afi-changelog h1 a, #afi-changelog h2 a { color: var(--redish); }\n" +
+            "#afi-changelog h3 { color: var(--greenish); margin-top: 35px; }\n" +
+            "#afi-changelog li { margin-bottom: 10px; }\n" +
+            "#afi-changelog code { background-color: color(var(--background) blend(var(--foreground) 90%)); padding: 4px; }\n" +
+          "</style>\n",
+      footer:
+        "</div>\n"
     }))
     .pipe(gulp.dest("./.sublime"))
 });
