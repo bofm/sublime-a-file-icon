@@ -7,6 +7,7 @@ import zipfile
 
 from ..common import settings
 from ..common.utils import path
+from ..common.utils import icons
 from ..common.utils.logging import log, dump
 
 from . import themes
@@ -27,14 +28,6 @@ def _create_dirs():
     except Exception as error:
         log("Error during create")
         dump(error)
-
-
-def _get_icons_path(package_name):
-    package_path = "Packages/" + package_name
-    for res in sublime.find_resources("file_type_default.png"):
-        if res.startswith(package_path):
-            return os.path.dirname(res)
-    return False
 
 
 def _extract_general():
@@ -87,32 +80,22 @@ def _copy_specific():
     src_multi = os.path.join(general_path, "multi")
     src_single = os.path.join(general_path, "single")
 
-    pkgicons = json.loads(sublime.load_resource("Packages/" +
-                                                settings.PACKAGE_NAME +
-                                                "/common/icons.json"))
-    allicons = sublime.find_resources("*.png")
-
     try:
-        for theme in customizable_themes:
-            theme_patch_path = os.path.join(specific_path, theme)
+        for theme_package in customizable_themes:
+            theme_patch_path = os.path.join(specific_path, theme_package)
             theme_patch_multi_path = os.path.join(theme_patch_path, "multi")
             theme_patch_single_path = os.path.join(theme_patch_path, "single")
+            missing_icons = icons.get_missing(theme_package)
 
-            if not os.path.exists(theme_patch_path):
-                log("Copying `{}` specific icons".format(theme))
+            if missing_icons:
+                if not os.path.exists(theme_patch_path):
+                    os.makedirs(theme_patch_multi_path)
+                    os.makedirs(theme_patch_single_path)
 
-                os.makedirs(theme_patch_path)
-                os.makedirs(theme_patch_multi_path)
-                os.makedirs(theme_patch_single_path)
+                for icon in missing_icons:
+                    dest = os.path.join(theme_patch_multi_path, icon + ".png")
 
-                theme_icons_path = _get_icons_path(theme)
-                theme_icons = [
-                    os.path.basename(os.path.splitext(i)[0])
-                    for i in allicons if i.startswith(theme_icons_path)
-                ]
-
-                for icon in pkgicons:
-                    if icon not in theme_icons:
+                    if not os.path.exists(dest):
                         for filename in os.listdir(src_multi):
                             if filename.startswith(icon):
                                 shutil.copy(
