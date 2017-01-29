@@ -27,7 +27,7 @@
     "color": "^0.11.3",
     "colors": "^1.1.2",
     "conventional-changelog": "^1.1.0",
-    "conventional-changelog-angular-2-in-title-case": "github:ihodev/conventional-changelog-angular-2-in-title-case",
+    "conventional-changelog-angular-ihodev": "github:ihodev/conventional-changelog-angular-ihodev",
     "conventional-github-releaser": "^1.1.3",
     "gulp": "^3.9.1",
     "gulp-batch": "^1.0.5",
@@ -44,8 +44,9 @@
     "gulp-rename": "^1.2.2",
     "gulp-svg2png": "^2.0.2",
     "gulp-template": "^4.0.0",
+    "gulp-unescape-html": "^1.0.2",
     "gulp-watch": "^4.3.10",
-    "gulp-wrapper": "^1.0.0",
+    "gulp-wrap": "^0.13.0",
     "merge-stream": "^1.0.0",
     "yargs": "^6.0.0"
   }

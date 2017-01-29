@@ -1,12 +1,44 @@
 <div id="afi-changelog">
 <style>
-#afi-changelog { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; }
-#afi-changelog { padding: 0 25px 25px; background-color: var(--background); }
-#afi-changelog h1, #afi-changelog h2 { color: var(--redish); }
-#afi-changelog h1 a, #afi-changelog h2 a { color: var(--redish); }
-#afi-changelog h3 { color: var(--greenish); margin-top: 35px; }
-#afi-changelog li { margin-bottom: 10px; }
-#afi-changelog code { background-color: color(var(--background) blend(var(--foreground) 90%)); padding: 4px; }
+  #afi-changelog {
+    --highlight: color(var(--background) blend(var(--foreground) 90%));
+    --heading: color(var(--background) blend(var(--foreground) 65%));
+
+    font-family: Roboto, "Fira Sans", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    padding: 1rem 2.5rem 2.5rem;
+    background-color: var(--background);
+  }
+
+  #afi-changelog h1,
+  #afi-changelog h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: var(--heading);
+  }
+
+  #afi-changelog h1 a,
+  #afi-changelog h2 a {
+    color: var(--orangish);
+  }
+
+  #afi-changelog h3 {
+    color: var(--greenish);
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  #afi-changelog ul {
+    margin-bottom: 1.5rem;
+  }
+
+  #afi-changelog li {
+    margin-bottom: 1rem;
+  }
+
+  #afi-changelog code {
+    background-color: var(--highlight);
+    padding: 0.3rem;
+  }
 </style>
 <p><a name="2.2.0"></a></p>
 <h1 id="-2-2-0-https-github-com-ihodev-sublime-file-icons-compare-v2-1-0-v2-2-0-2016-11-17-"><a href="https://github.com/ihodev/sublime-file-icons/compare/v2.1.0...v2.2.0">2.2.0</a> (2016-11-17)</h1>
@@ -58,11 +90,6 @@
 <ul>
 <li>Syntax definition conflicts (<a href="https://github.com/ihodev/sublime-file-icons/commit/45528b8">45528b8</a>), closes <a href="https://github.com/ihodev/sublime-file-icons/issues/21">#21</a></li>
 </ul>
-<h3 id="documentation">Documentation</h3>
-<ul>
-<li>Add release messages (<a href="https://github.com/ihodev/sublime-file-icons/commit/02ad4fb">02ad4fb</a>)</li>
-<li>Update theme&#39;s section (<a href="https://github.com/ihodev/sublime-file-icons/commit/692dc59">692dc59</a>)</li>
-</ul>
 <p><a name="2.0.0"></a></p>
 <h1 id="-2-0-0-https-github-com-ihodev-sublime-file-icons-compare-v1-0-2-v2-0-0-2016-10-29-"><a href="https://github.com/ihodev/sublime-file-icons/compare/v1.0.2...v2.0.0">2.0.0</a> (2016-10-29)</h1>
 <h3 id="bug-fixes">Bug Fixes</h3>
@@ -87,30 +114,6 @@
 <li>Provide black svg icons by default (<a href="https://github.com/ihodev/sublime-file-icons/commit/4dcfc49">4dcfc49</a>)</li>
 <li>St crash (<a href="https://github.com/ihodev/sublime-file-icons/commit/ce5a314">ce5a314</a>)</li>
 <li>Use a syntax icon instead of ESLint if the ext is provided (<a href="https://github.com/ihodev/sublime-file-icons/commit/56a4730">56a4730</a>), closes <a href="https://github.com/ihodev/sublime-file-icons/issues/5">#5</a></li>
-</ul>
-<h3 id="documentation">Documentation</h3>
-<ul>
-<li>Add a list of packages you may need to install (<a href="https://github.com/ihodev/sublime-file-icons/commit/5138550">5138550</a>)</li>
-<li>Add contributing and donating info (<a href="https://github.com/ihodev/sublime-file-icons/commit/340a1fb">340a1fb</a>)</li>
-<li>Add getting started link (<a href="https://github.com/ihodev/sublime-file-icons/commit/a1d7b4b">a1d7b4b</a>)</li>
-<li>Add icon section (<a href="https://github.com/ihodev/sublime-file-icons/commit/242f948">242f948</a>)</li>
-<li>Add info about supported themes (<a href="https://github.com/ihodev/sublime-file-icons/commit/1a32605">1a32605</a>)</li>
-<li>Add link (<a href="https://github.com/ihodev/sublime-file-icons/commit/89ee7a4">89ee7a4</a>)</li>
-<li>Add note about Material Theme support (<a href="https://github.com/ihodev/sublime-file-icons/commit/82752a0">82752a0</a>)</li>
-<li>Add package settings to the menu (<a href="https://github.com/ihodev/sublime-file-icons/commit/257ddd6">257ddd6</a>)</li>
-<li>Add resources section (<a href="https://github.com/ihodev/sublime-file-icons/commit/ef1df81">ef1df81</a>)</li>
-<li>Basic version of the 2.0.0. readme (<a href="https://github.com/ihodev/sublime-file-icons/commit/1fc4270">1fc4270</a>)</li>
-<li>Improve desc (<a href="https://github.com/ihodev/sublime-file-icons/commit/c76f878">c76f878</a>)</li>
-<li>Prepare readme to release (<a href="https://github.com/ihodev/sublime-file-icons/commit/7b7fb30">7b7fb30</a>)</li>
-<li>Review spelling and grammar (<a href="https://github.com/ihodev/sublime-file-icons/commit/f3b7fdd">f3b7fdd</a>)</li>
-<li>That -&gt; those (<a href="https://github.com/ihodev/sublime-file-icons/commit/fd4af5e">fd4af5e</a>)</li>
-<li>Update contributing notes (<a href="https://github.com/ihodev/sublime-file-icons/commit/e883b31">e883b31</a>)</li>
-<li>Update contributing notes (<a href="https://github.com/ihodev/sublime-file-icons/commit/67e88fb">67e88fb</a>)</li>
-<li>Update known issues (<a href="https://github.com/ihodev/sublime-file-icons/commit/95e008f">95e008f</a>)</li>
-<li>Update package list (<a href="https://github.com/ihodev/sublime-file-icons/commit/68294a5">68294a5</a>)</li>
-<li>Update readme (<a href="https://github.com/ihodev/sublime-file-icons/commit/d97727c">d97727c</a>)</li>
-<li>Update README.md (<a href="https://github.com/ihodev/sublime-file-icons/commit/f1a572a">f1a572a</a>)</li>
-<li>Wip (<a href="https://github.com/ihodev/sublime-file-icons/commit/c533f8d">c533f8d</a>)</li>
 </ul>
 <h3 id="features">Features</h3>
 <ul>
@@ -213,11 +216,6 @@
 <ul>
 <li>Add new setting exts (<a href="https://github.com/ihodev/sublime-file-icons/commit/36e1eac">36e1eac</a>)</li>
 </ul>
-<h3 id="documentation">Documentation</h3>
-<ul>
-<li>Remove coming soon (<a href="https://github.com/ihodev/sublime-file-icons/commit/ce4daaa">ce4daaa</a>)</li>
-<li>Update note about prefs (<a href="https://github.com/ihodev/sublime-file-icons/commit/74195d5">74195d5</a>)</li>
-</ul>
 <p><a name="1.0.1"></a></p>
 <h2 id="-1-0-1-https-github-com-ihodev-sublime-file-icons-compare-v1-0-0-v1-0-1-2016-07-27-"><a href="https://github.com/ihodev/sublime-file-icons/compare/v1.0.0...v1.0.1">1.0.1</a> (2016-07-27)</h2>
 <h3 id="bug-fixes">Bug Fixes</h3>
@@ -230,14 +228,10 @@
 <ul>
 <li>Add new settings file types (<a href="https://github.com/ihodev/sublime-file-icons/commit/ebdbad1">ebdbad1</a>)</li>
 </ul>
-<h3 id="documentation">Documentation</h3>
-<ul>
-<li>Add get it section (<a href="https://github.com/ihodev/sublime-file-icons/commit/d9c6dc1">d9c6dc1</a>)</li>
-<li>Add initial version (<a href="https://github.com/ihodev/sublime-file-icons/commit/acc180d">acc180d</a>)</li>
-</ul>
 <h3 id="features">Features</h3>
 <ul>
 <li>Add SublimeLinter support (<a href="https://github.com/ihodev/sublime-file-icons/commit/84c3dbe">84c3dbe</a>)</li>
 <li>Batman! (<a href="https://github.com/ihodev/sublime-file-icons/commit/1bbe846">1bbe846</a>)</li>
 </ul>
-</div>
+
+</div>
