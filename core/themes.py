@@ -7,19 +7,25 @@ import sublime_plugin
 from collections import OrderedDict
 
 from ..common import settings
-from ..common.templates.theme import TEMPLATE as THEMETPL
+from ..common.templates.theme import TEMPLATE as THEME
 from ..common.utils import path
 from ..common.utils import icons
 from ..common.utils.logging import log, dump, warning
 
 PATTERN = re.compile(r"^Packages/|\/.*$")
-COLORTPL = "\n    \"layer0.tint\": {},"
+COLOR = "{0}\"layer0.tint\": {1}{2}"
+OPACITY = "{0}\"layer0.opacity\": {1}{2}"
+SIZE = "{0}\"content_margin\": [{1}, {1}]{2}"
 
 
 def _patch_general(themes, dest, isettings):
     color = isettings.get("color", "")
     color_on_hover = isettings.get("color_on_hover", "")
     color_on_select = isettings.get("color_on_select", "")
+    opacity = isettings.get("opacity", "")
+    opacity_on_hover = isettings.get("opacity_on_hover", "")
+    opacity_on_select = isettings.get("opacity_on_select", "")
+    size = isettings.get("size", "")
 
     for theme in themes:
         theme_dest = os.path.join(dest, theme)
@@ -27,17 +33,36 @@ def _patch_general(themes, dest, isettings):
         log("Patching `{}`".format(theme))
 
         with open(theme_dest, "w") as t:
-            t.write(THEMETPL % {
+            t.write(THEME % {
                 "name": theme_name,
-                "color": COLORTPL.format(color) if color else color,
-                "color_on_hover": COLORTPL.format(color_on_hover)
-                if color_on_hover else color_on_hover,
-                "color_on_select": COLORTPL.format(color_on_select)
-                if color_on_select else color_on_select,
-                "size": isettings.get("size", ""),
-                "opacity": isettings.get("opacity", ""),
-                "opacity_on_hover": isettings.get("opacity_on_hover", ""),
-                "opacity_on_select": isettings.get("opacity_on_select", "")
+
+                "color": COLOR.format(
+                    ",\n    ", color, ""
+                ) if color else "",
+
+                "color_on_hover": COLOR.format(
+                    ",\n    ", color_on_hover, ","
+                ) if color_on_hover else ",",
+
+                "color_on_select": COLOR.format(
+                    ",\n    ", color_on_select, ","
+                ) if color_on_select else ",",
+
+                "opacity": OPACITY.format(
+                    ",\n    ", opacity, ","
+                ) if opacity else ",\n    ",
+
+                "opacity_on_hover": OPACITY.format(
+                    ",\n    ", opacity_on_hover, ""
+                ) if opacity_on_hover else "",
+
+                "opacity_on_select": OPACITY.format(
+                    ",\n    ", opacity_on_select, ""
+                ) if opacity_on_select else "",
+
+                "size": SIZE.format(
+                    "\n    ", size, ""
+                ) if size else ""
             })
             t.close()
 
@@ -52,17 +77,25 @@ def _patch_specific(theme, dest, isettings):
     log("Patching `{}`".format(theme))
 
     with open(theme_dest, "w") as t:
-        t.write(THEMETPL % {
+        t.write(THEME % {
             "name": theme_name,
-            "color": COLORTPL.format(color) if color else color,
-            "color_on_hover": COLORTPL.format(color_on_hover)
-            if color_on_hover else color_on_hover,
-            "color_on_select": COLORTPL.format(color_on_select)
-            if color_on_select else color_on_select,
-            "size": "",
+
+            "color": COLOR.format(
+                ",\n    ", color, ""
+            ) if color else "",
+
+            "color_on_hover": COLOR.format(
+                ",\n    ", color_on_hover, ","
+            ) if color_on_hover else ",",
+
+            "color_on_select": COLOR.format(
+                ",\n    ", color_on_select, ","
+            ) if color_on_select else ",",
+
             "opacity": "",
             "opacity_on_hover": "",
-            "opacity_on_select": ""
+            "opacity_on_select": "",
+            "size": ""
         })
         t.close()
 

@@ -1,5 +1,4 @@
-TEMPLATE = """\
-[
+TEMPLATE = """[
   // %(name)s Patch
   // ==========================================================================
 
@@ -9,25 +8,21 @@ TEMPLATE = """\
   // Default
 
   {
-    "class": "icon_file_type",%(color)s
-    "layer0.opacity": %(opacity)s,
-    "content_margin": [%(size)s, %(size)s]
+    "class": "icon_file_type"%(color)s%(opacity)s%(size)s
   },
 
   // Hovered
 
   {
-    "class": "icon_file_type",%(color_on_hover)s
-    "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-    "layer0.opacity": %(opacity_on_hover)s
+    "class": "icon_file_type"%(color_on_hover)s
+    "parents": [{"class": "tree_row", "attributes": ["hover"]}]%(opacity_on_hover)s
   },
 
   // Selected
 
   {
-    "class": "icon_file_type",%(color_on_select)s
-    "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-    "layer0.opacity": %(opacity_on_select)s
+    "class": "icon_file_type"%(color_on_select)s
+    "parents": [{"class": "tree_row", "attributes": ["selected"]}]%(opacity_on_select)s
   }
 ]
 """
