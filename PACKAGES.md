@@ -161,6 +161,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [TypeScript](https://packagecontrol.io/packages/TypeScript)
 
+## VIM
+
+- [VimL](https://packagecontrol.io/packages/VimL)
+
 ## Vue.js
 
 - [Vue Syntax Highlight](https://packagecontrol.io/packages/Vue%20Syntax%20Highlight)
