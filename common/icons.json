@@ -1247,6 +1247,28 @@
       }
     ]
   },
+  "file_type_vim": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "VimL",
+        "scope": "source.viml"
+      }
+    ],
+    "aliases": [
+      {
+        "name": "Vimrc (VimL)",
+        "extensions": [
+          ".vimrc",
+          ".gvimrc",
+          "_vimrc",
+          "_gvimrc"
+        ],
+        "base": "source.viml",
+        "scope": "source.viml.vimrc"
+      }
+    ]
+  },
   "file_type_vue": {
     "color": "cyan",
     "syntaxes": [
