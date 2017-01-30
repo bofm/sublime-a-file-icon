@@ -1,4 +1,5 @@
-> **Starting 3.0.0** `zz File Icons` will be renamed to `A File Icon`. 
+> 3.0.0 [coming soon][coming-soon].
+> `A File Icon` has been recently re-named from `zz File Icons`. 
 > I apologize for any inconvenience caused.
 
 # [![A File Icon][img-logo]][downloads]
@@ -157,6 +158,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 <!-- Misc -->
 
 [changelog]: https://github.com/ihodev/a-file-icon/blob/dev/CHANGELOG.md
+[coming-soon]: https://github.com/wbond/package_control_channel/pull/6109
 [contributing]: https://github.com/ihodev/a-file-icon/blob/dev/.github/CONTRIBUTING.md
 [customization]: https://github.com/ihodev/a-file-icon#customization
 [downloads]: https://packagecontrol.io/packages/A%20File%20Icon
