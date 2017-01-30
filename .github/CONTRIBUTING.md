@@ -39,7 +39,7 @@ If you want to add a new icon, please follow these steps:
 2. Add an example file that shows this icon to the `tests` folder.
 3. Provide the icon in SVG format and put it in the `common/assets` directory.
 4. Add icon settings to the [common/icons.json](https://github.com/ihodev/sublime-file-icons/blob/dev/common/icons.json) file.
-5. Build and check if the icon looks good.
+5. Build and check if the icon looks good (don't forget to remove `Packages/zzz A File Icon zzz` folder before you check, we copy icons once right after install or upgrade).
 6. It's recommended to add a link to the package which provides the syntax (see [PACKAGES.md](https://github.com/ihodev/sublime-file-icons/blob/dev/PACKAGES.md))
 
 > All that you need to add are the SVG icon, its settings and the example file(s).
