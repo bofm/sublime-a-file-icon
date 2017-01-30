@@ -176,7 +176,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 [img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?maxAge=3600&style=flat-square
 [img-getting-started]: https://raw.githubusercontent.com/ihodev/a-file-icon/dev/media/getting-started.png
 [img-logo]: https://raw.githubusercontent.com/ihodev/a-file-icon/dev/media/logo.png
-[img-patreon]: https://rawgit.com/ihodev/a-file-icon/dev/media/donate.svg
+[img-patreon]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/donate.svg
 [img-release]: https://img.shields.io/github/release/ihodev/a-file-icon.svg?maxAge=86400&style=flat-square
 [img-palette]: https://raw.githubusercontent.com/ihodev/a-file-icon/dev/media/palette.png
-[img-twitter]: https://rawgit.com/ihodev/a-file-icon/dev/media/twitter.svg
+[img-twitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/twitter.svg
