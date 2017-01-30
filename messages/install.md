@@ -22,5 +22,5 @@ It's heavily inspired by Atom File Icons.
 
 ***
 
-I've put a lot of time and effort into making `A File Icon` awesome. If you love it, 
-you can [buy me a coffee](https://www.patreon.com/ihodev) 😉.
+I've put a lot of time and effort into making `A File Icon` awesome. If you love 
+it, you can [buy me a coffee](https://www.patreon.com/ihodev) ☕.
