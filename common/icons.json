@@ -670,6 +670,15 @@
       }
     ]
   },
+  "file_type_maya": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "MEL",
+        "scope": "source.mel"
+      }
+    ]
+  },
   "file_type_mustache": {
     "color": "orange",
     "syntaxes": [
