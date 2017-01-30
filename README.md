@@ -126,10 +126,6 @@ Source icons are provided in SVG format (Sublime Text doesn't currently support 
 
 Rasterized icons can be found in `icons` folder.
 
-## Change Log
-
-See [CHANGELOG.md][changelog].
-
 ## Known Issues
 
 1. This package requires you to restart Sublime Text for the applied icons to take effect when:
