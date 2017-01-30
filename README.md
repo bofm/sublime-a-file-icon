@@ -1,5 +1,7 @@
 > 3.0.0 [coming soon][coming-soon].
+
 > `A File Icon` has been recently re-named from `zz File Icons`. 
+
 > I apologize for any inconvenience caused.
 
 # [![A File Icon][img-logo]][downloads]
