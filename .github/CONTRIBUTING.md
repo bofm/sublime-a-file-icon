@@ -2,7 +2,7 @@
 
 If you have any problems, please search for [a similar issue] first, before creating [a new one](https://github.com/ihodev/a-file-icon/issues) (don't forget to **follow the issue template**).
 
-> Also, check the list of [known issues](https://github.com/ihodev/a-file-icon#known-issues) before doing so.
+> Also, check the list of [known issues](https://github.com/ihodev/a-file-icon/labels/known%20issue) before doing so.
 
 Don't forget to provide your environment details: just choose `A File Icon: Environment` in `Command Palette` and copy them.
 

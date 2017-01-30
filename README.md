@@ -126,14 +126,6 @@ Source icons are provided in SVG format (Sublime Text doesn't currently support 
 
 Rasterized icons can be found in `icons` folder.
 
-## Known Issues
-
-1. This package requires you to restart Sublime Text for the applied icons to take effect when:
-    - you install it,
-    - you change its preferences,
-    - you install a new theme that should be patched.
-2. The icons for packages provided by the community require to be installed. E.g. if you want to see `SCSS` icon you should install one of the `SCSS` syntax packages.
-
 ## Share The Love
 
 I've put a lot of time and effort into making **A File Icon** awesome. If you love it, you can buy me a coffee. I promise it will be a good investment 😉.
@@ -160,7 +152,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 [downloads]: https://packagecontrol.io/packages/A%20File%20Icon
 [getting-started]: https://youtu.be/bTIOL-5SxHY 'Watch "Getting Started with A File Icon" on YouTube'
 [icons]: https://github.com/ihodev/a-file-icon/tree/dev/icons/multi
-[known-issues]: https://github.com/ihodev/a-file-icon#known-issues
+[known-issues]: https://github.com/ihodev/a-file-icon/labels/known%20issue
 [new-issue]: https://github.com/ihodev/a-file-icon/issues/new
 [packages]: https://github.com/ihodev/a-file-icon/blob/dev/PACKAGES.md
 [patreon]: https://www.patreon.com/ihodev
