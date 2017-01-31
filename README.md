@@ -1,15 +1,15 @@
 > 3.0.0 [coming soon][coming-soon].
 
-> `A File Icon` has been recently re-named from `zz File Icons`. 
-
-> I apologize for any inconvenience caused.
+> `A File Icon` has been recently re-named from `zz File Icons`. I apologize for any inconvenience caused.
 
 # [![A File Icon][img-logo]][downloads]
 
 [![Release][img-release]][release]
 [![Downloads][img-downloads]][downloads]
-[![Make a donation at patreon.com][img-patreon]][patreon]
+[![Stars][img-stars]][stars]
+[![Make a donation at Patreon][img-patreon]][patreon]
 [![Share via Twitter][img-twitter]][twitter]
+[![Join the chat at Gitter][img-gitter]][gitter]
 
 This package adds file-specific icons to Sublime Text for improved visual grepping. It's heavily inspired by [Atom File Icons][atom-file-icons].
 
@@ -153,22 +153,26 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 [customization]: https://github.com/ihodev/a-file-icon#customization
 [downloads]: https://packagecontrol.io/packages/A%20File%20Icon
 [getting-started]: https://youtu.be/bTIOL-5SxHY 'Watch "Getting Started with A File Icon" on YouTube'
+[gitter]: https://gitter.im/a-file-icon/Lobby
 [icons]: https://github.com/ihodev/a-file-icon/tree/dev/icons/multi
 [known-issues]: https://github.com/ihodev/a-file-icon/labels/known%20issue
 [new-issue]: https://github.com/ihodev/a-file-icon/issues/new
 [packages]: https://github.com/ihodev/a-file-icon/blob/dev/PACKAGES.md
 [patreon]: https://www.patreon.com/ihodev
 [release]: https://github.com/ihodev/a-file-icon/releases
+[stars]: https://github.com/ihodev/a-file-icon/stargazers
 [template]: https://github.com/ihodev/a-file-icon/blob/dev/common/templates/theme.py
 [issues]: https://github.com/ihodev/a-file-icon/issues
 [twitter]: https://twitter.com/intent/tweet?hashtags=sublimetext%2C%20file%2C%20icons&ref_src=twsrc%5Etfw&text=A%20File%20Icon%20%E2%80%93%20Sublime%20file%20icons%20for%20improved%20visual%20grepping%20%F0%9F%8E%89&tw_p=tweetbutton&url=https%3A%2F%2Fgithub.com%2Fihodev%2Fa-file-icon&via=ihodev
 
 <!-- Assets -->
 
-[img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?maxAge=3600&style=flat-square
+[img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?style=flat-square&maxAge=86400
 [img-getting-started]: https://raw.githubusercontent.com/ihodev/a-file-icon/dev/media/getting-started.png
+[img-gitter]: https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square
 [img-logo]: https://raw.githubusercontent.com/ihodev/a-file-icon/dev/media/logo.png
-[img-patreon]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/donate.svg
-[img-release]: https://img.shields.io/github/release/ihodev/a-file-icon.svg?maxAge=86400&style=flat-square
 [img-palette]: https://raw.githubusercontent.com/ihodev/a-file-icon/dev/media/palette.png
+[img-patreon]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/donate.svg
+[img-release]: https://img.shields.io/github/release/ihodev/a-file-icon.svg?style=flat-square&maxAge=86400
+[img-stars]: https://img.shields.io/github/stars/ihodev/a-file-icon.svg?style=flat-square&label=★★★★★&maxAge=86400
 [img-twitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/twitter.svg
