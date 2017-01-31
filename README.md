@@ -15,7 +15,7 @@ This package adds file-specific icons to Sublime Text for improved visual greppi
 
 Its aims are:
 
-* To be a `tmPreferences` storage for UI themes that support file-specific icons.
+* To be a `tmPreferences` storage for UI themes those support file-specific icons.
 * To provide icons for themes those don't (fully) support file-specific icons.
 
 If you have any problems, please search for a similar issue first, before creating [a new one][new-issue]. 
