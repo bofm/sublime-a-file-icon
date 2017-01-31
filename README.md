@@ -169,7 +169,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 
 [img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?style=flat-square&maxAge=86400
 [img-getting-started]: https://raw.githubusercontent.com/ihodev/a-file-icon/dev/media/getting-started.png
-[img-gitter]: https://img.shields.io/gitter/room/nwjs/nw.js.svg?style=flat-square
+[img-gitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/gitter.svg
 [img-logo]: https://raw.githubusercontent.com/ihodev/a-file-icon/dev/media/logo.png
 [img-palette]: https://raw.githubusercontent.com/ihodev/a-file-icon/dev/media/palette.png
 [img-patreon]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/donate.svg
