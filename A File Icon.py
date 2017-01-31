@@ -1,6 +1,6 @@
 import sublime
 
-if int(sublime.version()) >= 3114:
+if int(sublime.version()) > 3113:
     from .common import settings
     from .common.utils import cleaning
     from .core import icons
@@ -29,5 +29,4 @@ if int(sublime.version()) >= 3114:
         if events.pre_upgrade(PACKAGE_NAME) or events.remove(PACKAGE_NAME):
             cleaning.clean_all()
 else:
-    raise ImportWarning("A File Icon doesn't support Sublime Text versions " +
-                        "prior to 3114")
+    raise ImportWarning("Doesn't support Sublime Text versions prior to 3114")

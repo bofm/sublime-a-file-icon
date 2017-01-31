@@ -7,9 +7,10 @@ from .vendor import jsonutils
 from .vendor import webcolors
 from .utils.logging import log, dump, message
 
-PACKAGE_NAME = "A File Icon"
-PACKAGE_MAIN = PACKAGE_NAME
 PACKAGE_BASE = os.path.basename(os.path.dirname(os.path.dirname(__file__)))
+PACKAGE_NAME = os.path.splitext(PACKAGE_BASE)[0]
+PACKAGE_MAIN = PACKAGE_NAME
+PACKAGE_ARCH = PACKAGE_NAME + ".sublime-package"
 
 PACKAGE_SETTINGS_FILE = PACKAGE_NAME + ".sublime-settings"
 SUBLIME_SETTINGS_FILE = "Preferences.sublime-settings"

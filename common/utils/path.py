@@ -6,7 +6,7 @@ from .. import settings
 
 def get_package_archive():
     return os.path.join(sublime.installed_packages_path(),
-                        settings.PACKAGE_BASE)
+                        settings.PACKAGE_ARCH)
 
 
 def get_package_folder():

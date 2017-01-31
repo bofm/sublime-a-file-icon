@@ -54,20 +54,24 @@ def _copy_general():
     log("Copying general icons")
 
     package_path = path.get_package_icons()
-    general_path = path.get_overlay_patches_general()
 
-    src_multi = os.path.join(package_path, "multi")
-    src_single = os.path.join(package_path, "single")
+    if os.path.exists(package_path):
+        general_path = path.get_overlay_patches_general()
 
-    dest_multi = os.path.join(general_path, "multi")
-    dest_single = os.path.join(general_path, "single")
+        src_multi = os.path.join(package_path, "multi")
+        src_single = os.path.join(package_path, "single")
 
-    try:
-        shutil.copytree(src_multi, dest_multi)
-        shutil.copytree(src_single, dest_single)
-    except Exception as error:
-        log("Error during copy")
-        dump(error)
+        dest_multi = os.path.join(general_path, "multi")
+        dest_single = os.path.join(general_path, "single")
+
+        try:
+            shutil.copytree(src_multi, dest_multi)
+            shutil.copytree(src_single, dest_single)
+        except Exception as error:
+            log("Error during copy")
+            dump(error)
+    else:
+        _extract_general()
 
 
 def _copy_specific():
