@@ -14,7 +14,7 @@ PACKAGE_ARCH = PACKAGE_NAME + ".sublime-package"
 
 PACKAGE_SETTINGS_FILE = PACKAGE_NAME + ".sublime-settings"
 SUBLIME_SETTINGS_FILE = "Preferences.sublime-settings"
-PKGCTRL_SETTINGS_FILE = "Package Control.sublime-settigns"
+PKGCTRL_SETTINGS_FILE = "Package Control.sublime-settings"
 
 OVERLAY_ROOT = "{0} {1} {0}".format("zzz", PACKAGE_NAME)
 
