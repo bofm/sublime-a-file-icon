@@ -6,9 +6,12 @@
 *.sublime-theme
 *.log
 *cache
+*.pyc
 
+icons/
+aliases/
+preferences/
 node_modules/
-dist/
 
 # OS
 # =============================

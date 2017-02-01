@@ -1,18 +1,22 @@
-> **Starting 3.0.0** `zz File Icons` will be renamed to `A File Icon`. I've found the way how to fix/implement [#23](https://github.com/ihodev/sublime-file-icons/issues/23), [#24](https://github.com/ihodev/sublime-file-icons/issues/24). I have no plans to add new icons in 3.0.0, it will bring only the new way of applying them. I apologize for any inconvenience caused.
+> 3.0.0 [coming soon][coming-soon].
 
-# ![Sublime File Icons][img-logo]
+> `A File Icon` has been recently re-named from `zz File Icons`. I apologize for any inconvenience caused.
+
+# [![A File Icon][img-logo]][downloads]
 
 [![Release][img-release]][release]
 [![Downloads][img-downloads]][downloads]
-[![Make a donation at patreon.com][img-patreon]][patreon]
+[![Stars][img-stars]][stars]
+[![Make a donation at Patreon][img-patreon]][patreon]
 [![Share via Twitter][img-twitter]][twitter]
+[![Join the chat at Gitter][img-gitter]][gitter]
 
-This package adds file specific icons to Sublime Text for improved visual grepping. It's heavily inspired by [Atom File Icons][atom-file-icons].
+This package adds file-specific icons to Sublime Text for improved visual grepping. It's heavily inspired by [Atom File Icons][atom-file-icons].
 
 Its aims are:
 
-* To be a `tmPreferences` storage for UI themes that support file icons.
-* To provide file type icons for themes those don't (fully) support file icons.
+* To be a `tmPreferences` storage for UI themes those support file-specific icons.
+* To provide icons for themes those don't (fully) support file-specific icons.
 
 If you have any problems, please search for a similar issue first, before creating [a new one][new-issue]. 
 
@@ -20,26 +24,24 @@ If you have any problems, please search for a similar issue first, before creati
 
 ## Users
 
-<!--
 ### Getting Started
 
-[![Getting Started with Sublime File Icons][img-getting-started]][getting-started]
--->
+[![Getting Started with A File Icon][img-getting-started]][getting-started]
 
 ### Installation
 
 #### Package Control
 
-The easiest way to install is using Sublime's [Package Control][downloads]. It's listed as `zz File Icons`.
+The easiest way to install is using Sublime's [Package Control][downloads]. It's listed as `A File Icon`.
 
 1. Open `Command Palette` using menu item `Tools → Command Palette...`
 2. Choose `Package Control: Install Package`
-3. Find `zz File Icons` and hit `Enter`
+3. Find `A File Icon` and hit `Enter`
 
 #### Download
 
 1. [Download the `.zip`][release]
-2. Unzip and rename folder to `zz File Icons`
+2. Unzip and rename folder to `A File Icon`
 3. Copy folder into `Packages` directory, which you can find using the menu item `Preferences → Browse Packages...`
 
 > **Note:** Don't forget to restart Sublime Text after installing this package. 
@@ -48,14 +50,20 @@ The easiest way to install is using Sublime's [Package Control][downloads]. It's
 
 You can change the color, opacity level and size of the icons by modifying your user preferences file, which you can find by:
 
-* `Preferences → Package Settings → File Icons → Settings`,
-* Choose `File Icons: Settings` in `Command Palette`.
+* `Preferences → Package Settings → A File Icon → Settings`,
+* Choose `A File Icon: Settings` in `Command Palette`.
+
+### Wrong Icons
+
+Sublime Text uses syntax scopes for file-specific icons. That's why icons for packages provided by the community require to be installed.
+
+See the list of [community packages][packages] that you may need to install to see the right icon.
 
 ### Themes
 
-If your theme supports `zz File Icons` you can choose what icons you want to use – provided by the theme (by default) or provided by the package. Otherwise this package adds its own icons only.
+If your theme supports an icon customization you can choose what icons you want to use – provided by the theme (by default) or provided by the package. Otherwise this package adds its own icons only.
 
-Themes that already have support of `zz File Icons` include:
+Themes that already have support of the icon customization include:
 
 * [Boxy Theme][boxy-theme]
 * [Material Theme][material-theme]
@@ -65,85 +73,34 @@ Themes that already have support of `zz File Icons` include:
 If something goes wrong try to:
 
 1. Open `Command Palette` using menu item `Tools → Command Palette...`.
-2. Choose `File Icons: Clean Up`.
+2. Choose `A File Icon: Clean Patches`.
 3. Restart Sublime Text.
-
-#### Wrong Icons
-
-Sublime Text file type icons use syntax scopes. That's why icons for packages provided by the community require to be installed.
-
-See the list of [custom packages][packages] that you may need to install to see the right icon.
-
-#### Missing Icons
-
-In some cases you may see that some icons from your current theme are missing. You can:
-
-- Request support for this package from the theme's developer.
-- Submit a request to add missing icons if the theme already does.
-
-[More details here →][details] 
-
-#### Sublime Linter Setup
-
-This package adds some syntax aliases which Sublime Linter doesn't recognize. Just update your Sublime Linter settings, e.g.:
-
-```js
-  "syntax_map": {
-    "html (django)": "html",
-    "html (rails)": "html",
-    "html 5": "html",
-    "javascript (babel)": "javascript",
-    "javascript (gruntfile)": "javascript",
-    "javascript (gulpfile)": "javascript",
-    "json (bower)": "json",
-    "json (npm)": "json",
-    "json (settings)": "json",
-    "magicpython": "python",
-    "php": "html",
-    "python django": "python",
-    "pythonimproved": "python"
-  },
-```
-
-Full list of syntax aliases can be found [here][aliases].
 
 ## Developers
 
-### Bring Support to Your Theme
+### Bring Support of the File Icon Customization to Your Theme
 
-If you are a theme developer and you want to support `zz File Icons`, you should:
+If you are a theme developer and you want to support a file icon customization, you should:
 
-* Remove all stuff related to the icon setup: `.tmPreferences`, `.sublime-settings` and `.tmLanguage` files.
-* Rename all your icons to match [these ones][icons].
-* Add `.st-file-icons` file to the root of your theme (this is how we check if the theme is **supported**).
-
-Also see [MIGRATION.md][migration]. It contains a list of tasks that you have to follow to support the next version of `zz File Icons`.
+* Remove all stuff related to the icon setup: `.tmPreferences`, `.sublime-settings`, `.sublime-syntax` and `.tmLanguage` files.
+* Rename all your existing icons to match [these ones][icons].
+* Add `.supports-a-file-icon-customization` file to the root of your theme (this is how we check if the theme **supports** customization of the file-specific icons).
 
 ### How It Works
 
-In simple terms, `zz File Icons` does the following:
+In simple terms, `A File Icon` does the following:
 
-1. Searches all installed and supported themes.
-2. Checks if themes that don't support it are already patched, if not
-3. Patches them by:
-    - Generating `<theme-name>.sublime-theme` files from a [template][template].
-    - Putting them into `dist/zpatches/` directory.
-4. For themes that support it, provides `.tmPreferences` files by default (user can override icons provided by the theme via `"force_override": true`)
-5. After restarting Sublime Text, the patched themes will be updated to use the icons provided by `zz File Icons`
-
-It does these steps when:
-
-- You install it.
-- Plugins are loaded.
-- You change its preferences.
+1. Copies all the necessary files right after install or upgrade to `zzz A File Icon zzz` directory
+2. Searches all installed themes
+3. Checks if themes are already patched, if not
+4. Patches them by generating `<theme-name>.sublime-theme` files from a [template][template]
+5. For themes those support file icon customization, it provides `.tmPreferences` files and missing icons by default (user can override icons provided by the theme via `"force_mode": true`).
 
 The real process is just a little bit more complex to minimize hard drive I/O.
 
 ### Contributing
 
 Want to contribute some code? Excellent! Read up on our [guidelines][contributing].
-
-Together we will make **Sublime File Icons** even better than it is today!
 
 ## Resources
 
@@ -167,23 +124,11 @@ This package contains icons provided by:
 
 Source icons are provided in SVG format (Sublime Text doesn't currently support it). We convert them to @1x, @2x and @3x PNG assets before each release via a custom `gulp` task. 
 
-Rasterized icons can be found in `dist/zpatches` folder.
-
-## Change Log
-
-See [CHANGELOG.md][changelog].
-
-## Known Issues
-
-1. This package requires you to restart Sublime Text for the applied icons to take effect when:
-    - you install it,
-    - you change its preferences,
-    - you install a new theme that should be patched.
-2. The icons for custom packages need to be installed. E.g. if you want to see `SCSS` icon you should install one of the `SCSS` syntax packages.
+Rasterized icons can be found in `icons` folder.
 
 ## Share The Love
 
-I've put a lot of time and effort into making **Sublime File Icons** awesome. If you love it, you can buy me a coffee. I promise it will be a good investment 😉.
+I've put a lot of time and effort into making **A File Icon** awesome. If you love it, you can buy me a coffee. I promise it will be a good investment 😉.
 
 **Donate with:** [Patreon][patreon].
 
@@ -200,32 +145,32 @@ I've put a lot of time and effort into making **Sublime File Icons** awesome. If
 
 <!-- Misc -->
 
-[aliases]: https://github.com/ihodev/sublime-file-icons/tree/dev/dist/languages
-[bring-support]: https://github.com/ihodev/sublime-file-icons#bring-support-to-your-theme
-[changelog]: https://github.com/ihodev/sublime-file-icons/blob/dev/CHANGELOG.md
-[coming-soon]: https://github.com/wbond/package_control_channel/pull/5852
-[contributing]: https://github.com/ihodev/sublime-file-icons/blob/dev/CONTRIBUTING.md
-[customization]: https://github.com/ihodev/sublime-file-icons#customization
-[details]: https://forum.sublimetext.com/t/sublime-text-3-file-icons-in-sidebar/21134/4
-[downloads]: https://packagecontrol.io/packages/zz%20File%20Icons
-[getting-started]: https://youtu.be/bTIOL-5SxHY 'Watch "Getting Started with File Icons" on YouTube'
-[icons]: https://github.com/ihodev/sublime-file-icons/tree/dev/dist/zpatches/icons
-[known-issues]: https://github.com/ihodev/sublime-file-icons#known-issues
-[migration]: https://github.com/ihodev/sublime-file-icons/blob/dev/MIGRATION.md
-[new-issue]: https://github.com/ihodev/sublime-file-icons/issues/new
-[packages]: https://github.com/ihodev/sublime-file-icons/blob/dev/PACKAGES.md
+[changelog]: https://github.com/ihodev/a-file-icon/blob/dev/CHANGELOG.md
+[coming-soon]: https://github.com/wbond/package_control_channel/pull/6109
+[contributing]: https://github.com/ihodev/a-file-icon/blob/dev/.github/CONTRIBUTING.md
+[customization]: https://github.com/ihodev/a-file-icon#customization
+[downloads]: https://packagecontrol.io/packages/A%20File%20Icon
+[getting-started]: https://youtu.be/aTpuEhVHASw 'Watch "Getting Started with A File Icon" on YouTube'
+[gitter]: https://gitter.im/a-file-icon/Lobby
+[icons]: https://github.com/ihodev/a-file-icon/tree/dev/icons/multi
+[known-issues]: https://github.com/ihodev/a-file-icon/labels/known%20issue
+[new-issue]: https://github.com/ihodev/a-file-icon/issues/new
+[packages]: https://github.com/ihodev/a-file-icon/blob/dev/PACKAGES.md
 [patreon]: https://www.patreon.com/ihodev
-[release]: https://github.com/ihodev/sublime-file-icons/releases
-[template]: https://github.com/ihodev/sublime-file-icons/blob/dev/util/tpl.py
-[issues]: https://github.com/ihodev/sublime-file-icons/issues
-[twitter]: https://twitter.com/intent/tweet?hashtags=sublimetext%2C%20file%2C%20icons&ref_src=twsrc%5Etfw&text=Sublime%20file%20icons%20for%20improved%20visual%20grepping%20%F0%9F%8E%89&tw_p=tweetbutton&url=https%3A%2F%2Fgithub.com%2Fihodev%2Fsublime-file-icons&via=ihodev
+[release]: https://github.com/ihodev/a-file-icon/releases
+[stars]: https://github.com/ihodev/a-file-icon/stargazers
+[template]: https://github.com/ihodev/a-file-icon/blob/dev/common/templates/theme.py
+[issues]: https://github.com/ihodev/a-file-icon/issues
+[twitter]: https://twitter.com/intent/tweet?hashtags=sublimetext%2C%20file%2C%20icons&ref_src=twsrc%5Etfw&text=A%20File%20Icon%20%E2%80%93%20Sublime%20file%20icons%20for%20improved%20visual%20grepping%20%F0%9F%8E%89&tw_p=tweetbutton&url=https%3A%2F%2Fgithub.com%2Fihodev%2Fa-file-icon&via=ihodev
 
 <!-- Assets -->
 
-[img-downloads]: https://img.shields.io/packagecontrol/dt/zz%20File%20Icons.svg?maxAge=3600&style=flat-square
-[img-getting-started]: https://raw.githubusercontent.com/ihodev/sublime-file-icons/dev/media/getting-started.png
-[img-logo]: https://raw.githubusercontent.com/ihodev/sublime-file-icons/dev/media/logo.png
-[img-patreon]: https://img.shields.io/badge/donate-patreon-orange.svg?maxAge=2592000&style=flat-square
-[img-release]: https://img.shields.io/github/release/ihodev/sublime-file-icons.svg?maxAge=86400&style=flat-square
-[img-palette]: https://raw.githubusercontent.com/ihodev/sublime-file-icons/dev/media/palette.png
-[img-twitter]: https://img.shields.io/badge/share-twitter-1DA1F2.svg?maxAge=2592000&style=flat-square
+[img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?style=flat-square&maxAge=86400
+[img-getting-started]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/getting-started.jpg
+[img-gitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/gitter.svg
+[img-logo]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/logo.png
+[img-palette]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/palette.png
+[img-patreon]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/donate.svg
+[img-release]: https://img.shields.io/github/release/ihodev/a-file-icon.svg?style=flat-square&maxAge=86400
+[img-stars]: https://img.shields.io/github/stars/ihodev/a-file-icon.svg?style=flat-square&label=★★★★★&maxAge=86400
+[img-twitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/twitter.svg

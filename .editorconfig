@@ -11,8 +11,5 @@ trim_trailing_whitespace = true
 indent_size = 4
 trim_trailing_whitespace = false
 
-[*.{sublime-project,sublime-settings,sublime-menu,sublime-commands}]
-indent_style = tab
-
 [*.py]
 indent_size = 4
