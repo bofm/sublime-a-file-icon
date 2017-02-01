@@ -1,7 +1,3 @@
-> 3.0.0 [coming soon][coming-soon].
-
-> `A File Icon` has been recently re-named from `zz File Icons`. I apologize for any inconvenience caused.
-
 # [![A File Icon][img-logo]][downloads]
 
 [![Release][img-release]][release]
@@ -10,6 +6,8 @@
 [![Make a donation at Patreon][img-patreon]][patreon]
 [![Share via Twitter][img-twitter]][twitter]
 [![Join the chat at Gitter][img-gitter]][gitter]
+
+> `A File Icon` has been recently re-named from `zz File Icons`. I apologize for any inconvenience caused.
 
 This package adds file-specific icons to Sublime Text for improved visual grepping. It's heavily inspired by [Atom File Icons][atom-file-icons].
 
