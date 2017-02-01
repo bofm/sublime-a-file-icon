@@ -184,7 +184,7 @@ gulp.task("build:icons", function() {
  */
 
 gulp.task("media", function() {
-  return gulp.src("./media/*.png")
+  return gulp.src("./media/*.{png,jpg}")
     .pipe($.imagemin({verbose: true}))
     .pipe(gulp.dest("./media"));
 });
