@@ -28,31 +28,56 @@ class AfiEnvironmentCommand(sublime_plugin.ApplicationCommand):
 
         info["current_theme"] = get_current()
         info["installed_themes"] = "".join([
-            "<li>{}</li>".format(k) for k in get_installed().keys()
+            "\n  <li>{}</li>".format(k) for k in get_installed().keys()
         ])
 
         info["package_version"] = _get_package_version()
         info["installed_via_pc"] = _is_installed_via_pc()
 
         msg = """\
-            <b>Platform:</b> %(platform)s
-            <b>A File Icon:</b> %(package_version)s
-            <b>Sublime Text:</b> %(sublime_version)s
-            <b>Package Control:</b> %(installed_via_pc)s
-            <b>Current Theme:</b> %(current_theme)s
-            <b>Installed Themes:</b>
-            <ul>
-            %(installed_themes)s
+            <b>Platform:</b> %(platform)s<br>
+            <b>A File Icon:</b> %(package_version)s<br>
+            <b>Sublime Text:</b> %(sublime_version)s<br>
+            <b>Package Control:</b> %(installed_via_pc)s<br>
+            <b>Current Theme:</b> %(current_theme)s<br>
+            <b>Installed Themes:</b><br>
+            <ul>%(installed_themes)s
             </ul>
         """ % info
 
-        view = sublime.active_window().active_view()
+        html = """\
+            <div id="afi-environment">
+                <style>
+                    #afi-environment {
+                        padding: 0.5rem;
+                        line-height: 1.5;
+                    }
+                    #afi-environment ul {
+                        margin-top: 0.5rem;
+                        margin-bottom: 0;
+                        margin-left: 1rem;
+                    }
+                    #afi-environment a {
+                        display: inline;
+                    }
+                </style>
+                <a href="copy">Copy</a><br><br>
+                %(msg)s
+            </div>
+        """ % {"msg": msg}
 
-        def copy_and_hide(msg):
-            sublime.set_clipboard(msg.replace("    ", ""))
+        window = sublime.active_window()
+        view = window.active_view()
+        window.focus_view(view)
+        row = int(view.rowcol(view.visible_region().a)[0] + 1)
+
+        def on_navigate(href):
+            if (href.startswith("copy")):
+                sublime.set_clipboard(msg.replace("    ", ""))
             view.hide_popup()
 
-        view.show_popup("<style>ul { margin: 0;}</style>" +
-                        "<a href=\"" + msg + "\">Copy</a><br><br>" +
-                        msg.replace("\n", "<br>").replace("    ", ""),
-                        on_navigate=copy_and_hide)
+        view.show_popup(html,
+                        location=view.text_point(row, 5),
+                        max_width=800,
+                        max_height=800,
+                        on_navigate=on_navigate)
