@@ -6,6 +6,7 @@
 [![Make a donation at Patreon][img-patreon]][patreon]
 [![Share via Twitter][img-twitter]][twitter]
 [![Join the chat at Gitter][img-gitter]][gitter]
+[![Join the chat at Sublime Forum][img-forum]][forum]
 
 > `A File Icon` has been recently re-named from `zz File Icons`. I apologize for any inconvenience caused.
 
@@ -148,6 +149,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 [contributing]: https://github.com/ihodev/a-file-icon/blob/dev/.github/CONTRIBUTING.md
 [customization]: https://github.com/ihodev/a-file-icon#customization
 [downloads]: https://packagecontrol.io/packages/A%20File%20Icon
+[forum]: https://forum.sublimetext.com/t/a-file-icon-sublime-file-specific-icons-for-improved-visual-grepping/25874
 [getting-started]: https://youtu.be/aTpuEhVHASw 'Watch "Getting Started with A File Icon" on YouTube'
 [gitter]: https://gitter.im/a-file-icon/Lobby
 [icons]: https://github.com/ihodev/a-file-icon/tree/dev/icons/multi
@@ -164,6 +166,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 <!-- Assets -->
 
 [img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?style=flat-square&maxAge=86400
+[img-forum]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/forum.svg
 [img-getting-started]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/getting-started.jpg
 [img-gitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/gitter.svg
 [img-logo]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/logo.png
