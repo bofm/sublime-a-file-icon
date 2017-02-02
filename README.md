@@ -132,7 +132,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 
 <!-- Resources -->
 
-[atom-file-icons]: https://github.com/DanBrooker/file-icons
+[atom-file-icons]: https://github.com/file-icons/atom
 [boxy-theme]: https://github.com/ihodev/sublime-boxy
 [devicons]: http://vorillaz.github.io/devicons/#/main
 [font-awesome]: http://fontawesome.io/
