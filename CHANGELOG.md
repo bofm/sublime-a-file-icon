@@ -1,3 +1,28 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/ihodev/a-file-icon/compare/v2.2.0...v3.0.0) (2017-02-01)
+
+
+### Bug Fixes
+
+* Fix patch generation for themes with icon customization support ([531d1a3](https://github.com/ihodev/a-file-icon/commit/531d1a3))
+* Fix resource copying with partial extracted package ([96f8361](https://github.com/ihodev/a-file-icon/commit/96f8361))
+* Fix SublimeLinter settings update ([e483ae2](https://github.com/ihodev/a-file-icon/commit/e483ae2))
+* Remove theme addons from the list of installed themes ([e74586e](https://github.com/ihodev/a-file-icon/commit/e74586e))
+* St icon inconsistency ([921518c](https://github.com/ihodev/a-file-icon/commit/921518c)), closes [#59](https://github.com/ihodev/a-file-icon/issues/59)
+
+
+### Features
+
+* Add an icon for Maya (`*.mel`) ([f0873fb](https://github.com/ihodev/a-file-icon/commit/f0873fb)), closes [#67](https://github.com/ihodev/a-file-icon/issues/67)
+* Add icon for .elm files ([#63](https://github.com/ihodev/a-file-icon/issues/63)) ([1d51f7a](https://github.com/ihodev/a-file-icon/commit/1d51f7a))
+* Add riot icon ([8b051c3](https://github.com/ihodev/a-file-icon/commit/8b051c3)), closes [#58](https://github.com/ihodev/a-file-icon/issues/58)
+* Add VIM icon ([4da008a](https://github.com/ihodev/a-file-icon/commit/4da008a)), closes [#73](https://github.com/ihodev/a-file-icon/issues/73)
+* Automatically update linter settings ([2eb0049](https://github.com/ihodev/a-file-icon/commit/2eb0049)), closes [#65](https://github.com/ihodev/a-file-icon/issues/65)
+* Resolve conflicts with unsupported themes ([f9dbf65](https://github.com/ihodev/a-file-icon/commit/f9dbf65)), closes [#24](https://github.com/ihodev/a-file-icon/issues/24)
+* Use package icons if they missing in themes with icon customization support ([7d98ac0](https://github.com/ihodev/a-file-icon/commit/7d98ac0)), closes [#23](https://github.com/ihodev/a-file-icon/issues/23)
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/ihodev/a-file-icon/compare/v2.1.0...v2.2.0) (2016-11-17)
 
