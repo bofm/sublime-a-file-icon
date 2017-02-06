@@ -84,6 +84,7 @@ If you are a theme developer and you want to support a file icon customization, 
 * Remove all stuff related to the icon setup: `.tmPreferences`, `.sublime-settings`, `.sublime-syntax` and `.tmLanguage` files.
 * Rename all your existing icons to match [these ones][icons].
 * Add `.supports-a-file-icon-customization` file to the root of your theme (this is how we check if the theme **supports** customization of the file-specific icons).
+* Also you can provide [this script][installer] which recommends user to install `A File Icon` for enhanced support of the file-specific icons.
 
 ### How It Works
 
@@ -153,6 +154,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 [getting-started]: https://youtu.be/aTpuEhVHASw 'Watch "Getting Started with A File Icon" on YouTube'
 [gitter]: https://gitter.im/a-file-icon/Lobby
 [icons]: https://github.com/ihodev/a-file-icon/tree/dev/icons/multi
+[installer]: https://github.com/ihodev/sublime-boxy/blob/dev/Icons.py
 [known-issues]: https://github.com/ihodev/a-file-icon/labels/known%20issue
 [new-issue]: https://github.com/ihodev/a-file-icon/issues/new
 [packages]: https://github.com/ihodev/a-file-icon/blob/dev/PACKAGES.md
