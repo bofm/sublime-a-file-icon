@@ -6,8 +6,6 @@
 [![Join the chat at Gitter][img-gitter]][gitter]
 [![Join the chat at Sublime Forum][img-forum]][forum]
 
-> `A File Icon` has been recently re-named from `zz File Icons`. I apologize for any inconvenience caused.
-
 This package adds file-specific icons to Sublime Text for improved visual grepping. It's heavily inspired by [Atom File Icons][atom-file-icons].
 
 Its aims are:
