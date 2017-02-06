@@ -1,8 +1,6 @@
 # [![A File Icon][img-logo]][downloads]
 
-[![Release][img-release]][release]
-[![Downloads][img-downloads]][downloads]
-[![Stars][img-stars]][stars]
+[![Star on GitHub][img-stars]][stars]
 [![Make a donation at Patreon][img-patreon]][patreon]
 [![Share via Twitter][img-twitter]][twitter]
 [![Join the chat at Gitter][img-gitter]][gitter]
@@ -167,13 +165,11 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 
 <!-- Assets -->
 
-[img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?style=flat-squaremaxAge=86400
-[img-forum]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/forum-shield.svg
+[img-forum]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/reply-on-forum.svg
 [img-getting-started]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/getting-started.jpg
-[img-gitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/gitter-shield.svg
+[img-gitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/chat-on-gitter.svg
 [img-logo]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/logo.png
 [img-palette]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/palette.png
-[img-patreon]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/donate-shield.svg
-[img-release]: https://img.shields.io/github/release/ihodev/a-file-icon.svg?style=flat-square&colorB=497CE3&maxAge=86400
-[img-stars]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/star-shield.svg
-[img-twitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/twitter-shield.svg
+[img-patreon]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/donate-on-patreon.svg
+[img-stars]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/star-on-github.svg
+[img-twitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/share-on-twitter.svg
