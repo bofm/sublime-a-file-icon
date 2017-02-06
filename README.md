@@ -145,7 +145,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 [coming-soon]: https://github.com/wbond/package_control_channel/pull/6109
 [contributing]: https://github.com/ihodev/a-file-icon/blob/dev/.github/CONTRIBUTING.md
 [customization]: https://github.com/ihodev/a-file-icon#customization
-[downloads]: https://packagecontrol.io/packages/A%20File%20Icon
+[downloads]: https://packagecontrol.io/packages/A%20File%20Icon 'A File Icon @ Package Control'
 [forum]: https://forum.sublimetext.com/t/a-file-icon-sublime-file-specific-icons-for-improved-visual-grepping/25874
 [getting-started]: https://youtu.be/aTpuEhVHASw 'Watch "Getting Started with A File Icon" on YouTube'
 [gitter]: https://gitter.im/a-file-icon/Lobby
