@@ -165,7 +165,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 
 <!-- Assets -->
 
-[img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?style=flat-square&colorB=6AAB20&maxAge=86400
+[img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?style=flat-squaremaxAge=86400
 [img-forum]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/forum-shield.svg
 [img-getting-started]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/getting-started.jpg
 [img-gitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/gitter-shield.svg
@@ -173,5 +173,5 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 [img-palette]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/palette.png
 [img-patreon]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/donate-shield.svg
 [img-release]: https://img.shields.io/github/release/ihodev/a-file-icon.svg?style=flat-square&colorB=497CE3&maxAge=86400
-[img-stars]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/github-star-shield.svg
+[img-stars]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/star-shield.svg
 [img-twitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/twitter-shield.svg
