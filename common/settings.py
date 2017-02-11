@@ -160,55 +160,65 @@ def icons():
 def sublinter():
     sublime_packages_path = sublime.packages_path()
 
-    if not os.path.exists(os.path.join(sublime_packages_path, OVERLAY_ROOT)):
-        log("Updating linter settings")
+    try:
+        if not os.path.exists(os.path.join(
+            sublime_packages_path, OVERLAY_ROOT
+        )):
+            log("Updating linter settings")
 
-        icons = json.loads(sublime.load_resource("Packages/" + PACKAGE_NAME +
-                                                 "/common/icons.json"))
-        aliases = {}
+            icons = json.loads(sublime.load_resource("Packages/" +
+                                                     PACKAGE_NAME +
+                                                     "/common/icons.json"))
+            aliases = {}
 
-        sl_settings_file = "SublimeLinter.sublime-settings"
+            sl_settings_file = "SublimeLinter.sublime-settings"
 
-        sl_default_resource_path = "Packages/SublimeLinter/" + sl_settings_file
-        sl_default_settings_path = os.path.join(
-            sublime_packages_path, "SublimeLinter", sl_settings_file
-        )
+            sl_default_resource_path = "Packages/SublimeLinter/{}".format(
+                sl_settings_file
+            )
+            sl_default_settings_path = os.path.join(
+                sublime_packages_path, "SublimeLinter", sl_settings_file
+            )
 
-        sl_user_resource_path = "Packages/User/" + sl_settings_file
-        sl_user_settings_path = os.path.join(
-            sublime_packages_path, "User", sl_settings_file
-        )
+            sl_user_resource_path = "Packages/User/{}".format(sl_settings_file)
+            sl_user_settings_path = os.path.join(
+                sublime_packages_path, "User", sl_settings_file
+            )
 
-        sl_input_settings = {}
-        sl_output_settings = {"user": {}}
+            sl_input_settings = {}
+            sl_output_settings = {"user": {}}
 
-        if os.path.exists(sl_user_settings_path):
-            sl_input_settings = json.loads(jsonutils.sanitize_json(
-                sublime.load_resource(sl_user_resource_path)))["user"]
-        elif os.path.exists(sl_default_settings_path):
-            sl_input_settings = json.loads(jsonutils.sanitize_json(
-                sublime.load_resource(sl_default_resource_path)))["default"]
+            if os.path.exists(sl_user_settings_path):
+                sl_input_settings = json.loads(jsonutils.sanitize_json(
+                    sublime.load_resource(sl_user_resource_path)))["user"]
+            elif os.path.exists(sl_default_settings_path):
+                sl_input_settings = json.loads(jsonutils.sanitize_json(
+                    sublime.load_resource(
+                        sl_default_resource_path
+                    )))["default"]
 
-        if sl_input_settings:
-            for i in icons:
-                if "aliases" in icons[i]:
-                    for a in icons[i]["aliases"]:
-                        if "linter" in a:
-                            aliases[a["name"].lower()] = a["linter"]
+            if sl_input_settings:
+                for i in icons:
+                    if "aliases" in icons[i]:
+                        for a in icons[i]["aliases"]:
+                            if "linter" in a:
+                                aliases[a["name"].lower()] = a["linter"]
 
-            new_syntax_map = _merge(aliases, sl_input_settings["syntax_map"])
+                new_syntax_map = _merge(
+                    aliases, sl_input_settings["syntax_map"]
+                )
 
-            sl_input_settings["syntax_map"] = new_syntax_map
+                sl_input_settings["syntax_map"] = new_syntax_map
 
-            sl_output_settings["user"] = sl_input_settings
+                sl_output_settings["user"] = sl_input_settings
 
-            try:
                 with open(sl_user_settings_path, "w") as f:
                     json.dump(sl_output_settings, f, sort_keys=True, indent=4)
                     f.close()
-            except Exception as error:
-                log("Error during saving linter settings")
-                dump(error)
+
+    except Exception as error:
+        log("Error during saving linter settings")
+        dump(error)
 
 
 # TODO: Clean up in 3.1.0
