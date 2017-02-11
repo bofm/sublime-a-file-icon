@@ -162,10 +162,7 @@ def get_customizable():
     installed_themes = get_installed(logging=False)
     customizable_themes = []
 
-    # TODO: Clean up in 3.1.0
-    prev_res = sublime.find_resources(".st-file-icons")
-    curr_res = sublime.find_resources(".supports-a-file-icon-customization")
-    theme_res = prev_res + curr_res
+    theme_res = sublime.find_resources(".supports-a-file-icon-customization")
 
     for res in theme_res:
         pkg = re.sub(PATTERN, "", res)
