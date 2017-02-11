@@ -1,3 +1,13 @@
+<a name="3.0.1"></a>
+## [3.0.1](https://github.com/ihodev/a-file-icon/compare/v3.0.0...v3.0.1) (2017-02-11)
+
+
+### Bug Fixes
+
+* Fix error handling during saving linter settings ([597542b](https://github.com/ihodev/a-file-icon/commit/597542b)), closes [#87](https://github.com/ihodev/a-file-icon/issues/87)
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/ihodev/a-file-icon/compare/v2.2.0...v3.0.0) (2017-02-01)
 
