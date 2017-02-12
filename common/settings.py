@@ -221,53 +221,12 @@ def sublinter():
         dump(error)
 
 
-# TODO: Clean up in 3.1.0
-def migrate():
-    old_settings_file = "File Icons.sublime-settings"
-    old_settings_path = os.path.join(sublime.packages_path(), "User",
-                                     old_settings_file)
-
-    settings_to_migrate = {}
-
-    if os.path.exists(old_settings_path):
-        log("Migrating from 2.x.x settings")
-
-        old_settings = sublime.load_settings(old_settings_file)
-        new_settings = package()
-
-        for s in _default_settings:
-            if old_settings.has(s):
-                settings_to_migrate[s] = old_settings.get(s)
-
-        if old_settings.has("debug"):
-            settings_to_migrate["dev_mode"] = old_settings.get("debug")
-
-        if old_settings.has("force_override"):
-            settings_to_migrate[
-                "force_mode"
-            ] = old_settings.get("force_override")
-
-        for s in settings_to_migrate:
-            new_settings.set(s, settings_to_migrate[s])
-
-        sublime.save_settings(PACKAGE_SETTINGS_FILE)
-
-        try:
-            os.remove(old_settings_path)
-        except Exception as error:
-            log("Error during removing 2.x.x settings")
-            dump(error)
-        else:
-            message("Settings migration has successfully completed")
-
-
 def init():
     log("Initializing settings")
 
     global _default_settings
     _default_settings = _get_default()
 
-    migrate()
     sublinter()
 
     _add_listener()
