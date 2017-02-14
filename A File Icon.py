@@ -18,8 +18,7 @@ if int(sublime.version()) > 3113:
 
     def plugin_loaded():
         settings.init()
-        icons.check()
-        aliases.check()
+        icons.init()
 
     def plugin_unloaded():
         settings.clear_listener()
