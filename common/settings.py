@@ -152,6 +152,7 @@ def icons():
     s["opacity_on_hover"] = package().get("opacity_on_hover")
     s["opacity_on_select"] = package().get("opacity_on_select")
     s["size"] = package().get("size")
+    s["row_padding"] = package().get("row_padding")
     dump(s)
 
     return s
