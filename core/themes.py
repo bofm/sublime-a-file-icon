@@ -266,3 +266,5 @@ class AfiPatchThemesCommand(sublime_plugin.ApplicationCommand):
                 warning()
         else:
             log("All the themes are already patched")
+
+        settings.add_listener()

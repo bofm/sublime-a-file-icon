@@ -88,31 +88,28 @@ def _on_change():
     global _current_settings
     real_settings = {}
 
-    for s in _default_settings:
-        real_settings[s] = package().get(s)
+    if is_enabled():
+        for s in _default_settings:
+            real_settings[s] = package().get(s)
 
-        if real_settings[s] != _current_settings[s]:
-            if s.startswith("aliases"):
-                is_aliases_changed = True
-            elif s.startswith("force_mode"):
-                is_force_mode_changed = True
-            else:
-                is_icons_changed = True
+            if real_settings[s] != _current_settings[s]:
+                if s.startswith("aliases"):
+                    is_aliases_changed = True
+                elif s.startswith("force_mode"):
+                    is_force_mode_changed = True
+                else:
+                    is_icons_changed = True
 
-    if is_aliases_changed:
-        _on_aliases_change()
+        if is_aliases_changed:
+            _on_aliases_change()
 
-    if is_icons_changed:
-        _on_icons_change()
-    elif is_force_mode_changed:
-        _on_force_mode_change()
+        if is_icons_changed:
+            _on_icons_change()
+        elif is_force_mode_changed:
+            _on_force_mode_change()
 
-    if is_aliases_changed or is_force_mode_changed or is_icons_changed:
-        _current_settings = real_settings
-
-
-def _add_listener():
-    package().add_on_change(_uuid, _on_change)
+        if is_aliases_changed or is_force_mode_changed or is_icons_changed:
+            _current_settings = real_settings
 
 
 def _update():
@@ -120,16 +117,6 @@ def _update():
 
     for s in _default_settings:
         _current_settings[s] = package().get(s)
-
-
-def clear_listener():
-    package().clear_on_change(_uuid)
-
-
-def is_package_archive():
-    if os.path.splitext(PACKAGE_BASE)[1] == ".sublime-package":
-        return True
-    return False
 
 
 def subltxt():
@@ -142,6 +129,26 @@ def pkgctrl():
 
 def package():
     return sublime.load_settings(PACKAGE_SETTINGS_FILE)
+
+
+def add_listener():
+    package().add_on_change(_uuid, _on_change)
+
+
+def clear_listener():
+    package().clear_on_change(_uuid)
+
+
+def is_enabled():
+    if PACKAGE_NAME in subltxt().get("ignored_packages", []):
+        return False
+    return True
+
+
+def is_package_archive():
+    if os.path.splitext(PACKAGE_BASE)[1] == ".sublime-package":
+        return True
+    return False
 
 
 def icons():
@@ -230,5 +237,4 @@ def init():
 
     sublinter()
 
-    _add_listener()
     _update()
