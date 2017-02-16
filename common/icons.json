@@ -61,6 +61,34 @@
       }
     ]
   },
+  "file_type_audio": {
+    "color": "red",
+    "aliases":[
+      {
+        "name": "Plain Text (Audio)",
+        "extensions": [
+          "mp3",
+          "m4p",
+          "aac",
+          "aiff",
+          "au",
+          "flac",
+          "m4a",
+          "mpc",
+          "mp+",
+          "mpp",
+          "oga",
+          "opus",
+          "ra",
+          "rm",
+          "wav",
+          "wma"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.audio"
+      }
+    ]
+  },
   "file_type_babel": {
     "color": "yellow",
     "aliases": [
