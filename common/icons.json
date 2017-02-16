@@ -1275,6 +1275,33 @@
       }
     ]
   },
+  "file_type_video": {
+    "color": "purple",
+    "aliases":[
+      {
+        "name": "Plain Text (Video)",
+        "extensions": [
+          "avi",
+          "mp4",
+          "mov",
+          "mkv",
+          "h264",
+          "webm",
+          "wmv",
+          "ogv",
+          "ogg",
+          "3gp",
+          "m4v",
+          "mpg",
+          "mpeg",
+          "3gpp",
+          "ogm"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.video"
+      }
+    ]
+  },
   "file_type_vim": {
     "color": "green",
     "syntaxes": [
