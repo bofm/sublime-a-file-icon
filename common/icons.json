@@ -297,6 +297,15 @@
       }
     ]
   },
+  "file_type_elm": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "Elm",
+        "scope": "source.elm"
+      }
+    ]
+  },
   "file_type_erlang": {
     "color": "red",
     "syntaxes": [
@@ -357,12 +366,19 @@
       }
     ]
   },
-  "file_type_elm": {
-    "color": "cyan",
-    "syntaxes": [
+  "file_type_excel": {
+    "color": "green",
+    "aliases": [
       {
-        "name": "Elm",
-        "scope": "source.elm"
+        "name": "Plain Text (Microsoft Excel)",
+        "extensions": [
+          "xls",
+          "xlsx",
+          "xlsm",
+          "xlsb"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.excel"
       }
     ]
   },
