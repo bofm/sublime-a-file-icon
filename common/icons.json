@@ -1357,6 +1357,20 @@
       }
     ]
   },
+  "file_type_word": {
+    "color": "blue",
+    "aliases": [
+      {
+        "name": "Plain Text (Microsoft Word)",
+        "extensions": [
+          "doc",
+          "docx"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.word"
+      }
+    ]
+  },
   "file_type_yaml": {
     "color": "yellow",
     "syntaxes": [
