@@ -1,4 +1,29 @@
 {
+  "file_type_access": {
+    "color": "red",
+    "aliases": [
+      {
+        "name": "Plain Text (Microsoft Access)",
+        "extensions": [
+          "adn",
+          "accdb",
+          "accdr",
+          "accdt",
+          "accda",
+          "mdw",
+          "accde",
+          "mam",
+          "maq",
+          "mar",
+          "mat",
+          "maf",
+          "laccdb"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.access"
+      }
+    ]
+  },
   "file_type_actionscript": {
     "color": "red",
     "syntaxes": [
