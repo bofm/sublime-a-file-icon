@@ -895,6 +895,22 @@
       }
     ]
   },
+  "file_type_powerpoint": {
+    "color": "orange",
+    "aliases": [
+      {
+        "name": "Plain Text (Microsoft PowerPoint)",
+        "extensions": [
+          "ppt",
+          "pptx",
+          "pps",
+          "ppsx"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.powerpoint"
+      }
+    ]
+  },
   "file_type_preferences": {
     "color": "yellow",
     "syntaxes": [
