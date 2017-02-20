@@ -813,6 +813,19 @@
       }
     ]
   },
+  "file_type_onenote": {
+    "color": "purple",
+    "aliases": [
+      {
+        "name": "Plain Text (Microsoft OneNote)",
+        "extensions": [
+          "one"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.onenote"
+      }
+    ]
+  },
   "file_type_pdf": {
     "color": "red",
     "aliases": [
