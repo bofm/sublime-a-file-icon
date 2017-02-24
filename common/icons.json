@@ -33,6 +33,20 @@
       }
     ]
   },
+  "file_type_ae": {
+    "color": "purple",
+    "aliases": [
+      {
+        "name": "Plain Text (Adobe After Effects)",
+        "extensions": [
+          "aep",
+          "aet"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.ae"
+      }
+    ]
+  },
   "file_type_ai": {
     "color": "orange",
     "aliases":[
