@@ -1,3 +1,23 @@
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/ihodev/a-file-icon/compare/v3.0.1...v3.1.0) (2017-03-02)
+
+
+### Features
+
+* Add a video icon ([1166731](https://github.com/ihodev/a-file-icon/commit/1166731)), closes [#86](https://github.com/ihodev/a-file-icon/issues/86)
+* Add Adobe After Effects icon ([0a92a65](https://github.com/ihodev/a-file-icon/commit/0a92a65))
+* Add Adobe InDesign icon ([2db1a66](https://github.com/ihodev/a-file-icon/commit/2db1a66))
+* Add Adobe Premiere Pro icon ([d1198e6](https://github.com/ihodev/a-file-icon/commit/d1198e6)), closes [#84](https://github.com/ihodev/a-file-icon/issues/84)
+* Add an audio icon ([7c6c58e](https://github.com/ihodev/a-file-icon/commit/7c6c58e)), closes [#85](https://github.com/ihodev/a-file-icon/issues/85)
+* Add Microsoft Access icon ([e4aef71](https://github.com/ihodev/a-file-icon/commit/e4aef71)), closes [#83](https://github.com/ihodev/a-file-icon/issues/83)
+* Add Microsoft Excel icon ([5d8fe97](https://github.com/ihodev/a-file-icon/commit/5d8fe97))
+* Add Microsoft OneNote icon ([bf31913](https://github.com/ihodev/a-file-icon/commit/bf31913))
+* Add Microsoft PowerPoint icon ([c684b4f](https://github.com/ihodev/a-file-icon/commit/c684b4f))
+* Add Microsoft Word icon ([a53fecf](https://github.com/ihodev/a-file-icon/commit/a53fecf))
+* Add option to change sidebar row padding ([d4c2b94](https://github.com/ihodev/a-file-icon/commit/d4c2b94)), closes [#80](https://github.com/ihodev/a-file-icon/issues/80)
+
+
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://github.com/ihodev/a-file-icon/compare/v3.0.0...v3.0.1) (2017-02-11)
 

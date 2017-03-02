@@ -1,4 +1,4 @@
-# A File Icon 3.0.1
+# A File Icon 3.1.0
 
 New release!
 
