@@ -1,10 +1,49 @@
 {
+  "file_type_access": {
+    "color": "red",
+    "aliases": [
+      {
+        "name": "Plain Text (Microsoft Access)",
+        "extensions": [
+          "adn",
+          "accdb",
+          "accdr",
+          "accdt",
+          "accda",
+          "mdw",
+          "accde",
+          "mam",
+          "maq",
+          "mar",
+          "mat",
+          "maf",
+          "laccdb"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.access"
+      }
+    ]
+  },
   "file_type_actionscript": {
     "color": "red",
     "syntaxes": [
       {
         "name": "ActionScript",
         "scope": "source.actionscript"
+      }
+    ]
+  },
+  "file_type_ae": {
+    "color": "purple",
+    "aliases": [
+      {
+        "name": "Plain Text (Adobe After Effects)",
+        "extensions": [
+          "aep",
+          "aet"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.ae"
       }
     ]
   },
@@ -58,6 +97,34 @@
         ],
         "base": "text.plain",
         "scope": "text.plain.archive"
+      }
+    ]
+  },
+  "file_type_audio": {
+    "color": "red",
+    "aliases":[
+      {
+        "name": "Plain Text (Audio)",
+        "extensions": [
+          "mp3",
+          "m4p",
+          "aac",
+          "aiff",
+          "au",
+          "flac",
+          "m4a",
+          "mpc",
+          "mp+",
+          "mpp",
+          "oga",
+          "opus",
+          "ra",
+          "rm",
+          "wav",
+          "wma"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.audio"
       }
     ]
   },
@@ -269,6 +336,15 @@
       }
     ]
   },
+  "file_type_elm": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "Elm",
+        "scope": "source.elm"
+      }
+    ]
+  },
   "file_type_erlang": {
     "color": "red",
     "syntaxes": [
@@ -329,12 +405,19 @@
       }
     ]
   },
-  "file_type_elm": {
-    "color": "cyan",
-    "syntaxes": [
+  "file_type_excel": {
+    "color": "green",
+    "aliases": [
       {
-        "name": "Elm",
-        "scope": "source.elm"
+        "name": "Plain Text (Microsoft Excel)",
+        "extensions": [
+          "xls",
+          "xlsx",
+          "xlsm",
+          "xlsb"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.excel"
       }
     ]
   },
@@ -501,6 +584,24 @@
   },
   "file_type_image": {
     "color": "green"
+  },
+  "file_type_indesign": {
+    "color": "pink",
+    "aliases": [
+      {
+        "name": "Plain Text (Adobe InDesign)",
+        "extensions": [
+          "indd",
+          "indl",
+          "indt",
+          "indb",
+          "inx",
+          "idml"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.indesign"
+      }
+    ]
   },
   "file_type_java": {
     "color": "red",
@@ -769,6 +870,19 @@
       }
     ]
   },
+  "file_type_onenote": {
+    "color": "purple",
+    "aliases": [
+      {
+        "name": "Plain Text (Microsoft OneNote)",
+        "extensions": [
+          "one"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.onenote"
+      }
+    ]
+  },
   "file_type_pdf": {
     "color": "red",
     "aliases": [
@@ -838,12 +952,43 @@
       }
     ]
   },
+  "file_type_powerpoint": {
+    "color": "orange",
+    "aliases": [
+      {
+        "name": "Plain Text (Microsoft PowerPoint)",
+        "extensions": [
+          "ppt",
+          "pptx",
+          "pps",
+          "ppsx"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.powerpoint"
+      }
+    ]
+  },
   "file_type_preferences": {
     "color": "yellow",
     "syntaxes": [
       {
         "name": "ApacheConf",
         "scope": "source.apacheconf"
+      }
+    ]
+  },
+  "file_type_premiere": {
+    "color": "purple",
+    "aliases": [
+      {
+        "name": "Plain Text (Adobe Premiere Pro)",
+        "extensions": [
+          "prel",
+          "prproj",
+          "psq"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.premiere"
       }
     ]
   },
@@ -1247,6 +1392,33 @@
       }
     ]
   },
+  "file_type_video": {
+    "color": "purple",
+    "aliases":[
+      {
+        "name": "Plain Text (Video)",
+        "extensions": [
+          "avi",
+          "mp4",
+          "mov",
+          "mkv",
+          "h264",
+          "webm",
+          "wmv",
+          "ogv",
+          "ogg",
+          "3gp",
+          "m4v",
+          "mpg",
+          "mpeg",
+          "3gpp",
+          "ogm"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.video"
+      }
+    ]
+  },
   "file_type_vim": {
     "color": "green",
     "syntaxes": [
@@ -1299,6 +1471,20 @@
       {
         "name": "Batch File",
         "scope": "source.dosbatch"
+      }
+    ]
+  },
+  "file_type_word": {
+    "color": "blue",
+    "aliases": [
+      {
+        "name": "Plain Text (Microsoft Word)",
+        "extensions": [
+          "doc",
+          "docx"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.word"
       }
     ]
   },

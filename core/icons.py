@@ -117,6 +117,7 @@ def _copy_specific():
         log("Error during copy")
         dump(error)
     finally:
+        sublime.run_command("afi_check_aliases")
         sublime.run_command("afi_patch_themes")
 
 
@@ -129,8 +130,8 @@ def provide():
     _copy_specific()
 
 
-def check():
-    log("Checking icons")
+def init():
+    log("Initializing icons")
 
     if not os.path.exists(path.get_overlay()):
         _create_dirs()

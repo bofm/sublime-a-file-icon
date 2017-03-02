@@ -16,6 +16,7 @@ PATTERN = re.compile(r"^Packages/|\/.*$")
 COLOR = "{0}\"layer0.tint\": {1}{2}"
 OPACITY = "{0}\"layer0.opacity\": {1}{2}"
 SIZE = "{0}\"content_margin\": [{1}, {1}]{2}"
+ROW_PADDING = "{0}\"row_padding\": {1}{2}"
 
 
 def _patch_general(themes, dest, isettings):
@@ -26,6 +27,7 @@ def _patch_general(themes, dest, isettings):
     opacity_on_hover = isettings.get("opacity_on_hover", "")
     opacity_on_select = isettings.get("opacity_on_select", "")
     size = isettings.get("size", "")
+    row_padding = isettings.get("row_padding", "")
 
     for theme in themes:
         theme_dest = os.path.join(dest, theme)
@@ -62,7 +64,11 @@ def _patch_general(themes, dest, isettings):
 
                 "size": SIZE.format(
                     "\n    ", size, ""
-                ) if size else ""
+                ) if size else "",
+
+                "row_padding": ROW_PADDING.format(
+                    ",\n    ", row_padding, ""
+                ) if row_padding else ""
             })
             t.close()
 
@@ -95,7 +101,8 @@ def _patch_specific(theme, dest, isettings):
             "opacity": "",
             "opacity_on_hover": "",
             "opacity_on_select": "",
-            "size": ""
+            "size": "",
+            "row_padding": ""
         })
         t.close()
 
@@ -259,3 +266,5 @@ class AfiPatchThemesCommand(sublime_plugin.ApplicationCommand):
                 warning()
         else:
             log("All the themes are already patched")
+
+        settings.add_listener()

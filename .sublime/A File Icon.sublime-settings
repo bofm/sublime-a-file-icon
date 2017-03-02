@@ -35,6 +35,11 @@
   // change it to better fit your custom theme.
   "size": 8,
 
+  // Every theme adds its own sizes of the sidebar row padding.
+  // E.g. `Default.sublime-theme` provides [8, 3]. You can change it
+  // to better fit your icon size.
+  "row_padding": [],
+
   // By default the package provides syntax aliases to apply such
   // icons as `Gulpfile.js`, `webpack.config.js`, `package.json` and
   // etc. If you don't want to use them you can apply icons for

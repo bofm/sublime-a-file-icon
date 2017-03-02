@@ -3,6 +3,7 @@ import sublime
 if int(sublime.version()) > 3113:
     from .common import settings
     from .common.utils import cleaning
+
     from .core import icons
     from .core import aliases
 
@@ -13,13 +14,13 @@ if int(sublime.version()) > 3113:
     from .common.utils.reloader import AfiReloadCommand
     from .common.utils.cleaning import AfiCleanCommand
     from .common.utils.cleaning import AfiRevertCommand
+
     from .core.aliases import AfiCheckAliasesCommand
     from .core.themes import AfiPatchThemesCommand
 
     def plugin_loaded():
         settings.init()
-        icons.check()
-        aliases.check()
+        icons.init()
 
     def plugin_unloaded():
         settings.clear_listener()

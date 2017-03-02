@@ -88,31 +88,28 @@ def _on_change():
     global _current_settings
     real_settings = {}
 
-    for s in _default_settings:
-        real_settings[s] = package().get(s)
+    if is_enabled():
+        for s in _default_settings:
+            real_settings[s] = package().get(s)
 
-        if real_settings[s] != _current_settings[s]:
-            if s.startswith("aliases"):
-                is_aliases_changed = True
-            elif s.startswith("force_mode"):
-                is_force_mode_changed = True
-            else:
-                is_icons_changed = True
+            if real_settings[s] != _current_settings[s]:
+                if s.startswith("aliases"):
+                    is_aliases_changed = True
+                elif s.startswith("force_mode"):
+                    is_force_mode_changed = True
+                else:
+                    is_icons_changed = True
 
-    if is_aliases_changed:
-        _on_aliases_change()
+        if is_aliases_changed:
+            _on_aliases_change()
 
-    if is_icons_changed:
-        _on_icons_change()
-    elif is_force_mode_changed:
-        _on_force_mode_change()
+        if is_icons_changed:
+            _on_icons_change()
+        elif is_force_mode_changed:
+            _on_force_mode_change()
 
-    if is_aliases_changed or is_force_mode_changed or is_icons_changed:
-        _current_settings = real_settings
-
-
-def _add_listener():
-    package().add_on_change(_uuid, _on_change)
+        if is_aliases_changed or is_force_mode_changed or is_icons_changed:
+            _current_settings = real_settings
 
 
 def _update():
@@ -120,16 +117,6 @@ def _update():
 
     for s in _default_settings:
         _current_settings[s] = package().get(s)
-
-
-def clear_listener():
-    package().clear_on_change(_uuid)
-
-
-def is_package_archive():
-    if os.path.splitext(PACKAGE_BASE)[1] == ".sublime-package":
-        return True
-    return False
 
 
 def subltxt():
@@ -144,6 +131,26 @@ def package():
     return sublime.load_settings(PACKAGE_SETTINGS_FILE)
 
 
+def add_listener():
+    package().add_on_change(_uuid, _on_change)
+
+
+def clear_listener():
+    package().clear_on_change(_uuid)
+
+
+def is_enabled():
+    if PACKAGE_NAME in subltxt().get("ignored_packages", []):
+        return False
+    return True
+
+
+def is_package_archive():
+    if os.path.splitext(PACKAGE_BASE)[1] == ".sublime-package":
+        return True
+    return False
+
+
 def icons():
     log("Getting settings of the icons")
 
@@ -152,6 +159,7 @@ def icons():
     s["opacity_on_hover"] = package().get("opacity_on_hover")
     s["opacity_on_select"] = package().get("opacity_on_select")
     s["size"] = package().get("size")
+    s["row_padding"] = package().get("row_padding")
     dump(s)
 
     return s
@@ -221,54 +229,12 @@ def sublinter():
         dump(error)
 
 
-# TODO: Clean up in 3.1.0
-def migrate():
-    old_settings_file = "File Icons.sublime-settings"
-    old_settings_path = os.path.join(sublime.packages_path(), "User",
-                                     old_settings_file)
-
-    settings_to_migrate = {}
-
-    if os.path.exists(old_settings_path):
-        log("Migrating from 2.x.x settings")
-
-        old_settings = sublime.load_settings(old_settings_file)
-        new_settings = package()
-
-        for s in _default_settings:
-            if old_settings.has(s):
-                settings_to_migrate[s] = old_settings.get(s)
-
-        if old_settings.has("debug"):
-            settings_to_migrate["dev_mode"] = old_settings.get("debug")
-
-        if old_settings.has("force_override"):
-            settings_to_migrate[
-                "force_mode"
-            ] = old_settings.get("force_override")
-
-        for s in settings_to_migrate:
-            new_settings.set(s, settings_to_migrate[s])
-
-        sublime.save_settings(PACKAGE_SETTINGS_FILE)
-
-        try:
-            os.remove(old_settings_path)
-        except Exception as error:
-            log("Error during removing 2.x.x settings")
-            dump(error)
-        else:
-            message("Settings migration has successfully completed")
-
-
 def init():
     log("Initializing settings")
 
     global _default_settings
     _default_settings = _get_default()
 
-    migrate()
     sublinter()
 
-    _add_listener()
     _update()
