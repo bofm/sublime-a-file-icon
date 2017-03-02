@@ -977,6 +977,21 @@
       }
     ]
   },
+  "file_type_premiere": {
+    "color": "purple",
+    "aliases": [
+      {
+        "name": "Plain Text (Adobe Premiere Pro)",
+        "extensions": [
+          "prel",
+          "prproj",
+          "psq"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.premiere"
+      }
+    ]
+  },
   "file_type_procfile": {
     "color": "purple",
     "aliases": [
