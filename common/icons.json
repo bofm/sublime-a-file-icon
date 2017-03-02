@@ -585,6 +585,24 @@
   "file_type_image": {
     "color": "green"
   },
+  "file_type_indesign": {
+    "color": "pink",
+    "aliases": [
+      {
+        "name": "Plain Text (Adobe InDesign)",
+        "extensions": [
+          "indd",
+          "indl",
+          "indt",
+          "indb",
+          "inx",
+          "idml"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.indesign"
+      }
+    ]
+  },
   "file_type_java": {
     "color": "red",
     "syntaxes": [
