@@ -18,9 +18,41 @@ if int(sublime.version()) > 3113:
     from .core.aliases import AfiCheckAliasesCommand
     from .core.themes import AfiPatchThemesCommand
 
-    def plugin_loaded():
+    def init():
         settings.init()
         icons.init()
+
+    def prepare():
+        start_msg = "{}: Preparing to configure the plugin. ".format(
+            PACKAGE_NAME
+        ) + "Do not close the Sublime Text."
+
+        done_msg = "{}: Done.".format(PACKAGE_NAME)
+
+        print(start_msg)
+
+        window = sublime.active_window()
+        view = window.active_view()
+
+        def cleanup():
+            view.erase_status("afi")
+
+        def reload():
+            sublime.run_command("afi_reload")
+            view.set_status("afi", done_msg)
+            sublime.set_timeout(cleanup, 1000)
+
+        view.set_status("afi", start_msg)
+
+        sublime.set_timeout_async(reload, 5000)
+
+    def plugin_loaded():
+        from package_control import events
+
+        if events.post_upgrade(PACKAGE_NAME) or events.install(PACKAGE_NAME):
+            prepare()
+        else:
+            init()
 
     def plugin_unloaded():
         settings.clear_listener()
