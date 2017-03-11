@@ -45,6 +45,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Gradle_Language](https://packagecontrol.io/packages/Gradle_Language)
 
+## Haml
+
+- [Haml](https://packagecontrol.io/packages/Haml)
+
 ## Haxe
 
 - [Haxe](https://packagecontrol.io/packages/Haxe)
