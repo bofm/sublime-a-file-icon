@@ -1472,6 +1472,16 @@
         "name": "Batch File",
         "scope": "source.dosbatch"
       }
+    ],
+    "aliases": [
+      {
+        "name": "Plain Text (Windows Shortcut)",
+        "extensions": [
+          "lnk"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.lnk"
+      }
     ]
   },
   "file_type_word": {
