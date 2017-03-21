@@ -414,7 +414,8 @@
           "xls",
           "xlsx",
           "xlsm",
-          "xlsb"
+          "xlsb",
+          "xlt"
         ],
         "base": "text.plain",
         "scope": "text.plain.excel"
@@ -1491,7 +1492,12 @@
         "name": "Plain Text (Microsoft Word)",
         "extensions": [
           "doc",
-          "docx"
+          "docx",
+          "docm",
+          "docxml",
+          "dotm",
+          "dotx",
+          "wri"
         ],
         "base": "text.plain",
         "scope": "text.plain.word"
