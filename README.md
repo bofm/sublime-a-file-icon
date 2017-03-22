@@ -141,33 +141,33 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 
 <!-- Misc -->
 
-[changelog]: https://github.com/ihodev/a-file-icon/blob/dev/CHANGELOG.md
+[changelog]: https://github.com/ihodev/a-file-icon/blob/develop/CHANGELOG.md
 [coming-soon]: https://github.com/wbond/package_control_channel/pull/6109
-[contributing]: https://github.com/ihodev/a-file-icon/blob/dev/.github/CONTRIBUTING.md
+[contributing]: https://github.com/ihodev/a-file-icon/blob/develop/.github/CONTRIBUTING.md
 [customization]: https://github.com/ihodev/a-file-icon#customization
 [downloads]: https://packagecontrol.io/packages/A%20File%20Icon 'A File Icon @ Package Control'
 [forum]: https://forum.sublimetext.com/t/a-file-icon-sublime-file-specific-icons-for-improved-visual-grepping/25874
 [getting-started]: https://youtu.be/aTpuEhVHASw 'Watch "Getting Started with A File Icon" on YouTube'
 [gitter]: https://gitter.im/a-file-icon/Lobby
-[icons]: https://github.com/ihodev/a-file-icon/tree/dev/icons/multi
-[installer]: https://github.com/ihodev/sublime-boxy/blob/dev/Icons.py
+[icons]: https://github.com/ihodev/a-file-icon/tree/develop/icons/multi
+[installer]: https://github.com/ihodev/sublime-boxy/blob/master/Icons.py
 [known-issues]: https://github.com/ihodev/a-file-icon/labels/known%20issue
 [new-issue]: https://github.com/ihodev/a-file-icon/issues/new
-[packages]: https://github.com/ihodev/a-file-icon/blob/dev/PACKAGES.md
+[packages]: https://github.com/ihodev/a-file-icon/blob/develop/PACKAGES.md
 [patreon]: https://www.patreon.com/ihodev
 [release]: https://github.com/ihodev/a-file-icon/releases
 [stars]: https://github.com/ihodev/a-file-icon/stargazers
-[template]: https://github.com/ihodev/a-file-icon/blob/dev/common/templates/theme.py
+[template]: https://github.com/ihodev/a-file-icon/blob/develop/common/templates/theme.py
 [issues]: https://github.com/ihodev/a-file-icon/issues
 [twitter]: https://twitter.com/intent/tweet?hashtags=sublimetext%2C%20file%2C%20icons&ref_src=twsrc%5Etfw&text=A%20File%20Icon%20%E2%80%93%20Sublime%20file%20icons%20for%20improved%20visual%20grepping%20%F0%9F%8E%89&tw_p=tweetbutton&url=https%3A%2F%2Fgithub.com%2Fihodev%2Fa-file-icon&via=ihodev
 
 <!-- Assets -->
 
-[img-forum]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/reply-on-forum.svg
-[img-getting-started]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/getting-started.jpg
-[img-gitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/chat-on-gitter.svg
-[img-logo]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/logo.png
-[img-palette]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/palette.png
-[img-patreon]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/donate-on-patreon.svg
-[img-stars]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/star-on-github.svg
-[img-twitter]: https://cdn.rawgit.com/ihodev/a-file-icon/dev/media/share-on-twitter.svg
+[img-forum]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/reply-on-forum.svg
+[img-getting-started]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/getting-started.jpg
+[img-gitter]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/chat-on-gitter.svg
+[img-logo]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/logo.png
+[img-palette]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/palette.png
+[img-patreon]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/donate-on-patreon.svg
+[img-stars]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/star-on-github.svg
+[img-twitter]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/share-on-twitter.svg
