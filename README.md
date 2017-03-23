@@ -1,5 +1,6 @@
 # [![A File Icon][img-logo]][downloads]
 
+[![Install via Package Control][img-downloads]][downloads]
 [![Star on GitHub][img-stars]][stars]
 [![Make a donation at Patreon][img-patreon]][patreon]
 [![Share via Twitter][img-twitter]][twitter]
@@ -163,6 +164,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 
 <!-- Assets -->
 
+[img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?maxAge=3600&style=flat-square
 [img-forum]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/reply-on-forum.svg
 [img-getting-started]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/getting-started.jpg
 [img-gitter]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/chat-on-gitter.svg
