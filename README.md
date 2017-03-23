@@ -164,7 +164,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 
 <!-- Assets -->
 
-[img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?maxAge=3600&style=flat-square
+[img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?maxAge=3600&style=flat-square&label=%E2%A4%8B%20downloads
 [img-forum]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/reply-on-forum.svg
 [img-getting-started]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/getting-started.jpg
 [img-gitter]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/chat-on-gitter.svg
