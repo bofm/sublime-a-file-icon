@@ -393,6 +393,14 @@
         ],
         "base": "source.shell",
         "scope": "source.shell.eslint"
+      },
+      {
+        "name": "Plain Text (ESLint)",
+        "extensions": [
+          ".eslintcache"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.eslint"
       }
     ]
   },
