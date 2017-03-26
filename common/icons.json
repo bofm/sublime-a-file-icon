@@ -1269,6 +1269,14 @@
         ],
         "base": "source.yaml",
         "scope": "source.yaml.stylelint"
+      },
+      {
+        "name": "Shell Script (Stylelint)",
+        "extensions": [
+          ".stylelintignore"
+        ],
+        "base": "source.shell",
+        "scope": "source.shell.stylelint"
       }
     ]
   },
