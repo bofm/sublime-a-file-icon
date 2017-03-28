@@ -675,6 +675,15 @@
       }
     ]
   },
+  "file_type_kotlin": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "Kotlin",
+        "scope": "source.Kotlin"
+      }
+    ]
+  },
   "file_type_less": {
     "color": "blue",
     "syntaxes": [
