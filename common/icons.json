@@ -1388,6 +1388,21 @@
       }
     ]
   },
+  "file_type_tern": {
+    "color": "graphite",
+    "aliases": [
+      {
+        "name": "JSON (Tern JS)",
+        "linter": "json",
+        "extensions": [
+          ".tern-project",
+          ".tern-config"
+        ],
+        "base": "source.json",
+        "scope": "source.json.tern"
+      }
+    ]
+  },
   "file_type_tex": {
     "color": "blue",
     "syntaxes": [
