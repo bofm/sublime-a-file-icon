@@ -160,7 +160,7 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 [stars]: https://github.com/ihodev/a-file-icon/stargazers
 [template]: https://github.com/ihodev/a-file-icon/blob/develop/common/templates/theme.py
 [issues]: https://github.com/ihodev/a-file-icon/issues
-[twitter]: https://twitter.com/intent/tweet?hashtags=sublimetext%2C%20file%2C%20icons&ref_src=twsrc%5Etfw&text=A%20File%20Icon%20%E2%80%93%20Sublime%20file%20icons%20for%20improved%20visual%20grepping%20%F0%9F%8E%89&tw_p=tweetbutton&url=https%3A%2F%2Fgithub.com%2Fihodev%2Fa-file-icon&via=ihodev
+[twitter]: https://twitter.com/intent/tweet?hashtags=sublimetext%2C%20file%2C%20icons&ref_src=twsrc%5Etfw&text=A%20File%20Icon%20%E2%80%93%20Sublime%20file%20icons%20for%20improved%20visual%20grepping%20%F0%9F%8E%89&tw_p=tweetbutton&url=https%3A%2F%2Fpackagecontrol.io%2Fpackages%2FA%2520File%2520Icon&via=afileicon
 
 <!-- Assets -->
 
