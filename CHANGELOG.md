@@ -1,3 +1,26 @@
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/ihodev/a-file-icon/compare/v3.1.0...v3.2.0) (2017-03-28)
+
+
+### Bug Fixes
+
+* Add missing Office exts ([e9e3882](https://github.com/ihodev/a-file-icon/commit/e9e3882)), closes [#91](https://github.com/ihodev/a-file-icon/issues/91)
+* Associate ESLint icon with .eslintcache ([f3a24d7](https://github.com/ihodev/a-file-icon/commit/f3a24d7)), closes [#95](https://github.com/ihodev/a-file-icon/issues/95)
+* Associate stylelint icon with .stylelintignore ([f3aa250](https://github.com/ihodev/a-file-icon/commit/f3aa250)), closes [#96](https://github.com/ihodev/a-file-icon/issues/96)
+* Fix plugin crash on manual install ([d22b8ad](https://github.com/ihodev/a-file-icon/commit/d22b8ad))
+* Improve plugin install and update process ([324b968](https://github.com/ihodev/a-file-icon/commit/324b968))
+
+
+### Features
+
+* Add Dart icon ([97ea67e](https://github.com/ihodev/a-file-icon/commit/97ea67e)), closes [#92](https://github.com/ihodev/a-file-icon/issues/92)
+* Add Kotlin icon ([5aeaf82](https://github.com/ihodev/a-file-icon/commit/5aeaf82)), closes [#93](https://github.com/ihodev/a-file-icon/issues/93)
+* Add PowerShell icon ([b224f83](https://github.com/ihodev/a-file-icon/commit/b224f83)), closes [#94](https://github.com/ihodev/a-file-icon/issues/94)
+* Add Tern icon ([ff9d941](https://github.com/ihodev/a-file-icon/commit/ff9d941)), closes [#97](https://github.com/ihodev/a-file-icon/issues/97)
+* Associate Windows icon with `*.lnk` files ([0e820f5](https://github.com/ihodev/a-file-icon/commit/0e820f5)), closes [#90](https://github.com/ihodev/a-file-icon/issues/90)
+
+
+
 <a name="3.1.0"></a>
 # [3.1.0](https://github.com/ihodev/a-file-icon/compare/v3.0.1...v3.1.0) (2017-03-02)
 
