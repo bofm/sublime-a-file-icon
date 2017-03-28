@@ -17,6 +17,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Advanced CSV](https://packagecontrol.io/packages/Advanced%20CSV)
 
+## Dart
+
+- [Dart](https://packagecontrol.io/packages/Dart)
+
 ## Docker
 
 - [Dockerfile Syntax Highlighting](https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting)
@@ -45,6 +49,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Gradle_Language](https://packagecontrol.io/packages/Gradle_Language)
 
+## Haml
+
+- [Haml](https://packagecontrol.io/packages/Haml)
+
 ## Haxe
 
 - [Haxe](https://packagecontrol.io/packages/Haxe)
@@ -57,6 +65,10 @@ This file contains a list of possible packages those you may need to install to 
 ## Julia
 
 - [Julia](https://packagecontrol.io/packages/Julia)
+
+## Kotlin
+
+- [Kotlin](https://packagecontrol.io/packages/Kotlin)
 
 ## LESS
 
@@ -131,6 +143,7 @@ This file contains a list of possible packages those you may need to install to 
 ## Shell
 
 - [fish-shell](https://packagecontrol.io/packages/fish-shell)
+- [PowerShell](https://packagecontrol.io/packages/PowerShell)
 
 ## Slim
 

@@ -282,6 +282,15 @@
       }
     ]
   },
+  "file_type_dart": {
+    "color": "cyan",
+    "syntaxes": [
+      {
+        "name": "Dart",
+        "scope": "source.dart"
+      }
+    ]
+  },
   "file_type_default": {
     "color": "graphite"
   },
@@ -393,6 +402,14 @@
         ],
         "base": "source.shell",
         "scope": "source.shell.eslint"
+      },
+      {
+        "name": "Plain Text (ESLint)",
+        "extensions": [
+          ".eslintcache"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.eslint"
       }
     ]
   },
@@ -414,7 +431,8 @@
           "xls",
           "xlsx",
           "xlsm",
-          "xlsb"
+          "xlsb",
+          "xlt"
         ],
         "base": "text.plain",
         "scope": "text.plain.excel"
@@ -654,6 +672,15 @@
       {
         "name": "Julia",
         "scope": "source.julia"
+      }
+    ]
+  },
+  "file_type_kotlin": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "Kotlin",
+        "scope": "source.Kotlin"
       }
     ]
   },
@@ -968,6 +995,15 @@
       }
     ]
   },
+  "file_type_powershell": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "PowerShell",
+        "scope": "source.powershell"
+      }
+    ]
+  },
   "file_type_preferences": {
     "color": "yellow",
     "syntaxes": [
@@ -1268,6 +1304,14 @@
         ],
         "base": "source.yaml",
         "scope": "source.yaml.stylelint"
+      },
+      {
+        "name": "Shell Script (Stylelint)",
+        "extensions": [
+          ".stylelintignore"
+        ],
+        "base": "source.shell",
+        "scope": "source.shell.stylelint"
       }
     ]
   },
@@ -1341,6 +1385,21 @@
       {
         "name": "Tcl",
         "scope": "source.tcl"
+      }
+    ]
+  },
+  "file_type_tern": {
+    "color": "graphite",
+    "aliases": [
+      {
+        "name": "JSON (Tern JS)",
+        "linter": "json",
+        "extensions": [
+          ".tern-project",
+          ".tern-config"
+        ],
+        "base": "source.json",
+        "scope": "source.json.tern"
       }
     ]
   },
@@ -1472,6 +1531,16 @@
         "name": "Batch File",
         "scope": "source.dosbatch"
       }
+    ],
+    "aliases": [
+      {
+        "name": "Plain Text (Windows Shortcut)",
+        "extensions": [
+          "lnk"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.lnk"
+      }
     ]
   },
   "file_type_word": {
@@ -1481,7 +1550,12 @@
         "name": "Plain Text (Microsoft Word)",
         "extensions": [
           "doc",
-          "docx"
+          "docx",
+          "docm",
+          "docxml",
+          "dotm",
+          "dotx",
+          "wri"
         ],
         "base": "text.plain",
         "scope": "text.plain.word"

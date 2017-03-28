@@ -1,5 +1,6 @@
 # [![A File Icon][img-logo]][downloads]
 
+[![Install via Package Control][img-downloads]][downloads]
 [![Star on GitHub][img-stars]][stars]
 [![Make a donation at Patreon][img-patreon]][patreon]
 [![Share via Twitter][img-twitter]][twitter]
@@ -159,10 +160,11 @@ I've put a lot of time and effort into making **A File Icon** awesome. If you lo
 [stars]: https://github.com/ihodev/a-file-icon/stargazers
 [template]: https://github.com/ihodev/a-file-icon/blob/develop/common/templates/theme.py
 [issues]: https://github.com/ihodev/a-file-icon/issues
-[twitter]: https://twitter.com/intent/tweet?hashtags=sublimetext%2C%20file%2C%20icons&ref_src=twsrc%5Etfw&text=A%20File%20Icon%20%E2%80%93%20Sublime%20file%20icons%20for%20improved%20visual%20grepping%20%F0%9F%8E%89&tw_p=tweetbutton&url=https%3A%2F%2Fgithub.com%2Fihodev%2Fa-file-icon&via=ihodev
+[twitter]: https://twitter.com/intent/tweet?hashtags=sublimetext%2C%20file%2C%20icons&ref_src=twsrc%5Etfw&text=A%20File%20Icon%20%E2%80%93%20Sublime%20file%20icons%20for%20improved%20visual%20grepping%20%F0%9F%8E%89&tw_p=tweetbutton&url=https%3A%2F%2Fpackagecontrol.io%2Fpackages%2FA%2520File%2520Icon&via=afileicon
 
 <!-- Assets -->
 
+[img-downloads]: https://img.shields.io/packagecontrol/dt/A%20File%20Icon.svg?maxAge=3600&style=flat-square&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTggMjIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE4IDIyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI%2BPHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0ZGRkZGRjt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuNCwyMEg0LjZDNC4zLDIwLDQsMTkuNyw0LDE5LjN2LTAuN0M0LDE4LjMsNC4zLDE4LDQuNiwxOGg4LjljMC4zLDAsMC42LDAuMywwLjYsMC43djAuN0MxNCwxOS43LDEzLjcsMjAsMTMuNCwyMHogTTguNiwxNi4yQzguMiwxNS45LDQsOS41LDQsOS41YzAtMC4yLDAuMi0wLjQsMC41LTAuNGgyLjhWMi41QzcuMywyLjIsNy43LDIsOC4yLDJoMS41YzAuNSwwLDAuOSwwLjIsMC45LDAuNXY2LjZoMi44YzAuMywwLDAuNSwwLjIsMC41LDAuNGwtNC42LDYuN0M5LjMsMTYuMiw4LjksMTYuNSw4LjYsMTYuMnoiLz48L3N2Zz4%3D&logoWidth=10
 [img-forum]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/reply-on-forum.svg
 [img-getting-started]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/getting-started.jpg
 [img-gitter]: https://cdn.rawgit.com/ihodev/a-file-icon/develop/media/chat-on-gitter.svg

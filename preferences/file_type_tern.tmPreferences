@@ -2,11 +2,11 @@
 <plist version="1.0">
   <dict>
     <key>scope</key>
-    <string>source.json.stylelint, source.js.stylelint, source.yaml.stylelint, source.shell.stylelint</string>
+    <string>source.json.tern</string>
     <key>settings</key>
     <dict>
       <key>icon</key>
-      <string>file_type_stylelint</string>
+      <string>file_type_tern</string>
     </dict>
   </dict>
 </plist>
