@@ -17,6 +17,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Advanced CSV](https://packagecontrol.io/packages/Advanced%20CSV)
 
+## Dart
+
+- [Dart](https://packagecontrol.io/packages/Dart)
+
 ## Docker
 
 - [Dockerfile Syntax Highlighting](https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting)
