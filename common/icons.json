@@ -995,6 +995,15 @@
       }
     ]
   },
+  "file_type_powershell": {
+    "color": "blue",
+    "syntaxes": [
+      {
+        "name": "PowerShell",
+        "scope": "source.powershell"
+      }
+    ]
+  },
   "file_type_preferences": {
     "color": "yellow",
     "syntaxes": [
