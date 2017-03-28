@@ -66,6 +66,10 @@ This file contains a list of possible packages those you may need to install to 
 
 - [Julia](https://packagecontrol.io/packages/Julia)
 
+## Kotlin
+
+- [Kotlin](https://packagecontrol.io/packages/Kotlin)
+
 ## LESS
 
 - [LessImproved](https://packagecontrol.io/packages/LessImproved)
