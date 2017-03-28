@@ -143,6 +143,7 @@ This file contains a list of possible packages those you may need to install to 
 ## Shell
 
 - [fish-shell](https://packagecontrol.io/packages/fish-shell)
+- [PowerShell](https://packagecontrol.io/packages/PowerShell)
 
 ## Slim
 
