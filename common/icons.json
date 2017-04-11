@@ -1039,6 +1039,14 @@
         ],
         "base": "source.yaml",
         "scope": "source.yaml.procfile"
+      },
+      {
+        "name": "Plain Text (Buildpacks)",
+        "extensions": [
+          ".buildpacks"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.buildpacks"
       }
     ]
   },
