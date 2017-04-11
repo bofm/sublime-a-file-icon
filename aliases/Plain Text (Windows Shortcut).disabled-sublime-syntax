@@ -2,6 +2,7 @@
 ---
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Plain Text (Windows Shortcut)
+hidden: true
 file_extensions:
   - lnk
 scope: text.plain.lnk
