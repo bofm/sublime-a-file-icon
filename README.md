@@ -69,7 +69,7 @@ Themes that already have support of the icon customization include:
 If something goes wrong try to:
 
 1. Open `Command Palette` using menu item `Tools → Command Palette...`.
-2. Choose `A File Icon: Clean Patches`.
+2. Choose `A File Icon: Revert to a Freshly Installed State`.
 3. Restart Sublime Text.
 
 ## Developers
@@ -119,7 +119,7 @@ This package contains icons provided by:
 - [Icomoon][icomoon]
 - [Octicons][octicons]
 
-Source icons are provided in SVG format (Sublime Text doesn't currently support it). We convert them to @1x, @2x and @3x PNG assets before each release via a custom `gulp` task. 
+Source icons are provided in SVG format (Sublime Text doesn't currently support it). We convert them to @1x and @2x PNG assets before each release via a custom `gulp` task. 
 
 Rasterized icons can be found in `icons` folder.
 
