@@ -119,7 +119,7 @@ This package contains icons provided by:
 - [Icomoon][icomoon]
 - [Octicons][octicons]
 
-Source icons are provided in SVG format (Sublime Text doesn't currently support it). We convert them to @1x, @2x and @3x PNG assets before each release via a custom `gulp` task. 
+Source icons are provided in SVG format (Sublime Text doesn't currently support it). We convert them to @1x and @2x PNG assets before each release via a custom `gulp` task. 
 
 Rasterized icons can be found in `icons` folder.
 
