@@ -1,3 +1,17 @@
+<a name="3.2.1"></a>
+## [3.2.1](https://github.com/ihodev/a-file-icon/compare/v3.2.0...v3.2.1) (2017-04-13)
+
+
+### Bug Fixes
+
+* Associate Heroku icon with `.buildpacks` ([1abd271](https://github.com/ihodev/a-file-icon/commit/1abd271)), closes [#102](https://github.com/ihodev/a-file-icon/issues/102)
+* Associate tex-icon with biblatex (.bib) files ([9c9b2da](https://github.com/ihodev/a-file-icon/commit/9c9b2da))
+* Fix black icons on `Adaptive` theme ([9b2381b](https://github.com/ihodev/a-file-icon/commit/9b2381b))
+* Fix icon rendering on Windows (ST 3127+) ([acfd251](https://github.com/ihodev/a-file-icon/commit/acfd251)), closes [#108](https://github.com/ihodev/a-file-icon/issues/108)
+* Make aliases hidden ([0aa9954](https://github.com/ihodev/a-file-icon/commit/0aa9954))
+
+
+
 <a name="3.2.0"></a>
 # [3.2.0](https://github.com/ihodev/a-file-icon/compare/v3.1.0...v3.2.0) (2017-03-28)
 
