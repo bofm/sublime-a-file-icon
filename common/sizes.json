@@ -1,17 +1,12 @@
 [
   {
-    "size": 32,
-    "description": "16x16 is the default size of the Sublime Text icons. We are using 32x32 by default to improve HiDPI support.",
+    "size": 16,
+    "description": "16x16 is the default size of the Sublime Text icons.",
     "suffix": false
   },
   {
-    "size": 64,
+    "size": 32,
     "description": "The size of @2x icons.",
     "suffix": "@2x"
-  },
-  {
-    "size": 96,
-    "description": "The size of @3x icons.",
-    "suffix": "@3x"
   }
 ]

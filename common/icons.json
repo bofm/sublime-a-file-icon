@@ -1039,6 +1039,14 @@
         ],
         "base": "source.yaml",
         "scope": "source.yaml.procfile"
+      },
+      {
+        "name": "Plain Text (Buildpacks)",
+        "extensions": [
+          ".buildpacks"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.buildpacks"
       }
     ]
   },
@@ -1408,7 +1416,7 @@
     "syntaxes": [
       {
         "name": "LaTeX",
-        "scope": "text.tex, text.bibtex, text.log.latex"
+        "scope": "text.tex, text.biblatex, text.bibtex, text.log.latex"
       }
     ]
   },
