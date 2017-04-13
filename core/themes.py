@@ -20,7 +20,7 @@ ROW_PADDING = "{0}\"row_padding\": {1}{2}"
 
 
 def _patch_general(themes, dest, isettings):
-    color = isettings.get("color", "")
+    color = isettings.get("color", "[255, 255, 255]")
     color_on_hover = isettings.get("color_on_hover", "")
     color_on_select = isettings.get("color_on_select", "")
     opacity = isettings.get("opacity", "")
