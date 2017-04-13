@@ -1416,7 +1416,7 @@
     "syntaxes": [
       {
         "name": "LaTeX",
-        "scope": "text.tex, text.bibtex, text.log.latex"
+        "scope": "text.tex, text.biblatex, text.bibtex, text.log.latex"
       }
     ]
   },
