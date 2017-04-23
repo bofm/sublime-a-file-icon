@@ -320,6 +320,14 @@
         ],
         "base": "source.yaml",
         "scope": "source.yaml.docker"
+      },
+      {
+        "name": "Shell Script (Docker)",
+        "extensions": [
+          ".dockerignore"
+        ],
+        "base": "source.shell",
+        "scope": "source.shell.docker"
       }
     ]
   },
