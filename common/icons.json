@@ -1534,7 +1534,8 @@
         "linter": "javascript",
         "extensions": [
           "webpack.config.js",
-          "webpack.config.babel.js"
+          "webpack.config.babel.js",
+          "webpack.mix.js"
         ],
         "base": "source.js",
         "scope": "source.js.webpack"
