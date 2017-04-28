@@ -1216,7 +1216,8 @@
         "name": "JSON (Settings)",
         "linter": "json",
         "extensions": [
-          "jsbeautifyrc"
+          ".jshintrc",
+          ".jsbeautifyrc"
         ],
         "base": "source.json",
         "scope": "source.json.settings"
