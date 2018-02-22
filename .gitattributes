@@ -13,3 +13,4 @@
 /gulpfile.js        export-ignore
 /package.json       export-ignore
 /tests/             export-ignore
+/common/assets/     export-ignore
