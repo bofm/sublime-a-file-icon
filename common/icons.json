@@ -747,7 +747,8 @@
         "name": "YAML (Lock)",
         "linter": "yaml",
         "extensions": [
-          "Gemfile.lock"
+          "Gemfile.lock",
+          "Berksfile.lock"
         ],
         "base": "source.yaml",
         "scope": "source.yaml.lock"
