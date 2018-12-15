@@ -226,10 +226,9 @@ def get_installed(logging=True):
     return installed_themes
 
 
-def get_customizable():
+def get_customizable(installed_themes):
     log("Getting the list of theme packages with customization support")
 
-    installed_themes = get_installed(logging=False)
     customizable_themes = []
 
     theme_res = sublime.find_resources(".supports-a-file-icon-customization")
@@ -250,7 +249,7 @@ class AfiPatchThemesCommand(sublime_plugin.ApplicationCommand):
         log("Preparing to patch")
 
         installed_themes = get_installed()
-        customizable_themes = get_customizable()
+        customizable_themes = get_customizable(installed_themes)
         icons_settings = settings.icons()
         force_mode = settings.package().get("force_mode")
 
