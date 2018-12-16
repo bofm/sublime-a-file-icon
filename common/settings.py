@@ -86,9 +86,11 @@ def _on_change():
     global _current_settings
     real_settings = {}
 
+    package_settings = package()
+
     if is_enabled():
         for s in _default_settings:
-            real_settings[s] = package().get(s)
+            real_settings[s] = package_settings.get(s)
 
             if real_settings[s] != _current_settings[s]:
                 if s.startswith("aliases"):
@@ -118,15 +120,27 @@ def _update():
 
 
 def subltxt():
-    return sublime.load_settings(SUBLIME_SETTINGS_FILE)
+    try:
+        return subltxt.cache
+    except AttributeError:
+        subltxt.cache = sublime.load_settings(SUBLIME_SETTINGS_FILE)
+        return subltxt.cache
 
 
 def pkgctrl():
-    return sublime.load_settings(PKGCTRL_SETTINGS_FILE)
+    try:
+        return pkgctrl.cache
+    except AttributeError:
+        pkgctrl.cache = sublime.load_settings(PKGCTRL_SETTINGS_FILE)
+        return pkgctrl.cache
 
 
 def package():
-    return sublime.load_settings(PACKAGE_SETTINGS_FILE)
+    try:
+        return package.cache
+    except AttributeError:
+        package.cache = sublime.load_settings(PACKAGE_SETTINGS_FILE)
+        return package.cache
 
 
 def add_listener():
@@ -148,12 +162,14 @@ def is_package_archive():
 def icons():
     log("Getting settings of the icons")
 
+    package_settings = package()
+
     s = _get_colors()
-    s["opacity"] = package().get("opacity")
-    s["opacity_on_hover"] = package().get("opacity_on_hover")
-    s["opacity_on_select"] = package().get("opacity_on_select")
-    s["size"] = package().get("size")
-    s["row_padding"] = package().get("row_padding")
+    s["opacity"] = package_settings.get("opacity")
+    s["opacity_on_hover"] = package_settings.get("opacity_on_hover")
+    s["opacity_on_select"] = package_settings.get("opacity_on_select")
+    s["size"] = package_settings.get("size")
+    s["row_padding"] = package_settings.get("row_padding")
     dump(s)
 
     return s
