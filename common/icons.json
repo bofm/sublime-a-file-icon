@@ -690,6 +690,10 @@
       {
         "name": "JSX",
         "scope": "source.js.jsx"
+      },
+      {
+        "name": "JS Custom - React",
+        "scope": "source.js.react"
       }
     ]
   },
