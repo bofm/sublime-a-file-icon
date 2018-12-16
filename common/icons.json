@@ -313,6 +313,15 @@
       }
     ]
   },
+  "file_type_diff": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "Diff",
+        "scope": "source.diff"
+      }
+    ]
+  },
   "file_type_docker": {
     "color": "sky",
     "syntaxes": [
