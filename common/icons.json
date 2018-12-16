@@ -1572,6 +1572,23 @@
       }
     ]
   },
+  "file_type_visualstudio": {
+    "color": "purple",
+    "aliases": [
+      {
+        "name": "XML (Visual Studio)",
+        "extensions": [
+          "csproj",
+          "vsproj",
+          "ruleset",
+          "settings",
+          "targets"
+        ],
+        "base": "source.xml",
+        "scope": "source.xml.visualstudio"
+      }
+    ]
+  },
   "file_type_vue": {
     "color": "cyan",
     "syntaxes": [
