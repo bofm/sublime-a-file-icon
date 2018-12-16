@@ -138,15 +138,11 @@ def clear_listener():
 
 
 def is_enabled():
-    if PACKAGE_NAME in subltxt().get("ignored_packages", []):
-        return False
-    return True
+    return PACKAGE_NAME not in subltxt().get("ignored_packages", [])
 
 
 def is_package_archive():
-    if os.path.splitext(PACKAGE_BASE)[1] == ".sublime-package":
-        return True
-    return False
+    return PACKAGE_BASE.endswith(".sublime-package")
 
 
 def icons():
