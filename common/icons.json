@@ -292,6 +292,15 @@
       }
     ]
   },
+  "file_type_cython": {
+    "color": "yellow",
+    "syntaxes": [
+      {
+        "name": "Cython",
+        "scope": "source.cython"
+      }
+    ]
+  },
   "file_type_dart": {
     "color": "cyan",
     "syntaxes": [
