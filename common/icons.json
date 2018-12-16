@@ -271,6 +271,16 @@
   },
   "file_type_csv": {
     "color": "green",
+    "aliases":[
+      {
+        "name": "Plain Text (CSV)",
+        "extensions": [
+          "csv"
+        ],
+        "base": "text.plain",
+        "scope": "text.plain.csv"
+      }
+    ],
     "syntaxes": [
       {
         "name": "Advanced CSV",
