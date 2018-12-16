@@ -1,9 +1,7 @@
-import json
 import os
 import re
 import sublime
 
-from .vendor import jsonutils
 from .vendor import webcolors
 from .utils.logging import log, dump, message
 
@@ -25,10 +23,10 @@ _uuid = "9ebcce78-4cac-4089-8bd7-d551c634b052"
 
 
 def _get_default():
-    s = json.loads(jsonutils.sanitize_json(sublime.load_resource(
+    s = sublime.decode_value(sublime.load_resource(
         "Packages/{0}/.sublime/{1}"
         .format(PACKAGE_NAME, PACKAGE_SETTINGS_FILE)
-    )))
+    ))
 
     del s["dev_mode"]
     del s["dev_trace"]
@@ -174,9 +172,8 @@ def sublinter():
         )):
             log("Updating linter settings")
 
-            icons = json.loads(sublime.load_resource("Packages/" +
-                                                     PACKAGE_NAME +
-                                                     "/common/icons.json"))
+            icons = sublime.decode_value(sublime.load_resource(
+                "Packages/" + PACKAGE_NAME + "/common/icons.json"))
             aliases = {}
 
             sl_settings_file = "SublimeLinter.sublime-settings"
@@ -197,13 +194,13 @@ def sublinter():
             sl_output_settings = {"user": {}}
 
             if os.path.exists(sl_user_settings_path):
-                sl_input_settings = json.loads(jsonutils.sanitize_json(
-                    sublime.load_resource(sl_user_resource_path)))["user"]
+                sl_input_settings = sublime.decode_value(
+                    sublime.load_resource(sl_user_resource_path))["user"]
             elif os.path.exists(sl_default_settings_path):
-                sl_input_settings = json.loads(jsonutils.sanitize_json(
+                sl_input_settings = sublime.decode_value(
                     sublime.load_resource(
                         sl_default_resource_path
-                    )))["default"]
+                    ))["default"]
 
             if sl_input_settings:
                 for i in icons:
@@ -221,8 +218,7 @@ def sublinter():
                 sl_output_settings["user"] = sl_input_settings
 
                 with open(sl_user_settings_path, "w") as f:
-                    json.dump(sl_output_settings, f, sort_keys=True, indent=4)
-                    f.close()
+                    f.write(sublime.encode_value(sl_output_settings))
 
     except Exception as error:
         log("Error during saving linter settings")
