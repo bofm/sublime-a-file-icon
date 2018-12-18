@@ -248,6 +248,10 @@
       {
         "name": "C++",
         "scope": "source.c++"
+      },
+      {
+        "name": "Objective C++",
+        "scope": "source.objc++"
       }
     ]
   },
@@ -278,17 +282,13 @@
           "csv"
         ],
         "base": "text.plain",
-        "scope": "text.plain.csv"
+        "scope": "text.csv"
       }
     ],
     "syntaxes": [
       {
         "name": "Advanced CSV",
         "scope": "text.advanced_csv"
-      },
-      {
-        "name": "CSV Misc",
-        "scope": "text.csv"
       }
     ]
   },
@@ -1596,8 +1596,8 @@
           "settings",
           "targets"
         ],
-        "base": "source.xml",
-        "scope": "source.xml.visualstudio"
+        "base": "text.xml",
+        "scope": "text.xml.visualstudio"
       }
     ]
   },
