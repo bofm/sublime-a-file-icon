@@ -4,6 +4,11 @@ The icons for packages provided by the community must be installed, i.e., if you
 
 This file contains a list of possible packages you may need to install to see their respective icons.
 
+## CMake
+
+- [CMake](https://packagecontrol.io/packages/CMake)
+- [CMakeEditor](https://packagecontrol.io/packages/CMakeEditor)
+
 ## CoffeeScript
 
 - [Better CoffeeScript](https://packagecontrol.io/packages/Better%20CoffeeScript)
