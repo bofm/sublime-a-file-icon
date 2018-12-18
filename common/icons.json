@@ -1428,6 +1428,14 @@
         ],
         "base": "source.json",
         "scope": "source.json.sublime"
+      },
+      {
+        "name": "YAML (Sublime)",
+        "extensions": [
+          "sublime-syntax"
+        ],
+        "base": "source.yaml",
+        "scope": "source.yaml.sublime"
       }
     ]
   },
