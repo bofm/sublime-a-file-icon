@@ -1664,15 +1664,6 @@
       }
     ]
   },
-  "file_type_xml": {
-    "color": "blue",
-    "syntaxes": [
-      {
-        "name": "XML",
-        "scope": "text.xml"
-      }
-    ]
-  },
   "file_type_yaml": {
     "color": "yellow",
     "syntaxes": [
