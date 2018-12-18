@@ -313,6 +313,15 @@
   "file_type_default": {
     "color": "graphite"
   },
+  "file_type_delphi": {
+    "color": "red",
+    "syntaxes": [
+      {
+        "name": "Pascal",
+        "scope": "source.pascal"
+      }
+    ]
+  },
   "file_type_dlang": {
     "color": "red",
     "syntaxes": [
