@@ -1535,6 +1535,15 @@
       }
     ]
   },
+  "file_type_vhdl": {
+    "color": "green",
+    "syntaxes": [
+      {
+        "name": "VHDL",
+        "scope": "source.vhdl"
+      }
+    ]
+  },
   "file_type_video": {
     "color": "purple",
     "aliases":[
