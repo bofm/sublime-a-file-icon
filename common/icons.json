@@ -496,23 +496,26 @@
     "color": "orange",
     "syntaxes": [
       {
-        "name": "GitSyntaxes",
+        "name": "Git Formats",
         "scope": "text.git"
       },
       {
         "name": "Git Misc Packages",
         "scope": "source.git"
+      },
+      {
+        "name": "Shell Script (Git)",
+        "scope": "source.shell.git"
       }
     ],
     "aliases": [
       {
-        "name": "Shell Script (Git)",
+        "name": "Git Keep",
         "extensions": [
-          ".gitignore",
           ".gitkeep"
         ],
-        "base": "source.shell",
-        "scope": "source.shell.git"
+        "base": "text.plain",
+        "scope": "text.git.keep"
       }
     ]
   },
