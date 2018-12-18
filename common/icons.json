@@ -1417,6 +1417,7 @@
         "linter": "json",
         "extensions": [
           ".no-sublime-package",
+          "sublime-color-scheme",
           "sublime-commands",
           "sublime-menu",
           "sublime-project",
