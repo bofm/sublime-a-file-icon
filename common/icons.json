@@ -1564,6 +1564,14 @@
       {
         "name": "VHDL",
         "scope": "source.vhdl"
+      },
+      {
+        "name": "SystemVerilog",
+        "scope": "source.systemverilog"
+      },
+      {
+        "name": "Verilog",
+        "scope": "source.verilog"
       }
     ]
   },

@@ -188,6 +188,11 @@ This file contains a list of possible packages you may need to install to see th
 
 - [TypeScript](https://packagecontrol.io/packages/TypeScript)
 
+## Verilog
+
+- [SystemVerilog](https://packagecontrol.io/packages/SystemVerilog)
+- [Verilog](https://packagecontrol.io/packages/Verilog)
+
 ## VHDL
 
 - [Smart VHDL](https://packagecontrol.io/packages/Smart%20VHDL)
