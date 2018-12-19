@@ -1559,7 +1559,7 @@
     ]
   },
   "file_type_vhdl": {
-    "color": "green",
+    "color": "blue",
     "syntaxes": [
       {
         "name": "VHDL",
