@@ -41,9 +41,8 @@ def _merge(*settings):
     return result
 
 
-def _get_colors():
+def _get_colors(package_settings):
     colors = {}
-    package_settings = package()
     color_options = [
         o for o in _default_settings if o.startswith("color")
     ]
@@ -53,12 +52,9 @@ def _get_colors():
             color = package_settings.get(opt)
 
             if re.match(_pattern, color):
-                rgb_color = webcolors.hex_to_rgb(color)
-
-                color = ", ".join(str(e) for e in rgb_color)
-                colors[opt] = "[" + color + "]"
+                colors[opt] = webcolors.hex_to_rgb(color)
             else:
-                colors[opt] = ""
+                colors[opt] = []
 
     return colors
 
@@ -164,7 +160,7 @@ def icons():
 
     package_settings = package()
 
-    s = _get_colors()
+    s = _get_colors(package_settings)
     s["opacity"] = package_settings.get("opacity")
     s["opacity_on_hover"] = package_settings.get("opacity_on_hover")
     s["opacity_on_select"] = package_settings.get("opacity_on_select")
