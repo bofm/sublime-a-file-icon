@@ -1,8 +1,8 @@
 ## Found an Issue?
 
-If you have any problems, please search for [a similar issue] first, before creating [a new one](https://github.com/ihodev/a-file-icon/issues) (don't forget to **follow the issue template**).
+If you have any problems, please search for [a similar issue] first, before creating [a new one](https://github.com/SublimeText/AFileIcon/issues) (don't forget to **follow the issue template**).
 
-> Also, check the list of [known issues](https://github.com/ihodev/a-file-icon/labels/known%20issue) before doing so.
+> Also, check the list of [known issues](https://github.com/SublimeText/AFileIcon/labels/known%20issue) before doing so.
 
 Don't forget to provide your environment details: just choose `A File Icon: Environment` in `Command Palette` and copy them.
 
@@ -35,12 +35,12 @@ Build process consists of:
 
 If you want to add a new icon, please follow these steps:
 
-1. Try to find an icon in one of [these resources](https://github.com/ihodev/a-file-icon#icons). We always try to be pretty similar to [Atom File Icons](https://github.com/DanBrooker/file-icons) package. If you are unable to find anything – add your own.
+1. Try to find an icon in one of [these resources](https://github.com/SublimeText/AFileIcon#icons). We always try to be pretty similar to [Atom File Icons](https://github.com/DanBrooker/file-icons) package. If you are unable to find anything – add your own.
 2. Add an example file that shows this icon to the `tests` folder.
 3. Provide the icon in SVG format and put it in the `common/assets` directory.
-4. Add icon settings to the [common/icons.json](https://github.com/ihodev/a-file-icon/blob/develop/common/icons.json) file.
+4. Add icon settings to the [common/icons.json](https://github.com/SublimeText/AFileIcon/blob/develop/common/icons.json) file.
 5. Build and check if the icon looks good (don't forget to remove `Packages/zzz A File Icon zzz` folder before you check, we copy icons once right after install or upgrade).
-6. It's recommended to add a link to the package which provides the syntax (see [PACKAGES.md](https://github.com/ihodev/a-file-icon/blob/develop/PACKAGES.md))
+6. It's recommended to add a link to the package which provides the syntax (see [PACKAGES.md](https://github.com/SublimeText/AFileIcon/blob/develop/PACKAGES.md))
 
 > All that you need to add are the SVG icon, its settings and the example file(s).
 
@@ -58,7 +58,7 @@ Requirements:
 
 Example:
 
-[![ActionScript Icon](https://cdn.rawgit.com/ihodev/a-file-icon/develop/common/assets/file_type_actionscript.svg)](https://github.com/ihodev/a-file-icon/blob/develop/common/assets/file_type_actionscript.svg)
+[![ActionScript Icon](https://cdn.rawgit.com/SublimeText/AFileIcon/develop/common/assets/file_type_actionscript.svg)](https://github.com/SublimeText/AFileIcon/blob/develop/common/assets/file_type_actionscript.svg)
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
