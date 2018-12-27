@@ -765,6 +765,8 @@
       {
         "name": "Plain Text (License)",
         "extensions": [
+          "copying",
+          "copyright",
           "license"
         ],
         "base": "text.plain",
@@ -773,6 +775,8 @@
       {
         "name": "Markdown (License)",
         "extensions": [
+          "copying.md",
+          "copyright.md",
           "license.md"
         ],
         "base": "text.html.markdown",
