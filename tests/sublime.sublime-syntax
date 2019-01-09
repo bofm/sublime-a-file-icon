@@ -1,0 +1,7 @@
+%YAML 1.2
+---
+name: AFileIconTest
+scope: text
+hidden: true
+contexts:
+  main: []
